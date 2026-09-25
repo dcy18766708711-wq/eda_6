@@ -1,0 +1,35 @@
+* SPICE netlist generated from 3d56c2d26e67b048b4d63d3d4a2bda3445241f0258f469b797a93ce81d54b06a_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+R1 NET_E_3 NET_E_5 10_k
+RTMP61 0 NET_E_8 1k
+R2 VREF 0 200_k
+R4 NET_E_5 NET_E_7 300_k
+XU5 VREF NET_E_3 NET_E_8 U5
+R3 0 VREF 200_k
+R5 NET_E_8 0 20_k
+XU1 NET_E_7 U1
+XU12 NET_E_2 NET_E_5 NET_E_7 VREF U12
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = 0 : P_1(C_18) P_2(C_3) P_3(C_9)
+* E_2 = NET_E_2（原 netlabel "∅97" 为参数值形态或无效，已回退自动命名） : P_4(C_12) P_5(C_17)
+* E_3 = NET_E_3（原 netlabel "∅98" 为参数值形态或无效，已回退自动命名） : P_6(C_1) P_7(C_5) P_8(C_5)
+* E_4 = 0 : P_9(C_10) P_10(C_6)
+* E_5 = NET_E_5（原 netlabel "∅100" 为参数值形态或无效，已回退自动命名） : P_11(C_1) P_12(C_12) P_13(C_4)
+* E_6 = 0 : P_14(C_2) P_15(C_8)
+* E_7 = NET_E_7（原 netlabel "∅102" 为参数值形态或无效，已回退自动命名） : P_16(C_11) P_17(C_12) P_18(C_4)
+* E_8 = NET_E_8（原 netlabel "∅103" 为参数值形态或无效，已回退自动命名） : P_19(C_2) P_20(C_5) P_21(C_9)
+* E_9 = VREF : P_22(C_12) P_23(C_3) P_7(C_5) P_24(C_6)
+
+* ---- 待确认项 ----
+* 待人工确认: C_2 designator="RTMP61" value="∅23" type=R
+* 未映射类型 ANT（C_5 U5），按 X 子电路输出
+* 待人工确认: C_5 designator="∅43" value="∅42" type=ANT
+* 待人工确认: C_11 designator="U1" value="∅73" type=Box
+* 未映射类型 ANT（C_12 U12），按 X 子电路输出
+* 待人工确认: C_12 designator="∅84" value="∅83" type=ANT
+
+.end

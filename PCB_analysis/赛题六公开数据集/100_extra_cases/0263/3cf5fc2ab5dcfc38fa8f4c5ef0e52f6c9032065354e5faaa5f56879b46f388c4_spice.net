@@ -1,0 +1,46 @@
+* SPICE netlist generated from 3cf5fc2ab5dcfc38fa8f4c5ef0e52f6c9032065354e5faaa5f56879b46f388c4_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 NC_P_34 NC_P_36 NC_P_38 NC_P_40 NC_P_42 0 NC_P_46 NC_P_48 NC_P_44 NET_E_5 Zero_Mute_Control NET_E_6 DEMP_On_Off MUTE_On_Off Format System_Clock NET_E_1 _5_V PCM_Audio_Data NET_E_12 NET_E_9 NET_E_20 NET_E_21 NC_P_33 NC_P_35 NC_P_37 NC_P_39 NC_P_41 NC_P_43 NC_P_45 NC_P_47 U1
+XU2 NET_E_19 NET_E_3 U2
+XU3 NET_E_18 NET_E_2 U3
+C1 NET_E_5 0 1n
+C2 NET_E_2 NET_E_20 1n
+C3 NET_E_3 NET_E_21 1n
+C4 0 _5_V 1n
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅102" 为参数值形态或无效，已回退自动命名） : P_1(C_1) P_2(C_11)
+* E_2 = NET_E_2（原 netlabel "∅103" 为参数值形态或无效，已回退自动命名） : P_15(C_3) P_16(C_6)
+* E_3 = NET_E_3（原 netlabel "∅104" 为参数值形态或无效，已回退自动命名） : P_17(C_2) P_18(C_9)
+* E_4 = 0 : P_19(C_4) P_20(C_5)
+* E_5 = NET_E_5（原 netlabel "∅106" 为参数值形态或无效，已回退自动命名） : P_21(C_1) P_22(C_5)
+* E_6 = NET_E_6（原 netlabel "∅107" 为参数值形态或无效，已回退自动命名） : P_23(C_1) P_24(C_12)
+* E_7 = System_Clock : P_25(C_1)
+* E_8 = 0 : P_26(C_1) P_27(C_7)
+* E_9 = NET_E_9（原 netlabel "∅109" 为参数值形态或无效，已回退自动命名） : P_28(C_1)
+* E_10 = _5_V : P_3(C_1) P_4(C_10)
+* E_11 = PCM_Audio_Data : P_5(C_1)
+* E_12 = NET_E_12（原 netlabel "∅110" 为参数值形态或无效，已回退自动命名） : P_6(C_1)
+* E_13 = Format : P_7(C_1)
+* E_14 = DEMP_On_Off : P_8(C_1)
+* E_15 = MUTE_On_Off : P_9(C_1)
+* E_16 = Zero_Mute_Control : P_10(C_1)
+* E_17 = 0 : P_11(C_10) P_12(C_8)
+* E_18 = NET_E_18（原 netlabel "∅112" 为参数值形态或无效，已回退自动命名） : P_13(C_3)
+* E_19 = NET_E_19（原 netlabel "∅113" 为参数值形态或无效，已回退自动命名） : P_14(C_2)
+* E_20 = NET_E_20（原 netlabel "∅114" 为参数值形态或无效，已回退自动命名） : P_29(C_6) P_30(C_1)
+* E_21 = NET_E_21（原 netlabel "∅115" 为参数值形态或无效，已回退自动命名） : P_31(C_9) P_32(C_1)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅40" type=Box
+* 待人工确认: C_2 designator="U2" value="∅44" type=Box
+* 待人工确认: C_3 designator="U3" value="∅48" type=Box
+* 待人工确认: C_5 designator="C1" value="∅59" type=C
+* 待人工确认: C_6 designator="C2" value="∅66" type=C
+* 待人工确认: C_9 designator="C3" value="∅83" type=C
+* 待人工确认: C_10 designator="C4" value="∅90" type=C
+
+.end

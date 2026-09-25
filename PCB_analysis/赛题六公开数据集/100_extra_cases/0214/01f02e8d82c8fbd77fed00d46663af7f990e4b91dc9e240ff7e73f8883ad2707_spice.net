@@ -1,0 +1,29 @@
+* SPICE netlist generated from 01f02e8d82c8fbd77fed00d46663af7f990e4b91dc9e240ff7e73f8883ad2707_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 SDAGND NET_E_2 NET_E_4 0 U1
+XU2 SDAGND NET_E_2 1.14V_to_5.5V NET_E_4 0 U2
+R1 NET_E_4 1.14V_to_5.5V 5k
+R2 SDAGND 1.14V_to_5.5V 5k
+C1 0 1.14V_to_5.5V 0.01μ
+R3 NET_E_2 1.14V_to_5.5V 5k
+XU20  U20
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = SDAGND : P_1(C_1) P_2(C_2) P_3(C_7)
+* E_2 = NET_E_2（原 netlabel "∅71" 为参数值形态或无效，已回退自动命名） : P_4(C_1) P_5(C_2) P_6(C_9)
+* E_3 = 1.14V_to_5.5V : P_7(C_2) P_8(C_4) P_9(C_7) P_10(C_8) P_11(C_9)
+* E_4 = NET_E_4（原 netlabel "∅72" 为参数值形态或无效，已回退自动命名） : P_12(C_1) P_13(C_2) P_14(C_4)
+* E_6 = 0 : P_16(C_3) P_17(C_8)
+* E_10 = 0 : P_21(C_5) P_22(C_1)
+* E_12 = 0 : P_24(C_6) P_25(C_2)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅19" type=Box
+* 待人工确认: C_2 designator="U2" value="∅27" type=Box
+* 未映射类型 Opt（C_20 U20），按 X 子电路输出
+* 待人工确认: C_20 designator="∅69" value="∅68" type=Opt
+
+.end

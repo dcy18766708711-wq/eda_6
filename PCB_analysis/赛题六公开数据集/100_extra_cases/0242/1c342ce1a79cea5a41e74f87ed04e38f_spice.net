@@ -1,0 +1,38 @@
+* SPICE netlist generated from 1c342ce1a79cea5a41e74f87ed04e38f_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 Positive_Enable NET_E_10 VIN NET_E_12 0 Negative_Enable I²C_Interface_Clock NET_E_4 _5.0V I²C_Interface_Data _5.0V NET_E_8 0 U1
+C1 0 _5.0V 4.7μ
+L1 VIN NET_E_10 1u
+C2 0 _5.0V 4.7μ
+C3 0 VIN 1n
+C4 0 NET_E_8 4.7μ
+C5 NET_E_12 NET_E_4 2.2μ
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = Positive_Enable : P_1(C_1)
+* E_2 = Negative_Enable : P_19(C_1)
+* E_3 = I²C_Interface_Clock : P_20(C_1)
+* E_4 = NET_E_4（原 netlabel "∅102" 为参数值形态或无效，已回退自动命名） : P_21(C_1) P_22(C_7)
+* E_5 = _5.0V : P_23(C_1) P_24(C_2)
+* E_6 = I²C_Interface_Data : P_25(C_1)
+* E_7 = _5.0V : P_26(C_1) P_27(C_4)
+* E_8 = NET_E_8（原 netlabel "∅103" 为参数值形态或无效，已回退自动命名） : P_28(C_1) P_29(C_6)
+* E_9 = 0 : P_30(C_1) P_31(C_13)
+* E_10 = NET_E_10（原 netlabel "∅105" 为参数值形态或无效，已回退自动命名） : P_2(C_1) P_3(C_3)
+* E_11 = VIN : P_4(C_1) P_5(C_3) P_6(C_5)
+* E_12 = NET_E_12（原 netlabel "∅106" 为参数值形态或无效，已回退自动命名） : P_7(C_1) P_8(C_7)
+* E_13 = 0 : P_9(C_17) P_10(C_5)
+* E_14 = 0 : P_11(C_1) P_12(C_9)
+* E_15 = 0 : P_13(C_10) P_14(C_2)
+* E_16 = 0 : P_15(C_15) P_16(C_6)
+* E_17 = 0 : P_17(C_14) P_18(C_4)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅31" type=Box
+* 待人工确认: C_3 designator="L1" value="∅44" type=L
+* 待人工确认: C_5 designator="C3" value="∅57" type=C
+
+.end

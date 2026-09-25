@@ -1,0 +1,57 @@
+* SPICE netlist generated from 01_datasheet_sch_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 NET_E_11 NET_E_3 U1
+XU2 NET_E_10 NET_E_15 NET_E_15 NET_E_2 NET_E_7 U2
+XSW1 NET_E_2 NET_E_6 SW1
+R1 NET_E_11 NET_E_3 1k
+R3 NET_E_10 NET_E_7 1k
+R5 NET_E_13 NET_E_12 1k
+R4 NET_E_3 NC_P_31 1k
+R2 NET_E_1 NET_E_11 1k
+X1 NET_E_4 NET_E_2 X1
+XU1 NET_E_13 2048kHz NET_E_9 NET_E_16 U1
+XU2 NET_E_19 0 NET_E_14 U2
+C1 NET_E_1 NET_E_4 1n
+D1 NET_E_4 NET_E_1 DMOD
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅152" 为参数值形态或无效，已回退自动命名） : P_1(C_12) P_22(C_16) P_3(C_8)
+* E_2 = NET_E_2（原 netlabel "∅153" 为参数值形态或无效，已回退自动命名） : P_15(C_2) P_16(C_3) P_17(C_9)
+* E_3 = NET_E_3（原 netlabel "∅154" 为参数值形态或无效，已回退自动命名） : P_18(C_1) P_19(C_4) P_20(C_7)
+* E_4 = NET_E_4（原 netlabel "∅155" 为参数值形态或无效，已回退自动命名） : P_21(C_12) P_2(C_16) P_23(C_9)
+* E_5 = 2048kHz : P_24(C_10)
+* E_6 = NET_E_6（原 netlabel "0" 为参数值形态或无效，已回退自动命名） : P_25(C_3)
+* E_7 = NET_E_7（原 netlabel "∅156" 为参数值形态或无效，已回退自动命名） : P_26(C_2) P_27(C_5)
+* E_8 = 0 : P_28(C_11) P_29(C_13)
+* E_9 = NET_E_9（原 netlabel "∅158" 为参数值形态或无效，已回退自动命名） : P_30(C_10)
+* E_10 = NET_E_10（原 netlabel "∅159" 为参数值形态或无效，已回退自动命名） : P_4(C_2) P_5(C_5)
+* E_11 = NET_E_11（原 netlabel "∅160" 为参数值形态或无效，已回退自动命名） : P_6(C_1) P_7(C_4) P_8(C_8)
+* E_12 = NET_E_12（原 netlabel "0" 为参数值形态或无效，已回退自动命名） : P_9(C_6)
+* E_13 = NET_E_13（原 netlabel "∅161" 为参数值形态或无效，已回退自动命名） : P_10(C_10) P_11(C_6)
+* E_14 = NET_E_14（原 netlabel "0" 为参数值形态或无效，已回退自动命名） : P_12(C_11)
+* E_15 = NET_E_15（原 netlabel "∅162" 为参数值形态或无效，已回退自动命名） : P_13(C_2) P_14(C_2)
+* E_16 = NET_E_16（原 netlabel "∅163" 为参数值形态或无效，已回退自动命名） : P_43(C_14) P_44(C_10)
+* E_19 = NET_E_19（原 netlabel "∅164" 为参数值形态或无效，已回退自动命名） : P_49(C_15) P_50(C_11)
+
+* ---- 待确认项 ----
+* 未映射类型 AMP（C_1 U1），按 X 子电路输出
+* 待人工确认: C_1 designator="∅46" value="∅45" type=AMP
+* 未映射类型 AMP_5Pin（C_2 U2），按 X 子电路输出
+* 待人工确认: C_2 designator="∅59" value="∅58" type=AMP_5Pin
+* 未映射类型 Switch（C_3 SW1），按 X 子电路输出
+* 待人工确认: C_3 designator="SW1" value="∅65" type=Switch
+* 待人工确认: C_4 designator="R1" value="∅72" type=R
+* 待人工确认: C_5 designator="R3" value="∅79" type=R
+* 待人工确认: C_6 designator="R5" value="∅85" type=R
+* 待人工确认: C_7 designator="R4" value="∅92" type=R
+* 待人工确认: C_8 designator="R2" value="∅98" type=R
+* 待人工确认: C_9 designator="X1" value="∅106" type=Crystal_2Pin
+* 待人工确认: C_10 designator="U1" value="∅116" type=Box
+* 待人工确认: C_11 designator="U2" value="∅123" type=Box
+* 待人工确认: C_12 designator="C1" value="∅129" type=C
+* 待人工确认: C_16 designator="D1" value="∅149" type=LED
+
+.end

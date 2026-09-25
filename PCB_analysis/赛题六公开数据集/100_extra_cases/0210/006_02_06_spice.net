@@ -1,0 +1,88 @@
+* SPICE netlist generated from 006_02_06_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+Xu1 NET_E_71 NET_E_75 NET_E_1 0 NET_E_7 NET_E_34 NET_E_67 NET_E_68 NET_E_74 NET_E_73 0 PRG_DTR NET_E_14 PRG_RTS NET_E_6 0 NET_E_2 NET_E_3 NET_E_8 NET_E_9 NET_E_69 NET_E_70 NET_E_72 u1
+XU2 A5 0 NET_E_59 NET_E_76 U2
+R3 NET_E_21 0 5.1k
+R1 0 NET_E_7 1k
+D8 NET_E_26 NET_E_2 DMOD
+R15 NET_E_27 0 1k
+R2 0 NET_E_14 10k
+R4 0 A5 5.1k
+C3 0 0 10u
+R6 NET_E_34 0 1k
+R11 NET_E_7 NET_E_35 22.1k
+C1 0 NET_E_7 47.5k
+R5 NET_E_20 NET_E_37 1k
+XU3 D_ 0 NET_E_6 A6 B7 NET_E_77 U3
+R9 PRG_DTR NET_E_13 10k
+R10 PRG_RTS NET_E_43 10k
+D1 NET_E_3 NET_E_20 DMOD
+XU41 NET_E_43 U41
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅313" 为参数值形态或无效，已回退自动命名） : P_2(C_1) P_3(C_21)
+* E_2 = NET_E_2（原 netlabel "∅314" 为参数值形态或无效，已回退自动命名） : P_18(C_1) P_40(C_8)
+* E_3 = NET_E_3（原 netlabel "∅315" 为参数值形态或无效，已回退自动命名） : P_22(C_1) P_21(C_38)
+* E_4 = PRG_RTS : P_13(C_1) P_24(C_31)
+* E_5 = A5 : P_25(C_14) P_26(C_2)
+* E_6 = NET_E_6（原 netlabel "∅316" 为参数值形态或无效，已回退自动命名） : P_14(C_1) P_15(C_21)
+* E_7 = NET_E_7（原 netlabel "∅317" 为参数值形态或无效，已回退自动命名） : P_27(C_1) P_28(C_18) P_29(C_19) P_30(C_7)
+* E_8 = NET_E_8（原 netlabel "∅318" 为参数值形态或无效，已回退自动命名） : P_31(C_1)
+* E_9 = NET_E_9（原 netlabel "∅319" 为参数值形态或无效，已回退自动命名） : P_32(C_1) P_33(C_39)
+* E_10 = 0 : P_4(C_1) P_5(C_15) P_6(C_16) P_7(C_42) P_17(C_1)
+* E_11 = A6 : P_8(C_21)
+* E_12 = B7 : P_9(C_21)
+* E_13 = NET_E_13（原 netlabel "91" 为参数值形态或无效，已回退自动命名） : P_10(C_28)
+* E_14 = NET_E_14（原 netlabel "∅321" 为参数值形态或无效，已回退自动命名） : P_11(C_1) P_12(C_10)
+* E_16 = D_ : P_3(C_21)
+* E_18 = 0 : P_16(C_1) P_70(C_23)
+* E_20 = NET_E_20（原 netlabel "∅323" 为参数值形态或无效，已回退自动命名） : P_20(C_20) P_23(C_38)
+* E_21 = NET_E_21（原 netlabel "∅324" 为参数值形态或无效，已回退自动命名） : P_34(C_4)
+* E_25 = 0 : P_38(C_7) P_39(C_26)
+* E_26 = NET_E_26（原 netlabel "∅326" 为参数值形态或无效，已回退自动命名） : P_19(C_8)
+* E_27 = NET_E_27（原 netlabel "∅327" 为参数值形态或无效，已回退自动命名） : P_41(C_9)
+* E_31 = 0 : P_45(C_10) P_46(C_22)
+* E_32 = 0 : P_47(C_14) P_48(C_32)
+* E_33 = 0 : P_49(C_15) P_50(C_24)
+* E_34 = NET_E_34（原 netlabel "∅331" 为参数值形态或无效，已回退自动命名） : P_51(C_16) P_52(C_1)
+* E_35 = NET_E_35（原 netlabel "∅332" 为参数值形态或无效，已回退自动命名） : P_53(C_18) P_54(C_36)
+* E_36 = 0 : P_55(C_19) P_56(C_29)
+* E_37 = NET_E_37（原 netlabel "∅334" 为参数值形态或无效，已回退自动命名） : P_57(C_20)
+* E_41 = PRG_DTR : P_61(C_28) P_62(C_1)
+* E_43 = NET_E_43（原 netlabel "∅335" 为参数值形态或无效，已回退自动命名） : P_64(C_31) P_65(C_41)
+* E_45 = 0 : P_67(C_37) P_68(C_9)
+* E_48 = 0 : P_72(C_25) P_73(C_21)
+* E_51 = 0 : P_76(C_27) P_77(C_2)
+* E_54 = 0 : P_80(C_30) P_81(C_4)
+* E_57 = NET_E_57（原 netlabel "∅340" 为参数值形态或无效，已回退自动命名） : P_84(C_33)
+* E_58 = NET_E_58（原 netlabel "∅341" 为参数值形态或无效，已回退自动命名） : P_85(C_33)
+* E_59 = NET_E_59（原 netlabel "∅342" 为参数值形态或无效，已回退自动命名） : P_86(C_2)
+* E_61 = NET_E_61（原 netlabel "∅343" 为参数值形态或无效，已回退自动命名） : P_88(C_35)
+* E_63 = NET_E_63（原 netlabel "∅344" 为参数值形态或无效，已回退自动命名） : P_90(C_36)
+* E_64 = NET_E_64（原 netlabel "∅345" 为参数值形态或无效，已回退自动命名） : P_91(C_36)
+* E_67 = NET_E_67（原 netlabel "∅346" 为参数值形态或无效，已回退自动命名） : P_94(C_1)
+* E_68 = NET_E_68（原 netlabel "∅347" 为参数值形态或无效，已回退自动命名） : P_95(C_1)
+* E_69 = NET_E_69（原 netlabel "∅348" 为参数值形态或无效，已回退自动命名） : P_96(C_1)
+* E_70 = NET_E_70（原 netlabel "∅349" 为参数值形态或无效，已回退自动命名） : P_97(C_1)
+* E_71 = NET_E_71（原 netlabel "∅350" 为参数值形态或无效，已回退自动命名） : P_98(C_1)
+* E_72 = NET_E_72（原 netlabel "∅351" 为参数值形态或无效，已回退自动命名） : P_99(C_1)
+* E_73 = NET_E_73（原 netlabel "∅352" 为参数值形态或无效，已回退自动命名） : P_100(C_1)
+* E_74 = NET_E_74（原 netlabel "∅353" 为参数值形态或无效，已回退自动命名） : P_101(C_1)
+* E_75 = NET_E_75（原 netlabel "∅354" 为参数值形态或无效，已回退自动命名） : P_102(C_1)
+* E_76 = NET_E_76（原 netlabel "∅355" 为参数值形态或无效，已回退自动命名） : P_103(C_2)
+* E_77 = NET_E_77（原 netlabel "∅356" 为参数值形态或无效，已回退自动命名） : P_104(C_21)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="u1" value="∅154" type=Box
+* 待人工确认: C_2 designator="U2" value="∅156" type=Box
+* 待人工确认: C_7 designator="R1" value="∅167" type=R
+* 待人工确认: C_8 designator="D8" value="∅174" type=LED
+* 待人工确认: C_21 designator="U3" value="∅220" type=Box
+* 待人工确认: C_38 designator="D1" value="∅294" type=LED
+* 未映射类型 CIRCLE_HEADER（C_41 U41），按 X 子电路输出
+* 待人工确认: C_41 designator="∅307" value="∅306" type=CIRCLE_HEADER
+
+.end

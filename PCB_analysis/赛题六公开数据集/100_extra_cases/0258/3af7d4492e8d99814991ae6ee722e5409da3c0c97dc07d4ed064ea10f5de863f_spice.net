@@ -1,0 +1,25 @@
+* SPICE netlist generated from 3af7d4492e8d99814991ae6ee722e5409da3c0c97dc07d4ed064ea10f5de863f_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 Asserts_when_TDIE___TTRI NET_E_2 NET_E_3 NET_E_4 0 0 U1
+RSENSE2 0 NET_E_2 1k
+R1 0 NET_E_4 1k
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = Asserts_when_TDIE___TTRI : P_1(C_1)
+* E_2 = NET_E_2（原 netlabel "∅49" 为参数值形态或无效，已回退自动命名） : P_2(C_1) P_3(C_2)
+* E_3 = NET_E_3（原 netlabel "∅50" 为参数值形态或无效，已回退自动命名） : P_4(C_1)
+* E_4 = NET_E_4（原 netlabel "∅51" 为参数值形态或无效，已回退自动命名） : P_5(C_1) P_6(C_3)
+* E_5 = 0 : P_7(C_1) P_15(C_5)
+* E_6 = 0 : P_8(C_2) P_9(C_7)
+* E_7 = 0 : P_10(C_3) P_11(C_4)
+* E_11 = 0 : P_16(C_6) P_17(C_1)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅14" type=Box
+* 待人工确认: C_2 designator="RSENSE2" value="∅20" type=R
+* 待人工确认: C_3 designator="R1" value="∅26" type=R
+
+.end

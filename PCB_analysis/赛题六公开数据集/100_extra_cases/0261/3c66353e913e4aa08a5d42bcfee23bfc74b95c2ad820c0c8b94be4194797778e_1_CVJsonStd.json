@@ -1,0 +1,1824 @@
+{
+  "canvas": {"width": 1158, "height": 539},
+  "nowCls": "datasheet",
+  "components": {
+    "C_1": {
+      "cpntId": "C_1",
+      "state": "active",
+      "category": "Box",
+      "categoryId": "1",
+      "searchNameByOCR": "T_24",
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 1,
+        "y1": 40,
+        "x2": 217,
+        "y2": 484
+      },
+      "realBBox": {
+        "x1": 11,
+        "y1": 53,
+        "x2": 206,
+        "y2": 476
+      },
+      "rotation": null,
+      "pins": {
+        "P_1": {
+          "pinId": "P_1",
+          "edgeId": "E_1",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": "T_21",
+          "pinNameByVLM": null,
+          "tip": [217.000000,366.000000],
+          "base": [206.000000,366.000000]
+        },
+        "P_8": {
+          "pinId": "P_8",
+          "edgeId": "E_3",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": "T_12",
+          "pinNameByVLM": null,
+          "tip": [217.000000,190.000000],
+          "base": [206.000000,190.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_24": {
+          "tid": "T_24",
+          "category": "params",
+          "categoryId": 0,
+          "content": "(1) X = L or R",
+          "details": "searchName",
+          "location": {
+            "x1": 3,
+            "y1": 506,
+            "x2": 140,
+            "y2": 537
+          }
+        },
+        "T_4": {
+          "tid": "T_4",
+          "category": "params",
+          "categoryId": 0,
+          "content": "PCM1754",
+          "details": "",
+          "location": {
+            "x1": 54,
+            "y1": 58,
+            "x2": 160,
+            "y2": 85
+          }
+        }
+      }
+    },
+    "C_2": {
+      "cpntId": "C_2",
+      "state": "active",
+      "category": "C",
+      "categoryId": "4",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 315,
+        "y1": 412,
+        "x2": 359,
+        "y2": 453
+      },
+      "realBBox": {
+        "x1": 316,
+        "y1": 413,
+        "x2": 358,
+        "y2": 452
+      },
+      "rotation": null,
+      "pins": {
+        "P_2": {
+          "pinId": "P_2",
+          "edgeId": "E_1",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [337.000000,412.000000],
+          "base": [337.000000,413.000000]
+        },
+        "P_21": {
+          "pinId": "P_21",
+          "edgeId": "E_8",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [337.000000,453.000000],
+          "base": [337.000000,452.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_23": {
+          "tid": "T_23",
+          "category": "params",
+          "categoryId": 0,
+          "content": "10F",
+          "details": "value",
+          "location": {
+            "x1": 360,
+            "y1": 412,
+            "x2": 423,
+            "y2": 442
+          }
+        },
+        "T_22": {
+          "tid": "T_22",
+          "category": "params",
+          "categoryId": 0,
+          "content": "+",
+          "details": "",
+          "location": {
+            "x1": 341,
+            "y1": 404,
+            "x2": 358,
+            "y2": 423
+          }
+        }
+      }
+    },
+    "C_3": {
+      "cpntId": "C_3",
+      "state": "active",
+      "category": "C",
+      "categoryId": "4",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 620,
+        "y1": 99,
+        "x2": 665,
+        "y2": 144
+      },
+      "realBBox": {
+        "x1": 621,
+        "y1": 100,
+        "x2": 664,
+        "y2": 143
+      },
+      "rotation": null,
+      "pins": {
+        "P_13": {
+          "pinId": "P_13",
+          "edgeId": "E_6",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [642.000000,144.000000],
+          "base": [642.000000,143.000000]
+        },
+        "P_5": {
+          "pinId": "P_5",
+          "edgeId": "E_2",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [642.000000,99.000000],
+          "base": [642.000000,100.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_5": {
+          "tid": "T_5",
+          "category": "params",
+          "categoryId": 0,
+          "content": "C1",
+          "details": "designator",
+          "location": {
+            "x1": 669,
+            "y1": 107,
+            "x2": 706,
+            "y2": 138
+          }
+        }
+      }
+    },
+    "C_4": {
+      "cpntId": "C_4",
+      "state": "active",
+      "category": "ANT",
+      "categoryId": "26",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 746,
+        "y1": 150,
+        "x2": 867,
+        "y2": 293
+      },
+      "realBBox": {
+        "x1": 749,
+        "y1": 153,
+        "x2": 864,
+        "y2": 290
+      },
+      "rotation": null,
+      "pins": {
+        "P_14": {
+          "pinId": "P_14",
+          "edgeId": "E_6",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [746.000000,190.000000],
+          "base": [749.000000,190.000000]
+        },
+        "P_24": {
+          "pinId": "P_24",
+          "edgeId": "E_10",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [815.000000,292.000000],
+          "base": [815.000000,289.000000]
+        },
+        "P_3": {
+          "pinId": "P_3",
+          "edgeId": "E_1",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [746.000000,254.000000],
+          "base": [749.000000,254.000000]
+        },
+        "P_6": {
+          "pinId": "P_6",
+          "edgeId": "E_2",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [867.000000,222.000000],
+          "base": [864.000000,222.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_14": {
+          "tid": "T_14",
+          "category": "params",
+          "categoryId": 0,
+          "content": "1",
+          "details": "",
+          "location": {
+            "x1": 863,
+            "y1": 195,
+            "x2": 885,
+            "y2": 220
+          }
+        },
+        "T_3": {
+          "tid": "T_3",
+          "category": "params",
+          "categoryId": 0,
+          "content": "R1",
+          "details": "",
+          "location": {
+            "x1": 1011,
+            "y1": 29,
+            "x2": 1052,
+            "y2": 63
+          }
+        },
+        "T_2": {
+          "tid": "T_2",
+          "category": "params",
+          "categoryId": 0,
+          "content": "Av = −1, where Av =",
+          "details": "",
+          "location": {
+            "x1": 789,
+            "y1": 16,
+            "x2": 1004,
+            "y2": 49
+          }
+        },
+        "T_1": {
+          "tid": "T_1",
+          "category": "params",
+          "categoryId": 0,
+          "content": "R2",
+          "details": "",
+          "location": {
+            "x1": 1013,
+            "y1": 0,
+            "x2": 1052,
+            "y2": 35
+          }
+        },
+        "T_10": {
+          "tid": "T_10",
+          "category": "params",
+          "categoryId": 0,
+          "content": "2",
+          "details": "",
+          "location": {
+            "x1": 724,
+            "y1": 163,
+            "x2": 746,
+            "y2": 188
+          }
+        },
+        "T_13": {
+          "tid": "T_13",
+          "category": "params",
+          "categoryId": 0,
+          "content": "1/2",
+          "details": "",
+          "location": {
+            "x1": 781,
+            "y1": 194,
+            "x2": 812,
+            "y2": 218
+          }
+        },
+        "T_20": {
+          "tid": "T_20",
+          "category": "params",
+          "categoryId": 0,
+          "content": "+",
+          "details": "",
+          "location": {
+            "x1": 764,
+            "y1": 247,
+            "x2": 781,
+            "y2": 265
+          }
+        },
+        "T_18": {
+          "tid": "T_18",
+          "category": "params",
+          "categoryId": 0,
+          "content": "3",
+          "details": "",
+          "location": {
+            "x1": 724,
+            "y1": 229,
+            "x2": 746,
+            "y2": 254
+          }
+        },
+        "T_17": {
+          "tid": "T_17",
+          "category": "params",
+          "categoryId": 0,
+          "content": "OPA2353",
+          "details": "",
+          "location": {
+            "x1": 759,
+            "y1": 219,
+            "x2": 835,
+            "y2": 238
+          }
+        }
+      }
+    },
+    "C_5": {
+      "cpntId": "C_5",
+      "state": "active",
+      "category": "R",
+      "categoryId": "3",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 273,
+        "y1": 178,
+        "x2": 328,
+        "y2": 202
+      },
+      "realBBox": {
+        "x1": 274,
+        "y1": 179,
+        "x2": 327,
+        "y2": 201
+      },
+      "rotation": null,
+      "pins": {
+        "P_16": {
+          "pinId": "P_16",
+          "edgeId": "E_7",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [328.000000,190.000000],
+          "base": [327.000000,190.000000]
+        },
+        "P_9": {
+          "pinId": "P_9",
+          "edgeId": "E_3",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [273.000000,190.000000],
+          "base": [274.000000,190.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_8": {
+          "tid": "T_8",
+          "category": "params",
+          "categoryId": 0,
+          "content": "R1",
+          "details": "designator",
+          "location": {
+            "x1": 281,
+            "y1": 142,
+            "x2": 316,
+            "y2": 172
+          }
+        }
+      }
+    },
+    "C_6": {
+      "cpntId": "C_6",
+      "state": "active",
+      "category": "R",
+      "categoryId": "3",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 541,
+        "y1": 178,
+        "x2": 595,
+        "y2": 202
+      },
+      "realBBox": {
+        "x1": 542,
+        "y1": 179,
+        "x2": 594,
+        "y2": 201
+      },
+      "rotation": null,
+      "pins": {
+        "P_15": {
+          "pinId": "P_15",
+          "edgeId": "E_6",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [595.000000,190.000000],
+          "base": [594.000000,190.000000]
+        },
+        "P_17": {
+          "pinId": "P_17",
+          "edgeId": "E_7",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [541.000000,190.000000],
+          "base": [542.000000,190.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_9": {
+          "tid": "T_9",
+          "category": "params",
+          "categoryId": 0,
+          "content": "R3",
+          "details": "designator",
+          "location": {
+            "x1": 550,
+            "y1": 143,
+            "x2": 585,
+            "y2": 173
+          }
+        }
+      }
+    },
+    "C_7": {
+      "cpntId": "C_7",
+      "state": "active",
+      "category": "R",
+      "categoryId": "3",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 475,
+        "y1": 97,
+        "x2": 498,
+        "y2": 152
+      },
+      "realBBox": {
+        "x1": 476,
+        "y1": 98,
+        "x2": 497,
+        "y2": 151
+      },
+      "rotation": null,
+      "pins": {
+        "P_18": {
+          "pinId": "P_18",
+          "edgeId": "E_7",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [487.000000,152.000000],
+          "base": [487.000000,151.000000]
+        },
+        "P_7": {
+          "pinId": "P_7",
+          "edgeId": "E_2",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [487.000000,97.000000],
+          "base": [487.000000,98.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_7": {
+          "tid": "T_7",
+          "category": "params",
+          "categoryId": 0,
+          "content": "R2",
+          "details": "designator",
+          "location": {
+            "x1": 502,
+            "y1": 110,
+            "x2": 542,
+            "y2": 145
+          }
+        }
+      }
+    },
+    "C_8": {
+      "cpntId": "C_8",
+      "state": "active",
+      "category": "C",
+      "categoryId": "4",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 400,
+        "y1": 225,
+        "x2": 444,
+        "y2": 270
+      },
+      "realBBox": {
+        "x1": 401,
+        "y1": 226,
+        "x2": 443,
+        "y2": 269
+      },
+      "rotation": null,
+      "pins": {
+        "P_11": {
+          "pinId": "P_11",
+          "edgeId": "E_4",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [422.000000,270.000000],
+          "base": [422.000000,269.000000]
+        },
+        "P_19": {
+          "pinId": "P_19",
+          "edgeId": "E_7",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [422.000000,225.000000],
+          "base": [422.000000,226.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_16": {
+          "tid": "T_16",
+          "category": "params",
+          "categoryId": 0,
+          "content": "C2",
+          "details": "designator",
+          "location": {
+            "x1": 435,
+            "y1": 226,
+            "x2": 495,
+            "y2": 269
+          }
+        }
+      }
+    },
+    "C_10": {
+      "cpntId": "C_10",
+      "state": "active",
+      "category": "C",
+      "categoryId": "4",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 958,
+        "y1": 200,
+        "x2": 1002,
+        "y2": 244
+      },
+      "realBBox": {
+        "x1": 959,
+        "y1": 201,
+        "x2": 1001,
+        "y2": 243
+      },
+      "rotation": null,
+      "pins": {
+        "P_12": {
+          "pinId": "P_12",
+          "edgeId": "E_5",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [1002.000000,222.000000],
+          "base": [1001.000000,222.000000]
+        },
+        "P_4": {
+          "pinId": "P_4",
+          "edgeId": "E_2",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [958.000000,222.000000],
+          "base": [959.000000,222.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_19": {
+          "tid": "T_19",
+          "category": "params",
+          "categoryId": 0,
+          "content": "Output",
+          "details": "",
+          "location": {
+            "x1": 1069,
+            "y1": 225,
+            "x2": 1152,
+            "y2": 257
+          }
+        },
+        "T_11": {
+          "tid": "T_11",
+          "category": "params",
+          "categoryId": 0,
+          "content": "10F",
+          "details": "value",
+          "location": {
+            "x1": 950,
+            "y1": 164,
+            "x2": 1015,
+            "y2": 197
+          }
+        }
+      }
+    },
+    "C_14": {
+      "cpntId": "C_14",
+      "state": "active",
+      "category": "Gnd",
+      "categoryId": "2",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 407,
+        "y1": 300,
+        "x2": 437,
+        "y2": 331
+      },
+      "realBBox": {
+        "x1": 410,
+        "y1": 303,
+        "x2": 434,
+        "y2": 328
+      },
+      "rotation": null,
+      "pins": {
+        "P_10": {
+          "pinId": "P_10",
+          "edgeId": "E_4",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [422.000000,300.000000],
+          "base": [422.000000,303.000000]
+        }
+      },
+      "associatedTexts": {
+
+      }
+    },
+    "C_17": {
+      "cpntId": "C_17",
+      "state": "active",
+      "category": "Gnd",
+      "categoryId": "2",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 321,
+        "y1": 475,
+        "x2": 352,
+        "y2": 505
+      },
+      "realBBox": {
+        "x1": 324,
+        "y1": 478,
+        "x2": 349,
+        "y2": 502
+      },
+      "rotation": null,
+      "pins": {
+        "P_20": {
+          "pinId": "P_20",
+          "edgeId": "E_8",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [337.000000,475.000000],
+          "base": [337.000000,478.000000]
+        }
+      },
+      "associatedTexts": {
+
+      }
+    },
+    "C_18": {
+      "cpntId": "C_18",
+      "state": "active",
+      "category": "Gnd",
+      "categoryId": "2",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 799,
+        "y1": 295,
+        "x2": 830,
+        "y2": 326
+      },
+      "realBBox": {
+        "x1": 802,
+        "y1": 298,
+        "x2": 827,
+        "y2": 323
+      },
+      "rotation": null,
+      "pins": {
+        "P_23": {
+          "pinId": "P_23",
+          "edgeId": "E_10",
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [815.000000,295.000000],
+          "base": [815.000000,298.000000]
+        }
+      },
+      "associatedTexts": {
+
+      }
+    },
+    "C_19": {
+      "cpntId": "C_19",
+      "state": "active",
+      "category": "Box",
+      "categoryId": "1",
+      "searchNameByOCR": null,
+      "searchNameByVLM": null,
+      "searchNameByLib": null,
+      "location": {
+        "x1": 801,
+        "y1": 110,
+        "x2": 829,
+        "y2": 148
+      },
+      "realBBox": {
+        "x1": 804,
+        "y1": 113,
+        "x2": 826,
+        "y2": 145
+      },
+      "rotation": null,
+      "pins": {
+        "P_26": {
+          "pinId": "P_26",
+          "edgeId": null,
+          "pinNumberByOCR": null,
+          "pinNumberByVLM": null,
+          "pinNameByOCR": null,
+          "pinNameByVLM": null,
+          "tip": [815.000000,148.000000],
+          "base": [815.000000,145.000000]
+        }
+      },
+      "associatedTexts": {
+        "T_6": {
+          "tid": "T_6",
+          "category": "params",
+          "categoryId": 0,
+          "content": "Vcc",
+          "details": "",
+          "location": {
+            "x1": 791,
+            "y1": 99,
+            "x2": 840,
+            "y2": 130
+          }
+        }
+      }
+    }
+  },
+  "pins": {
+    "P_1": {
+      "pinId": "P_1",
+      "edgeId": "E_1",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": "T_21",
+      "pinNameByVLM": null,
+      "tip": [217.000000,366.000000],
+      "base": [206.000000,366.000000]
+    },
+    "P_10": {
+      "pinId": "P_10",
+      "edgeId": "E_4",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [422.000000,300.000000],
+      "base": [422.000000,303.000000]
+    },
+    "P_11": {
+      "pinId": "P_11",
+      "edgeId": "E_4",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [422.000000,270.000000],
+      "base": [422.000000,269.000000]
+    },
+    "P_12": {
+      "pinId": "P_12",
+      "edgeId": "E_5",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [1002.000000,222.000000],
+      "base": [1001.000000,222.000000]
+    },
+    "P_13": {
+      "pinId": "P_13",
+      "edgeId": "E_6",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [642.000000,144.000000],
+      "base": [642.000000,143.000000]
+    },
+    "P_14": {
+      "pinId": "P_14",
+      "edgeId": "E_6",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [746.000000,190.000000],
+      "base": [749.000000,190.000000]
+    },
+    "P_15": {
+      "pinId": "P_15",
+      "edgeId": "E_6",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [595.000000,190.000000],
+      "base": [594.000000,190.000000]
+    },
+    "P_16": {
+      "pinId": "P_16",
+      "edgeId": "E_7",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [328.000000,190.000000],
+      "base": [327.000000,190.000000]
+    },
+    "P_17": {
+      "pinId": "P_17",
+      "edgeId": "E_7",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [541.000000,190.000000],
+      "base": [542.000000,190.000000]
+    },
+    "P_18": {
+      "pinId": "P_18",
+      "edgeId": "E_7",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [487.000000,152.000000],
+      "base": [487.000000,151.000000]
+    },
+    "P_19": {
+      "pinId": "P_19",
+      "edgeId": "E_7",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [422.000000,225.000000],
+      "base": [422.000000,226.000000]
+    },
+    "P_2": {
+      "pinId": "P_2",
+      "edgeId": "E_1",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [337.000000,412.000000],
+      "base": [337.000000,413.000000]
+    },
+    "P_20": {
+      "pinId": "P_20",
+      "edgeId": "E_8",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [337.000000,475.000000],
+      "base": [337.000000,478.000000]
+    },
+    "P_21": {
+      "pinId": "P_21",
+      "edgeId": "E_8",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [337.000000,453.000000],
+      "base": [337.000000,452.000000]
+    },
+    "P_23": {
+      "pinId": "P_23",
+      "edgeId": "E_10",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [815.000000,295.000000],
+      "base": [815.000000,298.000000]
+    },
+    "P_24": {
+      "pinId": "P_24",
+      "edgeId": "E_10",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [815.000000,292.000000],
+      "base": [815.000000,289.000000]
+    },
+    "P_26": {
+      "pinId": "P_26",
+      "edgeId": null,
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [815.000000,148.000000],
+      "base": [815.000000,145.000000]
+    },
+    "P_3": {
+      "pinId": "P_3",
+      "edgeId": "E_1",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [746.000000,254.000000],
+      "base": [749.000000,254.000000]
+    },
+    "P_4": {
+      "pinId": "P_4",
+      "edgeId": "E_2",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [958.000000,222.000000],
+      "base": [959.000000,222.000000]
+    },
+    "P_5": {
+      "pinId": "P_5",
+      "edgeId": "E_2",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [642.000000,99.000000],
+      "base": [642.000000,100.000000]
+    },
+    "P_6": {
+      "pinId": "P_6",
+      "edgeId": "E_2",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [867.000000,222.000000],
+      "base": [864.000000,222.000000]
+    },
+    "P_7": {
+      "pinId": "P_7",
+      "edgeId": "E_2",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [487.000000,97.000000],
+      "base": [487.000000,98.000000]
+    },
+    "P_8": {
+      "pinId": "P_8",
+      "edgeId": "E_3",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": "T_12",
+      "pinNameByVLM": null,
+      "tip": [217.000000,190.000000],
+      "base": [206.000000,190.000000]
+    },
+    "P_9": {
+      "pinId": "P_9",
+      "edgeId": "E_3",
+      "pinNumberByOCR": null,
+      "pinNumberByVLM": null,
+      "pinNameByOCR": null,
+      "pinNameByVLM": null,
+      "tip": [273.000000,190.000000],
+      "base": [274.000000,190.000000]
+    }
+  },
+  "texts": {
+    "T_1": {
+      "tid": "T_1",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "R2",
+      "details": "",
+      "location": {
+        "x1": 1013,
+        "y1": 0,
+        "x2": 1052,
+        "y2": 35
+      }
+    },
+    "T_2": {
+      "tid": "T_2",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "Av = −1, where Av =",
+      "details": "",
+      "location": {
+        "x1": 789,
+        "y1": 16,
+        "x2": 1004,
+        "y2": 49
+      }
+    },
+    "T_3": {
+      "tid": "T_3",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "R1",
+      "details": "",
+      "location": {
+        "x1": 1011,
+        "y1": 29,
+        "x2": 1052,
+        "y2": 63
+      }
+    },
+    "T_4": {
+      "tid": "T_4",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "PCM1754",
+      "details": "",
+      "location": {
+        "x1": 54,
+        "y1": 58,
+        "x2": 160,
+        "y2": 85
+      }
+    },
+    "T_5": {
+      "tid": "T_5",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "C1",
+      "details": "designator",
+      "location": {
+        "x1": 669,
+        "y1": 107,
+        "x2": 706,
+        "y2": 138
+      }
+    },
+    "T_6": {
+      "tid": "T_6",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "Vcc",
+      "details": "",
+      "location": {
+        "x1": 791,
+        "y1": 99,
+        "x2": 840,
+        "y2": 130
+      }
+    },
+    "T_7": {
+      "tid": "T_7",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "R2",
+      "details": "designator",
+      "location": {
+        "x1": 502,
+        "y1": 110,
+        "x2": 542,
+        "y2": 145
+      }
+    },
+    "T_8": {
+      "tid": "T_8",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "R1",
+      "details": "designator",
+      "location": {
+        "x1": 281,
+        "y1": 142,
+        "x2": 316,
+        "y2": 172
+      }
+    },
+    "T_9": {
+      "tid": "T_9",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "R3",
+      "details": "designator",
+      "location": {
+        "x1": 550,
+        "y1": 143,
+        "x2": 585,
+        "y2": 173
+      }
+    },
+    "T_10": {
+      "tid": "T_10",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "2",
+      "details": "",
+      "location": {
+        "x1": 724,
+        "y1": 163,
+        "x2": 746,
+        "y2": 188
+      }
+    },
+    "T_11": {
+      "tid": "T_11",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "10F",
+      "details": "value",
+      "location": {
+        "x1": 950,
+        "y1": 164,
+        "x2": 1015,
+        "y2": 197
+      }
+    },
+    "T_12": {
+      "tid": "T_12",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "VouTX(1)",
+      "details": "pinName",
+      "location": {
+        "x1": 104,
+        "y1": 170,
+        "x2": 204,
+        "y2": 212
+      }
+    },
+    "T_13": {
+      "tid": "T_13",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "1/2",
+      "details": "",
+      "location": {
+        "x1": 781,
+        "y1": 194,
+        "x2": 812,
+        "y2": 218
+      }
+    },
+    "T_14": {
+      "tid": "T_14",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "1",
+      "details": "",
+      "location": {
+        "x1": 863,
+        "y1": 195,
+        "x2": 885,
+        "y2": 220
+      }
+    },
+    "T_15": {
+      "tid": "T_15",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "Filtered",
+      "details": "netlabel",
+      "location": {
+        "x1": 1070,
+        "y1": 199,
+        "x2": 1155,
+        "y2": 224
+      }
+    },
+    "T_16": {
+      "tid": "T_16",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "C2",
+      "details": "designator",
+      "location": {
+        "x1": 435,
+        "y1": 226,
+        "x2": 495,
+        "y2": 269
+      }
+    },
+    "T_17": {
+      "tid": "T_17",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "OPA2353",
+      "details": "",
+      "location": {
+        "x1": 759,
+        "y1": 219,
+        "x2": 835,
+        "y2": 238
+      }
+    },
+    "T_18": {
+      "tid": "T_18",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "3",
+      "details": "",
+      "location": {
+        "x1": 724,
+        "y1": 229,
+        "x2": 746,
+        "y2": 254
+      }
+    },
+    "T_19": {
+      "tid": "T_19",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "Output",
+      "details": "",
+      "location": {
+        "x1": 1069,
+        "y1": 225,
+        "x2": 1152,
+        "y2": 257
+      }
+    },
+    "T_20": {
+      "tid": "T_20",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "+",
+      "details": "",
+      "location": {
+        "x1": 764,
+        "y1": 247,
+        "x2": 781,
+        "y2": 265
+      }
+    },
+    "T_21": {
+      "tid": "T_21",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "VCOM",
+      "details": "pinName",
+      "location": {
+        "x1": 135,
+        "y1": 350,
+        "x2": 205,
+        "y2": 388
+      }
+    },
+    "T_22": {
+      "tid": "T_22",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "+",
+      "details": "",
+      "location": {
+        "x1": 341,
+        "y1": 404,
+        "x2": 358,
+        "y2": 423
+      }
+    },
+    "T_23": {
+      "tid": "T_23",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "10F",
+      "details": "value",
+      "location": {
+        "x1": 360,
+        "y1": 412,
+        "x2": 423,
+        "y2": 442
+      }
+    },
+    "T_24": {
+      "tid": "T_24",
+      "state": "active",
+      "category": "params",
+      "categoryId": 0,
+      "content": "(1) X = L or R",
+      "details": "searchName",
+      "location": {
+        "x1": 3,
+        "y1": 506,
+        "x2": 140,
+        "y2": 537
+      }
+    }
+  },
+  "edges": {
+    "E_1": {
+      "edgeId": "E_1",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_1": {
+          "pinId": "P_1",
+          "cpntId": "C_1",
+          "location": [217,366]
+        },
+        "P_2": {
+          "pinId": "P_2",
+          "cpntId": "C_2",
+          "location": [337,412]
+        },
+        "P_3": {
+          "pinId": "P_3",
+          "cpntId": "C_4",
+          "location": [746,254]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[601,254],[602,254],[603,254],[604,254],[605,254],[606,254],[607,254],[608,254],[609,254],[610,254],[611,254],[612,254],[613,254],[614,254],[615,254],[616,254],[617,254],[618,254],[619,254],[620,254],[621,254],[622,254],[623,254],[624,254],[625,254],[626,254],[627,254],[628,254],[629,254],[630,254],[631,254],[632,254],[633,254],[634,254],[635,254],[636,254],[637,254],[638,254],[639,254],[640,254],[641,254],[642,254],[643,254],[644,254],[645,254],[646,254],[647,254],[648,254],[649,254],[650,254],[651,254],[652,254],[653,254],[654,254],[655,254],[656,254],[657,254],[658,254],[659,254],[660,254],[661,254],[662,254],[663,254],[664,254],[665,254],[666,254],[667,254],[668,254],[669,254],[670,254],[671,254],[672,254],[673,254],[674,254],[675,254],[676,254],[677,254],[678,254],[679,254],[680,254],[681,254],[682,254],[683,254],[684,254],[685,254],[686,254],[687,254],[688,254],[689,254],[690,254],[691,254],[692,254],[693,254],[694,254],[695,254],[696,254],[697,254],[698,254],[699,254],[700,254],[701,254],[702,254],[703,254],[704,254],[705,254],[706,254],[707,254],[708,254],[709,254],[710,254],[711,254],[712,254],[713,254],[714,254],[715,254],[716,254],[717,254],[718,254],[719,254],[720,254],[721,254],[722,254],[723,254],[724,254],[725,254],[726,254],[727,254],[728,254],[729,254],[730,254],[731,254],[732,254],[733,254],[734,254],[735,254],[736,254],[737,254],[738,254],[739,254],[740,254],[741,254],[742,254],[743,254],[744,254],[601,255],[601,256],[601,257],[601,258],[601,259],[601,260],[601,261],[601,262],[601,263],[601,264],[601,265],[601,266],[601,267],[601,268],[601,269],[601,270],[601,271],[601,272],[601,273],[601,274],[601,275],[601,276],[601,277],[601,278],[601,279],[601,280],[601,281],[601,282],[601,283],[601,284],[601,285],[601,286],[601,287],[601,288],[601,289],[601,290],[601,291],[601,292],[601,293],[601,294],[601,295],[601,296],[601,297],[601,298],[601,299],[601,300],[601,301],[601,302],[601,303],[601,304],[601,305],[601,306],[601,307],[601,308],[601,309],[601,310],[601,311],[601,312],[601,313],[601,314],[601,315],[601,316],[601,317],[601,318],[601,319],[601,320],[601,321],[601,322],[601,323],[601,324],[601,325],[601,326],[601,327],[601,328],[601,329],[601,330],[601,331],[601,332],[601,333],[601,334],[601,335],[601,336],[601,337],[601,338],[601,339],[601,340],[601,341],[601,342],[601,343],[601,344],[601,345],[601,346],[601,347],[601,348],[601,349],[601,350],[601,351],[601,352],[601,353],[601,354],[601,355],[601,356],[601,357],[601,358],[601,359],[601,360],[601,361],[601,362],[601,363],[601,364],[601,365],[218,366],[219,366],[220,366],[221,366],[222,366],[223,366],[224,366],[225,366],[226,366],[227,366],[228,366],[229,366],[230,366],[231,366],[232,366],[233,366],[234,366],[235,366],[236,366],[237,366],[238,366],[239,366],[240,366],[241,366],[242,366],[243,366],[244,366],[245,366],[246,366],[247,366],[248,366],[249,366],[250,366],[251,366],[252,366],[253,366],[254,366],[255,366],[256,366],[257,366],[258,366],[259,366],[260,366],[261,366],[262,366],[263,366],[264,366],[265,366],[266,366],[267,366],[268,366],[269,366],[270,366],[271,366],[272,366],[273,366],[274,366],[275,366],[276,366],[277,366],[278,366],[279,366],[280,366],[281,366],[282,366],[283,366],[284,366],[285,366],[286,366],[287,366],[288,366],[289,366],[290,366],[291,366],[292,366],[293,366],[294,366],[295,366],[296,366],[297,366],[298,366],[299,366],[300,366],[301,366],[302,366],[303,366],[304,366],[305,366],[306,366],[307,366],[308,366],[309,366],[310,366],[311,366],[312,366],[313,366],[314,366],[315,366],[316,366],[317,366],[318,366],[319,366],[320,366],[321,366],[322,366],[323,366],[324,366],[325,366],[326,366],[327,366],[328,366],[329,366],[330,366],[331,366],[332,366],[333,366],[334,366],[335,366],[336,366],[337,366],[338,366],[339,366],[340,366],[341,366],[342,366],[343,366],[344,366],[345,366],[346,366],[347,366],[348,366],[349,366],[350,366],[351,366],[352,366],[353,366],[354,366],[355,366],[356,366],[357,366],[358,366],[359,366],[360,366],[361,366],[362,366],[363,366],[364,366],[365,366],[366,366],[367,366],[368,366],[369,366],[370,366],[371,366],[372,366],[373,366],[374,366],[375,366],[376,366],[377,366],[378,366],[379,366],[380,366],[381,366],[382,366],[383,366],[384,366],[385,366],[386,366],[387,366],[388,366],[389,366],[390,366],[391,366],[392,366],[393,366],[394,366],[395,366],[396,366],[397,366],[398,366],[399,366],[400,366],[401,366],[402,366],[403,366],[404,366],[405,366],[406,366],[407,366],[408,366],[409,366],[410,366],[411,366],[412,366],[413,366],[414,366],[415,366],[416,366],[417,366],[418,366],[419,366],[420,366],[421,366],[422,366],[423,366],[424,366],[425,366],[426,366],[427,366],[428,366],[429,366],[430,366],[431,366],[432,366],[433,366],[434,366],[435,366],[436,366],[437,366],[438,366],[439,366],[440,366],[441,366],[442,366],[443,366],[444,366],[445,366],[446,366],[447,366],[448,366],[449,366],[450,366],[451,366],[452,366],[453,366],[454,366],[455,366],[456,366],[457,366],[458,366],[459,366],[460,366],[461,366],[462,366],[463,366],[464,366],[465,366],[466,366],[467,366],[468,366],[469,366],[470,366],[471,366],[472,366],[473,366],[474,366],[475,366],[476,366],[477,366],[478,366],[479,366],[480,366],[481,366],[482,366],[483,366],[484,366],[485,366],[486,366],[487,366],[488,366],[489,366],[490,366],[491,366],[492,366],[493,366],[494,366],[495,366],[496,366],[497,366],[498,366],[499,366],[500,366],[501,366],[502,366],[503,366],[504,366],[505,366],[506,366],[507,366],[508,366],[509,366],[510,366],[511,366],[512,366],[513,366],[514,366],[515,366],[516,366],[517,366],[518,366],[519,366],[520,366],[521,366],[522,366],[523,366],[524,366],[525,366],[526,366],[527,366],[528,366],[529,366],[530,366],[531,366],[532,366],[533,366],[534,366],[535,366],[536,366],[537,366],[538,366],[539,366],[540,366],[541,366],[542,366],[543,366],[544,366],[545,366],[546,366],[547,366],[548,366],[549,366],[550,366],[551,366],[552,366],[553,366],[554,366],[555,366],[556,366],[557,366],[558,366],[559,366],[560,366],[561,366],[562,366],[563,366],[564,366],[565,366],[566,366],[567,366],[568,366],[569,366],[570,366],[571,366],[572,366],[573,366],[574,366],[575,366],[576,366],[577,366],[578,366],[579,366],[580,366],[581,366],[582,366],[583,366],[584,366],[585,366],[586,366],[587,366],[588,366],[589,366],[590,366],[591,366],[592,366],[593,366],[594,366],[595,366],[596,366],[597,366],[598,366],[599,366],[600,366],[601,366],[337,367],[337,368],[337,369],[337,370],[337,371],[337,372],[337,373],[337,374],[337,375],[337,376],[337,377],[337,378],[337,379],[337,380],[337,381],[337,382],[337,383],[337,384],[337,385],[337,386],[337,387],[337,388],[337,389],[337,390],[337,391],[337,392],[337,393],[337,394],[337,395],[337,396],[337,397],[337,398],[337,399],[337,400],[337,401],[337,402],[337,403],[337,404],[337,405],[337,406],[337,407],[337,408],[337,409],[337,410]]},
+        "endPoints": {"wire": [[744,254],[218,366],[337,410]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": [[601,254],[601,366]]}
+      },
+      "keyPointPaths": {"wire": [[[744,254],[601,254]],[[218,366],[337,366]],[[337,410],[337,366]],[[337,366],[601,366]],[[601,254],[601,366]]]},
+      "coordinates": [[601,254], [602,254], [603,254], [604,254], [605,254], [606,254], [607,254], [608,254], [609,254], [610,254], [611,254], [612,254], [613,254], [614,254], [615,254], [616,254], [617,254], [618,254], [619,254], [620,254], [621,254], [622,254], [623,254], [624,254], [625,254], [626,254], [627,254], [628,254], [629,254], [630,254], [631,254], [632,254], [633,254], [634,254], [635,254], [636,254], [637,254], [638,254], [639,254], [640,254], [641,254], [642,254], [643,254], [644,254], [645,254], [646,254], [647,254], [648,254], [649,254], [650,254], [651,254], [652,254], [653,254], [654,254], [655,254], [656,254], [657,254], [658,254], [659,254], [660,254], [661,254], [662,254], [663,254], [664,254], [665,254], [666,254], [667,254], [668,254], [669,254], [670,254], [671,254], [672,254], [673,254], [674,254], [675,254], [676,254], [677,254], [678,254], [679,254], [680,254], [681,254], [682,254], [683,254], [684,254], [685,254], [686,254], [687,254], [688,254], [689,254], [690,254], [691,254], [692,254], [693,254], [694,254], [695,254], [696,254], [697,254], [698,254], [699,254], [700,254], [701,254], [702,254], [703,254], [704,254], [705,254], [706,254], [707,254], [708,254], [709,254], [710,254], [711,254], [712,254], [713,254], [714,254], [715,254], [716,254], [717,254], [718,254], [719,254], [720,254], [721,254], [722,254], [723,254], [724,254], [725,254], [726,254], [727,254], [728,254], [729,254], [730,254], [731,254], [732,254], [733,254], [734,254], [735,254], [736,254], [737,254], [738,254], [739,254], [740,254], [741,254], [742,254], [743,254], [744,254], [745,254], [601,255], [602,255], [603,255], [604,255], [605,255], [606,255], [607,255], [608,255], [609,255], [610,255], [611,255], [612,255], [613,255], [614,255], [615,255], [616,255], [617,255], [618,255], [619,255], [620,255], [621,255], [622,255], [623,255], [624,255], [625,255], [626,255], [627,255], [628,255], [629,255], [630,255], [631,255], [632,255], [633,255], [634,255], [635,255], [636,255], [637,255], [638,255], [639,255], [640,255], [641,255], [642,255], [643,255], [644,255], [645,255], [646,255], [647,255], [648,255], [649,255], [650,255], [651,255], [652,255], [653,255], [654,255], [655,255], [656,255], [657,255], [658,255], [659,255], [660,255], [661,255], [662,255], [663,255], [664,255], [665,255], [666,255], [667,255], [668,255], [669,255], [670,255], [671,255], [672,255], [673,255], [674,255], [675,255], [676,255], [677,255], [678,255], [679,255], [680,255], [681,255], [682,255], [683,255], [684,255], [685,255], [686,255], [687,255], [688,255], [689,255], [690,255], [691,255], [692,255], [693,255], [694,255], [695,255], [696,255], [697,255], [698,255], [699,255], [700,255], [701,255], [702,255], [703,255], [704,255], [705,255], [706,255], [707,255], [708,255], [709,255], [710,255], [711,255], [712,255], [713,255], [714,255], [715,255], [716,255], [717,255], [718,255], [719,255], [720,255], [721,255], [722,255], [723,255], [724,255], [725,255], [726,255], [727,255], [728,255], [729,255], [730,255], [731,255], [732,255], [733,255], [734,255], [735,255], [736,255], [737,255], [738,255], [739,255], [740,255], [741,255], [742,255], [743,255], [744,255], [745,255], [601,256], [602,256], [601,257], [602,257], [601,258], [602,258], [601,259], [602,259], [601,260], [602,260], [601,261], [602,261], [601,262], [602,262], [601,263], [602,263], [601,264], [602,264], [601,265], [602,265], [601,266], [602,266], [601,267], [602,267], [601,268], [602,268], [601,269], [602,269], [601,270], [602,270], [601,271], [602,271], [601,272], [602,272], [601,273], [602,273], [601,274], [602,274], [601,275], [602,275], [601,276], [602,276], [601,277], [602,277], [601,278], [602,278], [601,279], [602,279], [601,280], [602,280], [601,281], [602,281], [601,282], [602,282], [601,283], [602,283], [601,284], [602,284], [601,285], [602,285], [601,286], [602,286], [601,287], [602,287], [601,288], [602,288], [601,289], [602,289], [601,290], [602,290], [601,291], [602,291], [601,292], [602,292], [601,293], [602,293], [601,294], [602,294], [601,295], [602,295], [601,296], [602,296], [601,297], [602,297], [601,298], [602,298], [601,299], [602,299], [601,300], [602,300], [601,301], [602,301], [601,302], [602,302], [601,303], [602,303], [601,304], [602,304], [601,305], [602,305], [601,306], [602,306], [601,307], [602,307], [601,308], [602,308], [601,309], [602,309], [601,310], [602,310], [601,311], [602,311], [601,312], [602,312], [601,313], [602,313], [601,314], [602,314], [601,315], [602,315], [601,316], [602,316], [601,317], [602,317], [601,318], [602,318], [601,319], [602,319], [601,320], [602,320], [601,321], [602,321], [601,322], [602,322], [601,323], [602,323], [601,324], [602,324], [601,325], [602,325], [601,326], [602,326], [601,327], [602,327], [601,328], [602,328], [601,329], [602,329], [601,330], [602,330], [601,331], [602,331], [601,332], [602,332], [601,333], [602,333], [601,334], [602,334], [601,335], [602,335], [601,336], [602,336], [601,337], [602,337], [601,338], [602,338], [601,339], [602,339], [601,340], [602,340], [601,341], [602,341], [601,342], [602,342], [601,343], [602,343], [601,344], [602,344], [601,345], [602,345], [601,346], [602,346], [601,347], [602,347], [601,348], [602,348], [601,349], [602,349], [601,350], [602,350], [601,351], [602,351], [601,352], [602,352], [601,353], [602,353], [601,354], [602,354], [601,355], [602,355], [601,356], [602,356], [601,357], [602,357], [601,358], [602,358], [601,359], [602,359], [334,360], [335,360], [336,360], [337,360], [338,360], [339,360], [340,360], [601,360], [333,361], [334,361], [335,361], [336,361], [337,361], [338,361], [339,361], [340,361], [341,361], [342,361], [601,361], [331,362], [332,362], [333,362], [334,362], [335,362], [336,362], [337,362], [338,362], [339,362], [340,362], [341,362], [342,362], [343,362], [601,362], [331,363], [332,363], [333,363], [334,363], [335,363], [336,363], [337,363], [338,363], [339,363], [340,363], [341,363], [342,363], [343,363], [601,363], [330,364], [331,364], [332,364], [333,364], [334,364], [335,364], [336,364], [337,364], [338,364], [339,364], [340,364], [341,364], [342,364], [343,364], [344,364], [601,364], [330,365], [331,365], [332,365], [333,365], [334,365], [335,365], [336,365], [337,365], [338,365], [339,365], [340,365], [341,365], [342,365], [343,365], [344,365], [601,365], [218,366], [219,366], [220,366], [221,366], [222,366], [223,366], [224,366], [225,366], [226,366], [227,366], [228,366], [229,366], [230,366], [231,366], [232,366], [233,366], [234,366], [235,366], [236,366], [237,366], [238,366], [239,366], [240,366], [241,366], [242,366], [243,366], [244,366], [245,366], [246,366], [247,366], [248,366], [249,366], [250,366], [251,366], [252,366], [253,366], [254,366], [255,366], [256,366], [257,366], [258,366], [259,366], [260,366], [261,366], [262,366], [263,366], [264,366], [265,366], [266,366], [267,366], [268,366], [269,366], [270,366], [271,366], [272,366], [273,366], [274,366], [275,366], [276,366], [277,366], [278,366], [279,366], [280,366], [281,366], [282,366], [283,366], [284,366], [285,366], [286,366], [287,366], [288,366], [289,366], [290,366], [291,366], [292,366], [293,366], [294,366], [295,366], [296,366], [297,366], [298,366], [299,366], [300,366], [301,366], [302,366], [303,366], [304,366], [305,366], [306,366], [307,366], [308,366], [309,366], [310,366], [311,366], [312,366], [313,366], [314,366], [315,366], [316,366], [317,366], [318,366], [319,366], [320,366], [321,366], [322,366], [323,366], [324,366], [325,366], [326,366], [327,366], [328,366], [329,366], [330,366], [331,366], [332,366], [333,366], [334,366], [335,366], [336,366], [337,366], [338,366], [339,366], [340,366], [341,366], [342,366], [343,366], [344,366], [345,366], [346,366], [347,366], [348,366], [349,366], [350,366], [351,366], [352,366], [353,366], [354,366], [355,366], [356,366], [357,366], [358,366], [359,366], [360,366], [361,366], [362,366], [363,366], [364,366], [365,366], [366,366], [367,366], [368,366], [369,366], [370,366], [371,366], [372,366], [373,366], [374,366], [375,366], [376,366], [377,366], [378,366], [379,366], [380,366], [381,366], [382,366], [383,366], [384,366], [385,366], [386,366], [387,366], [388,366], [389,366], [390,366], [391,366], [392,366], [393,366], [394,366], [395,366], [396,366], [397,366], [398,366], [399,366], [400,366], [401,366], [402,366], [403,366], [404,366], [405,366], [406,366], [407,366], [408,366], [409,366], [410,366], [411,366], [412,366], [413,366], [414,366], [415,366], [416,366], [417,366], [418,366], [419,366], [420,366], [421,366], [422,366], [423,366], [424,366], [425,366], [426,366], [427,366], [428,366], [429,366], [430,366], [431,366], [432,366], [433,366], [434,366], [435,366], [436,366], [437,366], [438,366], [439,366], [440,366], [441,366], [442,366], [443,366], [444,366], [445,366], [446,366], [447,366], [448,366], [449,366], [450,366], [451,366], [452,366], [453,366], [454,366], [455,366], [456,366], [457,366], [458,366], [459,366], [460,366], [461,366], [462,366], [463,366], [464,366], [465,366], [466,366], [467,366], [468,366], [469,366], [470,366], [471,366], [472,366], [473,366], [474,366], [475,366], [476,366], [477,366], [478,366], [479,366], [480,366], [481,366], [482,366], [483,366], [484,366], [485,366], [486,366], [487,366], [488,366], [489,366], [490,366], [491,366], [492,366], [493,366], [494,366], [495,366], [496,366], [497,366], [498,366], [499,366], [500,366], [501,366], [502,366], [503,366], [504,366], [505,366], [506,366], [507,366], [508,366], [509,366], [510,366], [511,366], [512,366], [513,366], [514,366], [515,366], [516,366], [517,366], [518,366], [519,366], [520,366], [521,366], [522,366], [523,366], [524,366], [525,366], [526,366], [527,366], [528,366], [529,366], [530,366], [531,366], [532,366], [533,366], [534,366], [535,366], [536,366], [537,366], [538,366], [539,366], [540,366], [541,366], [542,366], [543,366], [544,366], [545,366], [546,366], [547,366], [548,366], [549,366], [550,366], [551,366], [552,366], [553,366], [554,366], [555,366], [556,366], [557,366], [558,366], [559,366], [560,366], [561,366], [562,366], [563,366], [564,366], [565,366], [566,366], [567,366], [568,366], [569,366], [570,366], [571,366], [572,366], [573,366], [574,366], [575,366], [576,366], [577,366], [578,366], [579,366], [580,366], [581,366], [582,366], [583,366], [584,366], [585,366], [586,366], [587,366], [588,366], [589,366], [590,366], [591,366], [592,366], [593,366], [594,366], [595,366], [596,366], [597,366], [598,366], [599,366], [600,366], [601,366], [602,366], [330,367], [331,367], [332,367], [333,367], [334,367], [335,367], [336,367], [337,367], [338,367], [339,367], [340,367], [341,367], [342,367], [343,367], [344,367], [330,368], [331,368], [332,368], [333,368], [334,368], [335,368], [336,368], [337,368], [338,368], [339,368], [340,368], [341,368], [342,368], [343,368], [344,368], [331,369], [332,369], [333,369], [334,369], [335,369], [336,369], [337,369], [338,369], [339,369], [340,369], [341,369], [342,369], [343,369], [331,370], [332,370], [333,370], [334,370], [335,370], [336,370], [337,370], [338,370], [339,370], [340,370], [341,370], [342,370], [333,371], [334,371], [335,371], [336,371], [337,371], [338,371], [339,371], [340,371], [341,371], [334,372], [335,372], [336,372], [337,372], [338,372], [339,372], [340,372], [337,373], [338,373], [337,374], [338,374], [337,375], [338,375], [337,376], [338,376], [337,377], [338,377], [337,378], [338,378], [337,379], [338,379], [337,380], [338,380], [337,381], [338,381], [337,382], [338,382], [337,383], [338,383], [337,384], [338,384], [337,385], [338,385], [337,386], [338,386], [337,387], [338,387], [337,388], [338,388], [337,389], [338,389], [337,390], [338,390], [337,391], [338,391], [337,392], [338,392], [337,393], [338,393], [337,394], [338,394], [337,395], [338,395], [337,396], [338,396], [337,397], [338,397], [337,398], [338,398], [337,399], [338,399], [337,400], [338,400], [337,401], [338,401], [337,402], [338,402], [337,403], [338,403], [337,404], [338,404], [337,405], [338,405], [337,406], [338,406], [337,407], [338,407], [337,408], [338,408], [337,409], [338,409], [337,410], [338,410], [337,411], [338,411]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_2": {
+      "edgeId": "E_2",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_4": {
+          "pinId": "P_4",
+          "cpntId": "C_10",
+          "location": [958,222]
+        },
+        "P_5": {
+          "pinId": "P_5",
+          "cpntId": "C_3",
+          "location": [642,99]
+        },
+        "P_6": {
+          "pinId": "P_6",
+          "cpntId": "C_4",
+          "location": [867,222]
+        },
+        "P_7": {
+          "pinId": "P_7",
+          "cpntId": "C_7",
+          "location": [487,97]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[487,64],[488,64],[489,64],[490,64],[491,64],[492,64],[493,64],[494,64],[495,64],[496,64],[497,64],[498,64],[499,64],[500,64],[501,64],[502,64],[503,64],[504,64],[505,64],[506,64],[507,64],[508,64],[509,64],[510,64],[511,64],[512,64],[513,64],[514,64],[515,64],[516,64],[517,64],[518,64],[519,64],[520,64],[521,64],[522,64],[523,64],[524,64],[525,64],[526,64],[527,64],[528,64],[529,64],[530,64],[531,64],[532,64],[533,64],[534,64],[535,64],[536,64],[537,64],[538,64],[539,64],[540,64],[541,64],[542,64],[543,64],[544,64],[545,64],[546,64],[547,64],[548,64],[549,64],[550,64],[551,64],[552,64],[553,64],[554,64],[555,64],[556,64],[557,64],[558,64],[559,64],[560,64],[561,64],[562,64],[563,64],[564,64],[565,64],[566,64],[567,64],[568,64],[569,64],[570,64],[571,64],[572,64],[573,64],[574,64],[575,64],[576,64],[577,64],[578,64],[579,64],[580,64],[581,64],[582,64],[583,64],[584,64],[585,64],[586,64],[587,64],[588,64],[589,64],[590,64],[591,64],[592,64],[593,64],[594,64],[595,64],[596,64],[597,64],[598,64],[599,64],[600,64],[601,64],[602,64],[603,64],[604,64],[605,64],[606,64],[607,64],[608,64],[609,64],[610,64],[611,64],[612,64],[613,64],[614,64],[615,64],[616,64],[617,64],[618,64],[619,64],[620,64],[621,64],[622,64],[623,64],[624,64],[625,64],[626,64],[627,64],[628,64],[629,64],[630,64],[631,64],[632,64],[633,64],[634,64],[635,64],[636,64],[637,64],[638,64],[639,64],[640,64],[641,64],[642,64],[643,64],[644,64],[645,64],[646,64],[647,64],[648,64],[649,64],[650,64],[651,64],[652,64],[653,64],[654,64],[655,64],[656,64],[657,64],[658,64],[659,64],[660,64],[661,64],[662,64],[663,64],[664,64],[665,64],[666,64],[667,64],[668,64],[669,64],[670,64],[671,64],[672,64],[673,64],[674,64],[675,64],[676,64],[677,64],[678,64],[679,64],[680,64],[681,64],[682,64],[683,64],[684,64],[685,64],[686,64],[687,64],[688,64],[689,64],[690,64],[691,64],[692,64],[693,64],[694,64],[695,64],[696,64],[697,64],[698,64],[699,64],[700,64],[701,64],[702,64],[703,64],[704,64],[705,64],[706,64],[707,64],[708,64],[709,64],[710,64],[711,64],[712,64],[713,64],[714,64],[715,64],[716,64],[717,64],[718,64],[719,64],[720,64],[721,64],[722,64],[723,64],[724,64],[725,64],[726,64],[727,64],[728,64],[729,64],[730,64],[731,64],[732,64],[733,64],[734,64],[735,64],[736,64],[737,64],[738,64],[739,64],[740,64],[741,64],[742,64],[743,64],[744,64],[745,64],[746,64],[747,64],[748,64],[749,64],[750,64],[751,64],[752,64],[753,64],[754,64],[755,64],[756,64],[757,64],[758,64],[759,64],[760,64],[761,64],[762,64],[763,64],[764,64],[765,64],[766,64],[767,64],[768,64],[769,64],[770,64],[771,64],[772,64],[773,64],[774,64],[775,64],[776,64],[777,64],[778,64],[779,64],[780,64],[781,64],[782,64],[783,64],[784,64],[785,64],[786,64],[787,64],[788,64],[789,64],[790,64],[791,64],[792,64],[793,64],[794,64],[795,64],[796,64],[797,64],[798,64],[799,64],[800,64],[801,64],[802,64],[803,64],[804,64],[805,64],[806,64],[807,64],[808,64],[809,64],[810,64],[811,64],[812,64],[813,64],[814,64],[815,64],[816,64],[817,64],[818,64],[819,64],[820,64],[821,64],[822,64],[823,64],[824,64],[825,64],[826,64],[827,64],[828,64],[829,64],[830,64],[831,64],[832,64],[833,64],[834,64],[835,64],[836,64],[837,64],[838,64],[839,64],[840,64],[841,64],[842,64],[843,64],[844,64],[845,64],[846,64],[847,64],[848,64],[849,64],[850,64],[851,64],[852,64],[853,64],[854,64],[855,64],[856,64],[857,64],[858,64],[859,64],[860,64],[861,64],[862,64],[863,64],[864,64],[865,64],[866,64],[867,64],[868,64],[869,64],[870,64],[871,64],[872,64],[873,64],[874,64],[875,64],[876,64],[877,64],[878,64],[879,64],[880,64],[881,64],[882,64],[883,64],[884,64],[885,64],[886,64],[887,64],[888,64],[889,64],[890,64],[891,64],[892,64],[893,64],[894,64],[895,64],[896,64],[897,64],[487,65],[642,65],[897,65],[487,66],[642,66],[897,66],[487,67],[642,67],[897,67],[487,68],[642,68],[897,68],[487,69],[642,69],[897,69],[487,70],[642,70],[897,70],[487,71],[642,71],[897,71],[487,72],[642,72],[897,72],[487,73],[642,73],[897,73],[487,74],[642,74],[897,74],[487,75],[642,75],[897,75],[487,76],[642,76],[897,76],[487,77],[642,77],[897,77],[487,78],[642,78],[897,78],[487,79],[642,79],[897,79],[487,80],[642,80],[897,80],[487,81],[642,81],[897,81],[487,82],[642,82],[897,82],[487,83],[642,83],[897,83],[487,84],[642,84],[897,84],[487,85],[642,85],[897,85],[487,86],[642,86],[897,86],[487,87],[642,87],[897,87],[487,88],[642,88],[897,88],[487,89],[642,89],[897,89],[487,90],[642,90],[897,90],[487,91],[642,91],[897,91],[487,92],[642,92],[897,92],[487,93],[642,93],[897,93],[487,94],[642,94],[897,94],[487,95],[642,95],[897,95],[642,96],[897,96],[642,97],[897,97],[897,98],[897,99],[897,100],[897,101],[897,102],[897,103],[897,104],[897,105],[897,106],[897,107],[897,108],[897,109],[897,110],[897,111],[897,112],[897,113],[897,114],[897,115],[897,116],[897,117],[897,118],[897,119],[897,120],[897,121],[897,122],[897,123],[897,124],[897,125],[897,126],[897,127],[897,128],[897,129],[897,130],[897,131],[897,132],[897,133],[897,134],[897,135],[897,136],[897,137],[897,138],[897,139],[897,140],[897,141],[897,142],[897,143],[897,144],[897,145],[897,146],[897,147],[897,148],[897,149],[897,150],[897,151],[897,152],[897,153],[897,154],[897,155],[897,156],[897,157],[897,158],[897,159],[897,160],[897,161],[897,162],[897,163],[897,164],[897,165],[897,166],[897,167],[897,168],[897,169],[897,170],[897,171],[897,172],[897,173],[897,174],[897,175],[897,176],[897,177],[897,178],[897,179],[897,180],[897,181],[897,182],[897,183],[897,184],[897,185],[897,186],[897,187],[897,188],[897,189],[897,190],[897,191],[897,192],[897,193],[897,194],[897,195],[897,196],[897,197],[897,198],[897,199],[897,200],[897,201],[897,202],[897,203],[897,204],[897,205],[897,206],[897,207],[897,208],[897,209],[897,210],[897,211],[897,212],[897,213],[897,214],[897,215],[897,216],[897,217],[897,218],[897,219],[897,220],[897,221],[868,222],[869,222],[870,222],[871,222],[872,222],[873,222],[874,222],[875,222],[876,222],[877,222],[878,222],[879,222],[880,222],[881,222],[882,222],[883,222],[884,222],[885,222],[886,222],[887,222],[888,222],[889,222],[890,222],[891,222],[892,222],[893,222],[894,222],[895,222],[896,222],[897,222],[898,222],[899,222],[900,222],[901,222],[902,222],[903,222],[904,222],[905,222],[906,222],[907,222],[908,222],[909,222],[910,222],[911,222],[912,222],[913,222],[914,222],[915,222],[916,222],[917,222],[918,222],[919,222],[920,222],[921,222],[922,222],[923,222],[924,222],[925,222],[926,222],[927,222],[928,222],[929,222],[930,222],[931,222],[932,222],[933,222],[934,222],[935,222],[936,222],[937,222],[938,222],[939,222],[940,222],[941,222],[942,222],[943,222],[944,222],[945,222],[946,222],[947,222],[948,222],[949,222],[950,222],[951,222],[952,222],[953,222],[954,222],[955,222],[956,222],[957,222]]},
+        "endPoints": {"wire": [[487,95],[642,97],[868,222],[957,222]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": [[487,64],[897,64]]}
+      },
+      "keyPointPaths": {"wire": [[[487,95],[487,64]],[[642,97],[642,64]],[[868,222],[897,222]],[[957,222],[897,222]],[[642,64],[897,64]],[[642,64],[487,64]],[[897,222],[897,64]]]},
+      "coordinates": [[639,58], [640,58], [641,58], [642,58], [643,58], [644,58], [645,58], [638,59], [639,59], [640,59], [641,59], [642,59], [643,59], [644,59], [645,59], [646,59], [647,59], [637,60], [638,60], [639,60], [640,60], [641,60], [642,60], [643,60], [644,60], [645,60], [646,60], [647,60], [648,60], [636,61], [637,61], [638,61], [639,61], [640,61], [641,61], [642,61], [643,61], [644,61], [645,61], [646,61], [647,61], [648,61], [649,61], [636,62], [637,62], [638,62], [639,62], [640,62], [641,62], [642,62], [643,62], [644,62], [645,62], [646,62], [647,62], [648,62], [649,62], [635,63], [636,63], [637,63], [638,63], [639,63], [640,63], [641,63], [642,63], [643,63], [644,63], [645,63], [646,63], [647,63], [648,63], [649,63], [487,64], [488,64], [489,64], [490,64], [491,64], [492,64], [493,64], [494,64], [495,64], [496,64], [497,64], [498,64], [499,64], [500,64], [501,64], [502,64], [503,64], [504,64], [505,64], [506,64], [507,64], [508,64], [509,64], [510,64], [511,64], [512,64], [513,64], [514,64], [515,64], [516,64], [517,64], [518,64], [519,64], [520,64], [521,64], [522,64], [523,64], [524,64], [525,64], [526,64], [527,64], [528,64], [529,64], [530,64], [531,64], [532,64], [533,64], [534,64], [535,64], [536,64], [537,64], [538,64], [539,64], [540,64], [541,64], [542,64], [543,64], [544,64], [545,64], [546,64], [547,64], [548,64], [549,64], [550,64], [551,64], [552,64], [553,64], [554,64], [555,64], [556,64], [557,64], [558,64], [559,64], [560,64], [561,64], [562,64], [563,64], [564,64], [565,64], [566,64], [567,64], [568,64], [569,64], [570,64], [571,64], [572,64], [573,64], [574,64], [575,64], [576,64], [577,64], [578,64], [579,64], [580,64], [581,64], [582,64], [583,64], [584,64], [585,64], [586,64], [587,64], [588,64], [589,64], [590,64], [591,64], [592,64], [593,64], [594,64], [595,64], [596,64], [597,64], [598,64], [599,64], [600,64], [601,64], [602,64], [603,64], [604,64], [605,64], [606,64], [607,64], [608,64], [609,64], [610,64], [611,64], [612,64], [613,64], [614,64], [615,64], [616,64], [617,64], [618,64], [619,64], [620,64], [621,64], [622,64], [623,64], [624,64], [625,64], [626,64], [627,64], [628,64], [629,64], [630,64], [631,64], [632,64], [633,64], [634,64], [635,64], [636,64], [637,64], [638,64], [639,64], [640,64], [641,64], [642,64], [643,64], [644,64], [645,64], [646,64], [647,64], [648,64], [649,64], [650,64], [651,64], [652,64], [653,64], [654,64], [655,64], [656,64], [657,64], [658,64], [659,64], [660,64], [661,64], [662,64], [663,64], [664,64], [665,64], [666,64], [667,64], [668,64], [669,64], [670,64], [671,64], [672,64], [673,64], [674,64], [675,64], [676,64], [677,64], [678,64], [679,64], [680,64], [681,64], [682,64], [683,64], [684,64], [685,64], [686,64], [687,64], [688,64], [689,64], [690,64], [691,64], [692,64], [693,64], [694,64], [695,64], [696,64], [697,64], [698,64], [699,64], [700,64], [701,64], [702,64], [703,64], [704,64], [705,64], [706,64], [707,64], [708,64], [709,64], [710,64], [711,64], [712,64], [713,64], [714,64], [715,64], [716,64], [717,64], [718,64], [719,64], [720,64], [721,64], [722,64], [723,64], [724,64], [725,64], [726,64], [727,64], [728,64], [729,64], [730,64], [731,64], [732,64], [733,64], [734,64], [735,64], [736,64], [737,64], [738,64], [739,64], [740,64], [741,64], [742,64], [743,64], [744,64], [745,64], [746,64], [747,64], [748,64], [749,64], [750,64], [751,64], [752,64], [753,64], [754,64], [755,64], [756,64], [757,64], [758,64], [759,64], [760,64], [761,64], [762,64], [763,64], [764,64], [765,64], [766,64], [767,64], [768,64], [769,64], [770,64], [771,64], [772,64], [773,64], [774,64], [775,64], [776,64], [777,64], [778,64], [779,64], [780,64], [781,64], [782,64], [783,64], [784,64], [785,64], [786,64], [787,64], [788,64], [789,64], [790,64], [791,64], [792,64], [793,64], [794,64], [795,64], [796,64], [797,64], [798,64], [799,64], [800,64], [801,64], [802,64], [803,64], [804,64], [805,64], [806,64], [807,64], [808,64], [809,64], [810,64], [811,64], [812,64], [813,64], [814,64], [815,64], [816,64], [817,64], [818,64], [819,64], [820,64], [821,64], [822,64], [823,64], [824,64], [825,64], [826,64], [827,64], [828,64], [829,64], [830,64], [831,64], [832,64], [833,64], [834,64], [835,64], [836,64], [837,64], [838,64], [839,64], [840,64], [841,64], [842,64], [843,64], [844,64], [845,64], [846,64], [847,64], [848,64], [849,64], [850,64], [851,64], [852,64], [853,64], [854,64], [855,64], [856,64], [857,64], [858,64], [859,64], [860,64], [861,64], [862,64], [863,64], [864,64], [865,64], [866,64], [867,64], [868,64], [869,64], [870,64], [871,64], [872,64], [873,64], [874,64], [875,64], [876,64], [877,64], [878,64], [879,64], [880,64], [881,64], [882,64], [883,64], [884,64], [885,64], [886,64], [887,64], [888,64], [889,64], [890,64], [891,64], [892,64], [893,64], [894,64], [895,64], [896,64], [897,64], [487,65], [488,65], [489,65], [490,65], [491,65], [492,65], [493,65], [494,65], [495,65], [496,65], [497,65], [498,65], [499,65], [500,65], [501,65], [502,65], [503,65], [504,65], [505,65], [506,65], [507,65], [508,65], [509,65], [510,65], [511,65], [512,65], [513,65], [514,65], [515,65], [516,65], [517,65], [518,65], [519,65], [520,65], [521,65], [522,65], [523,65], [524,65], [525,65], [526,65], [527,65], [528,65], [529,65], [530,65], [531,65], [532,65], [533,65], [534,65], [535,65], [536,65], [537,65], [538,65], [539,65], [540,65], [541,65], [542,65], [543,65], [544,65], [545,65], [546,65], [547,65], [548,65], [549,65], [550,65], [551,65], [552,65], [553,65], [554,65], [555,65], [556,65], [557,65], [558,65], [559,65], [560,65], [561,65], [562,65], [563,65], [564,65], [565,65], [566,65], [567,65], [568,65], [569,65], [570,65], [571,65], [572,65], [573,65], [574,65], [575,65], [576,65], [577,65], [578,65], [579,65], [580,65], [581,65], [582,65], [583,65], [584,65], [585,65], [586,65], [587,65], [588,65], [589,65], [590,65], [591,65], [592,65], [593,65], [594,65], [595,65], [596,65], [597,65], [598,65], [599,65], [600,65], [601,65], [602,65], [603,65], [604,65], [605,65], [606,65], [607,65], [608,65], [609,65], [610,65], [611,65], [612,65], [613,65], [614,65], [615,65], [616,65], [617,65], [618,65], [619,65], [620,65], [621,65], [622,65], [623,65], [624,65], [625,65], [626,65], [627,65], [628,65], [629,65], [630,65], [631,65], [632,65], [633,65], [634,65], [635,65], [636,65], [637,65], [638,65], [639,65], [640,65], [641,65], [642,65], [643,65], [644,65], [645,65], [646,65], [647,65], [648,65], [649,65], [650,65], [651,65], [652,65], [653,65], [654,65], [655,65], [656,65], [657,65], [658,65], [659,65], [660,65], [661,65], [662,65], [663,65], [664,65], [665,65], [666,65], [667,65], [668,65], [669,65], [670,65], [671,65], [672,65], [673,65], [674,65], [675,65], [676,65], [677,65], [678,65], [679,65], [680,65], [681,65], [682,65], [683,65], [684,65], [685,65], [686,65], [687,65], [688,65], [689,65], [690,65], [691,65], [692,65], [693,65], [694,65], [695,65], [696,65], [697,65], [698,65], [699,65], [700,65], [701,65], [702,65], [703,65], [704,65], [705,65], [706,65], [707,65], [708,65], [709,65], [710,65], [711,65], [712,65], [713,65], [714,65], [715,65], [716,65], [717,65], [718,65], [719,65], [720,65], [721,65], [722,65], [723,65], [724,65], [725,65], [726,65], [727,65], [728,65], [729,65], [730,65], [731,65], [732,65], [733,65], [734,65], [735,65], [736,65], [737,65], [738,65], [739,65], [740,65], [741,65], [742,65], [743,65], [744,65], [745,65], [746,65], [747,65], [748,65], [749,65], [750,65], [751,65], [752,65], [753,65], [754,65], [755,65], [756,65], [757,65], [758,65], [759,65], [760,65], [761,65], [762,65], [763,65], [764,65], [765,65], [766,65], [767,65], [768,65], [769,65], [770,65], [771,65], [772,65], [773,65], [774,65], [775,65], [776,65], [777,65], [778,65], [779,65], [780,65], [781,65], [782,65], [783,65], [784,65], [785,65], [786,65], [787,65], [788,65], [789,65], [790,65], [791,65], [792,65], [793,65], [794,65], [795,65], [796,65], [797,65], [798,65], [799,65], [800,65], [801,65], [802,65], [803,65], [804,65], [805,65], [806,65], [807,65], [808,65], [809,65], [810,65], [811,65], [812,65], [813,65], [814,65], [815,65], [816,65], [817,65], [818,65], [819,65], [820,65], [821,65], [822,65], [823,65], [824,65], [825,65], [826,65], [827,65], [828,65], [829,65], [830,65], [831,65], [832,65], [833,65], [834,65], [835,65], [836,65], [837,65], [838,65], [839,65], [840,65], [841,65], [842,65], [843,65], [844,65], [845,65], [846,65], [847,65], [848,65], [849,65], [850,65], [851,65], [852,65], [853,65], [854,65], [855,65], [856,65], [857,65], [858,65], [859,65], [860,65], [861,65], [862,65], [863,65], [864,65], [865,65], [866,65], [867,65], [868,65], [869,65], [870,65], [871,65], [872,65], [873,65], [874,65], [875,65], [876,65], [877,65], [878,65], [879,65], [880,65], [881,65], [882,65], [883,65], [884,65], [885,65], [886,65], [887,65], [888,65], [889,65], [890,65], [891,65], [892,65], [893,65], [894,65], [895,65], [896,65], [897,65], [898,65], [487,66], [636,66], [637,66], [638,66], [639,66], [640,66], [641,66], [642,66], [643,66], [644,66], [645,66], [646,66], [647,66], [648,66], [649,66], [897,66], [487,67], [488,67], [636,67], [637,67], [638,67], [639,67], [640,67], [641,67], [642,67], [643,67], [644,67], [645,67], [646,67], [647,67], [648,67], [897,67], [898,67], [487,68], [488,68], [637,68], [638,68], [639,68], [640,68], [641,68], [642,68], [643,68], [644,68], [645,68], [646,68], [647,68], [648,68], [897,68], [898,68], [487,69], [488,69], [638,69], [639,69], [640,69], [641,69], [642,69], [643,69], [644,69], [645,69], [646,69], [647,69], [897,69], [898,69], [487,70], [488,70], [639,70], [640,70], [641,70], [642,70], [643,70], [644,70], [645,70], [897,70], [898,70], [487,71], [488,71], [642,71], [643,71], [897,71], [898,71], [487,72], [488,72], [642,72], [643,72], [897,72], [898,72], [487,73], [488,73], [642,73], [643,73], [897,73], [898,73], [487,74], [488,74], [642,74], [643,74], [897,74], [898,74], [487,75], [488,75], [642,75], [643,75], [897,75], [898,75], [487,76], [488,76], [642,76], [643,76], [897,76], [898,76], [487,77], [488,77], [642,77], [643,77], [897,77], [898,77], [487,78], [488,78], [642,78], [643,78], [897,78], [898,78], [487,79], [488,79], [642,79], [643,79], [897,79], [898,79], [487,80], [488,80], [642,80], [643,80], [897,80], [898,80], [487,81], [488,81], [642,81], [643,81], [897,81], [898,81], [487,82], [488,82], [642,82], [643,82], [897,82], [898,82], [487,83], [488,83], [642,83], [643,83], [897,83], [898,83], [487,84], [488,84], [642,84], [643,84], [897,84], [898,84], [487,85], [488,85], [642,85], [643,85], [897,85], [898,85], [487,86], [488,86], [642,86], [643,86], [897,86], [898,86], [487,87], [488,87], [642,87], [643,87], [897,87], [898,87], [487,88], [488,88], [642,88], [643,88], [897,88], [898,88], [487,89], [488,89], [642,89], [643,89], [897,89], [898,89], [487,90], [488,90], [642,90], [643,90], [897,90], [898,90], [487,91], [488,91], [642,91], [643,91], [897,91], [898,91], [487,92], [488,92], [642,92], [643,92], [897,92], [898,92], [487,93], [488,93], [642,93], [643,93], [897,93], [898,93], [487,94], [488,94], [642,94], [643,94], [897,94], [898,94], [487,95], [488,95], [642,95], [643,95], [897,95], [898,95], [487,96], [488,96], [642,96], [643,96], [897,96], [898,96], [642,97], [643,97], [897,97], [898,97], [642,98], [643,98], [897,98], [898,98], [897,99], [898,99], [897,100], [898,100], [897,101], [898,101], [897,102], [898,102], [897,103], [898,103], [897,104], [898,104], [897,105], [898,105], [897,106], [898,106], [897,107], [898,107], [897,108], [898,108], [897,109], [898,109], [897,110], [898,110], [897,111], [898,111], [897,112], [898,112], [897,113], [898,113], [897,114], [898,114], [897,115], [898,115], [897,116], [898,116], [897,117], [898,117], [897,118], [898,118], [897,119], [898,119], [897,120], [898,120], [897,121], [898,121], [897,122], [898,122], [897,123], [898,123], [897,124], [898,124], [897,125], [898,125], [897,126], [898,126], [897,127], [898,127], [897,128], [898,128], [897,129], [898,129], [897,130], [898,130], [897,131], [898,131], [897,132], [898,132], [897,133], [898,133], [897,134], [898,134], [897,135], [898,135], [897,136], [898,136], [897,137], [898,137], [897,138], [898,138], [897,139], [898,139], [897,140], [898,140], [897,141], [898,141], [897,142], [898,142], [897,143], [898,143], [897,144], [898,144], [897,145], [898,145], [897,146], [898,146], [897,147], [898,147], [897,148], [898,148], [897,149], [898,149], [897,150], [898,150], [897,151], [898,151], [897,152], [898,152], [897,153], [898,153], [897,154], [898,154], [897,155], [898,155], [897,156], [898,156], [897,157], [898,157], [897,158], [898,158], [897,159], [898,159], [897,160], [898,160], [897,161], [898,161], [897,162], [898,162], [897,163], [898,163], [897,164], [898,164], [897,165], [898,165], [897,166], [898,166], [897,167], [898,167], [897,168], [898,168], [897,169], [898,169], [897,170], [898,170], [897,171], [898,171], [897,172], [898,172], [897,173], [898,173], [897,174], [898,174], [897,175], [898,175], [897,176], [898,176], [897,177], [898,177], [897,178], [898,178], [897,179], [898,179], [897,180], [898,180], [897,181], [898,181], [897,182], [898,182], [897,183], [898,183], [897,184], [898,184], [897,185], [898,185], [897,186], [898,186], [897,187], [898,187], [897,188], [898,188], [897,189], [898,189], [897,190], [898,190], [897,191], [898,191], [897,192], [898,192], [897,193], [898,193], [897,194], [898,194], [897,195], [898,195], [897,196], [898,196], [897,197], [898,197], [897,198], [898,198], [897,199], [898,199], [897,200], [898,200], [897,201], [898,201], [897,202], [898,202], [897,203], [898,203], [897,204], [898,204], [897,205], [898,205], [897,206], [898,206], [897,207], [898,207], [897,208], [898,208], [897,209], [898,209], [897,210], [898,210], [897,211], [898,211], [897,212], [898,212], [897,213], [898,213], [897,214], [898,214], [897,215], [898,215], [894,216], [895,216], [896,216], [897,216], [898,216], [899,216], [900,216], [893,217], [894,217], [895,217], [896,217], [897,217], [898,217], [899,217], [900,217], [901,217], [902,217], [891,218], [892,218], [893,218], [894,218], [895,218], [896,218], [897,218], [898,218], [899,218], [900,218], [901,218], [902,218], [903,218], [891,219], [892,219], [893,219], [894,219], [895,219], [896,219], [897,219], [898,219], [899,219], [900,219], [901,219], [902,219], [903,219], [890,220], [891,220], [892,220], [893,220], [894,220], [895,220], [896,220], [897,220], [898,220], [899,220], [900,220], [901,220], [902,220], [903,220], [904,220], [890,221], [891,221], [892,221], [893,221], [894,221], [895,221], [896,221], [897,221], [898,221], [899,221], [900,221], [901,221], [902,221], [903,221], [904,221], [868,222], [869,222], [870,222], [871,222], [872,222], [873,222], [874,222], [875,222], [876,222], [877,222], [878,222], [879,222], [880,222], [881,222], [882,222], [883,222], [884,222], [885,222], [886,222], [887,222], [888,222], [889,222], [890,222], [891,222], [892,222], [893,222], [894,222], [895,222], [896,222], [897,222], [898,222], [899,222], [900,222], [901,222], [902,222], [903,222], [904,222], [905,222], [906,222], [907,222], [908,222], [909,222], [910,222], [911,222], [912,222], [913,222], [914,222], [915,222], [916,222], [917,222], [918,222], [919,222], [920,222], [921,222], [922,222], [923,222], [924,222], [925,222], [926,222], [927,222], [928,222], [929,222], [930,222], [931,222], [932,222], [933,222], [934,222], [935,222], [936,222], [937,222], [938,222], [939,222], [940,222], [941,222], [942,222], [943,222], [944,222], [945,222], [946,222], [947,222], [948,222], [949,222], [950,222], [951,222], [952,222], [953,222], [954,222], [955,222], [956,222], [957,222], [890,223], [891,223], [892,223], [893,223], [894,223], [895,223], [896,223], [897,223], [898,223], [899,223], [900,223], [901,223], [902,223], [903,223], [904,223], [890,224], [891,224], [892,224], [893,224], [894,224], [895,224], [896,224], [897,224], [898,224], [899,224], [900,224], [901,224], [902,224], [903,224], [904,224], [891,225], [892,225], [893,225], [894,225], [895,225], [896,225], [897,225], [898,225], [899,225], [900,225], [901,225], [902,225], [903,225], [891,226], [892,226], [893,226], [894,226], [895,226], [896,226], [897,226], [898,226], [899,226], [900,226], [901,226], [902,226], [903,226], [893,227], [894,227], [895,227], [896,227], [897,227], [898,227], [899,227], [900,227], [901,227], [902,227], [894,228], [895,228], [896,228], [897,228], [898,228], [899,228], [900,228]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_3": {
+      "edgeId": "E_3",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_8": {
+          "pinId": "P_8",
+          "cpntId": "C_1",
+          "location": [217,190]
+        },
+        "P_9": {
+          "pinId": "P_9",
+          "cpntId": "C_5",
+          "location": [273,190]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[218,190],[272,190]]},
+        "endPoints": {"wire": [[218,190],[272,190]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[218,190],[272,190]]]},
+      "coordinates": [[264,189], [265,189], [266,189], [267,189], [268,189], [269,189], [270,189], [271,189], [218,190], [219,190], [220,190], [221,190], [222,190], [223,190], [224,190], [225,190], [226,190], [227,190], [228,190], [229,190], [230,190], [231,190], [232,190], [233,190], [234,190], [235,190], [236,190], [237,190], [238,190], [239,190], [240,190], [241,190], [242,190], [243,190], [244,190], [245,190], [246,190], [247,190], [248,190], [249,190], [250,190], [251,190], [252,190], [253,190], [254,190], [255,190], [256,190], [257,190], [258,190], [259,190], [260,190], [261,190], [262,190], [263,190], [264,190], [265,190], [266,190], [267,190], [268,190], [269,190], [270,190], [271,190], [272,190]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_4": {
+      "edgeId": "E_4",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_10": {
+          "pinId": "P_10",
+          "cpntId": "C_14",
+          "location": [422,300]
+        },
+        "P_11": {
+          "pinId": "P_11",
+          "cpntId": "C_8",
+          "location": [422,270]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[422,269],[422,301]]},
+        "endPoints": {"wire": [[422,269],[422,301]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[422,269],[422,301]]]},
+      "coordinates": [[422,269], [422,270], [422,271], [422,272], [422,273], [422,274], [422,275], [422,276], [422,277], [422,278], [422,279], [422,280], [422,281], [422,282], [422,283], [422,284], [422,285], [422,286], [422,287], [422,288], [422,289], [422,290], [422,291], [422,292], [422,293], [422,294], [422,295], [422,296], [422,297], [422,298], [422,299], [422,300], [422,301]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_5": {
+      "edgeId": "E_5",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "T_15",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_12": {
+          "pinId": "P_12",
+          "cpntId": "C_10",
+          "location": [1002,222]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[1003,222],[1059,222]]},
+        "endPoints": {"wire": [[1003,222],[1059,222]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[1003,222],[1059,222]],[[1002,222],[1057,222]],[[1057,222],[1059,222]]]},
+      "coordinates": [[1003,222], [1004,222], [1005,222], [1006,222], [1007,222], [1008,222], [1009,222], [1010,222], [1011,222], [1012,222], [1013,222], [1014,222], [1015,222], [1016,222], [1017,222], [1018,222], [1019,222], [1020,222], [1021,222], [1022,222], [1023,222], [1024,222], [1025,222], [1026,222], [1027,222], [1028,222], [1029,222], [1030,222], [1031,222], [1032,222], [1033,222], [1034,222], [1035,222], [1036,222], [1037,222], [1038,222], [1039,222], [1040,222], [1041,222], [1042,222], [1043,222], [1044,222], [1045,222], [1046,222], [1047,222], [1048,222], [1049,222], [1050,222], [1051,222], [1052,222], [1053,222], [1054,222], [1055,222], [1056,222], [1057,222], [1058,222], [1059,222]],
+      "associatedTexts": {
+        "T_15": {
+          "tid": "T_15",
+          "category": "params",
+          "categoryId": 0,
+          "content": "Filtered",
+          "details": "netlabel",
+          "location": {
+            "x1": 1070,
+            "y1": 199,
+            "x2": 1155,
+            "y2": 224
+          }
+        }
+      }
+    },
+    "E_6": {
+      "edgeId": "E_6",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_13": {
+          "pinId": "P_13",
+          "cpntId": "C_3",
+          "location": [642,144]
+        },
+        "P_14": {
+          "pinId": "P_14",
+          "cpntId": "C_4",
+          "location": [746,190]
+        },
+        "P_15": {
+          "pinId": "P_15",
+          "cpntId": "C_6",
+          "location": [595,190]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[642,146],[642,147],[642,148],[642,149],[642,150],[642,151],[642,152],[642,153],[642,154],[642,155],[642,156],[642,157],[642,158],[642,159],[642,160],[642,161],[642,162],[642,163],[642,164],[642,165],[642,166],[642,167],[642,168],[642,169],[642,170],[642,171],[642,172],[642,173],[642,174],[642,175],[642,176],[642,177],[642,178],[642,179],[642,180],[642,181],[642,182],[642,183],[642,184],[642,185],[642,186],[642,187],[642,188],[642,189],[596,190],[597,190],[598,190],[599,190],[600,190],[601,190],[602,190],[603,190],[604,190],[605,190],[606,190],[607,190],[608,190],[609,190],[610,190],[611,190],[612,190],[613,190],[614,190],[615,190],[616,190],[617,190],[618,190],[619,190],[620,190],[621,190],[622,190],[623,190],[624,190],[625,190],[626,190],[627,190],[628,190],[629,190],[630,190],[631,190],[632,190],[633,190],[634,190],[635,190],[636,190],[637,190],[638,190],[639,190],[640,190],[641,190],[642,190],[643,190],[644,190],[645,190],[646,190],[647,190],[648,190],[649,190],[650,190],[651,190],[652,190],[653,190],[654,190],[655,190],[656,190],[657,190],[658,190],[659,190],[660,190],[661,190],[662,190],[663,190],[664,190],[665,190],[666,190],[667,190],[668,190],[669,190],[670,190],[671,190],[672,190],[673,190],[674,190],[675,190],[676,190],[677,190],[678,190],[679,190],[680,190],[681,190],[682,190],[683,190],[684,190],[685,190],[686,190],[687,190],[688,190],[689,190],[690,190],[691,190],[692,190],[693,190],[694,190],[695,190],[696,190],[697,190],[698,190],[699,190],[700,190],[701,190],[702,190],[703,190],[704,190],[705,190],[706,190],[707,190],[708,190],[709,190],[710,190],[711,190],[712,190],[713,190],[714,190],[715,190],[716,190],[717,190],[718,190],[719,190],[720,190],[721,190],[722,190],[723,190],[724,190],[725,190],[726,190],[727,190],[728,190],[729,190],[730,190],[731,190],[732,190],[733,190],[734,190],[735,190],[736,190],[737,190],[738,190],[739,190],[740,190],[741,190],[742,190],[743,190],[744,190],[745,190]]},
+        "endPoints": {"wire": [[642,146],[596,190],[745,190]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[642,146],[642,190]],[[596,190],[642,190]],[[745,190],[642,190]]]},
+      "coordinates": [[642,145], [643,145], [642,146], [643,146], [642,147], [643,147], [642,148], [643,148], [642,149], [643,149], [642,150], [643,150], [642,151], [643,151], [642,152], [643,152], [642,153], [643,153], [642,154], [643,154], [642,155], [643,155], [642,156], [643,156], [642,157], [643,157], [642,158], [643,158], [642,159], [643,159], [642,160], [643,160], [642,161], [643,161], [642,162], [643,162], [642,163], [643,163], [642,164], [643,164], [642,165], [643,165], [642,166], [643,166], [642,167], [643,167], [642,168], [643,168], [642,169], [643,169], [642,170], [643,170], [642,171], [643,171], [642,172], [643,172], [642,173], [643,173], [642,174], [643,174], [642,175], [643,175], [642,176], [643,176], [642,177], [643,177], [642,178], [643,178], [642,179], [643,179], [642,180], [643,180], [642,181], [643,181], [642,182], [643,182], [642,183], [643,183], [639,184], [640,184], [641,184], [642,184], [643,184], [644,184], [645,184], [638,185], [639,185], [640,185], [641,185], [642,185], [643,185], [644,185], [645,185], [646,185], [647,185], [637,186], [638,186], [639,186], [640,186], [641,186], [642,186], [643,186], [644,186], [645,186], [646,186], [647,186], [648,186], [636,187], [637,187], [638,187], [639,187], [640,187], [641,187], [642,187], [643,187], [644,187], [645,187], [646,187], [647,187], [648,187], [636,188], [637,188], [638,188], [639,188], [640,188], [641,188], [642,188], [643,188], [644,188], [645,188], [646,188], [647,188], [648,188], [649,188], [635,189], [636,189], [637,189], [638,189], [639,189], [640,189], [641,189], [642,189], [643,189], [644,189], [645,189], [646,189], [647,189], [648,189], [649,189], [596,190], [597,190], [598,190], [599,190], [600,190], [601,190], [602,190], [603,190], [604,190], [605,190], [606,190], [607,190], [608,190], [609,190], [610,190], [611,190], [612,190], [613,190], [614,190], [615,190], [616,190], [617,190], [618,190], [619,190], [620,190], [621,190], [622,190], [623,190], [624,190], [625,190], [626,190], [627,190], [628,190], [629,190], [630,190], [631,190], [632,190], [633,190], [634,190], [635,190], [636,190], [637,190], [638,190], [639,190], [640,190], [641,190], [642,190], [643,190], [644,190], [645,190], [646,190], [647,190], [648,190], [649,190], [650,190], [651,190], [652,190], [653,190], [654,190], [655,190], [656,190], [657,190], [658,190], [659,190], [660,190], [661,190], [662,190], [663,190], [664,190], [665,190], [666,190], [667,190], [668,190], [669,190], [670,190], [671,190], [672,190], [673,190], [674,190], [675,190], [676,190], [677,190], [678,190], [679,190], [680,190], [681,190], [682,190], [683,190], [684,190], [685,190], [686,190], [687,190], [688,190], [689,190], [690,190], [691,190], [692,190], [693,190], [694,190], [695,190], [696,190], [697,190], [698,190], [699,190], [700,190], [701,190], [702,190], [703,190], [704,190], [705,190], [706,190], [707,190], [708,190], [709,190], [710,190], [711,190], [712,190], [713,190], [714,190], [715,190], [716,190], [717,190], [718,190], [719,190], [720,190], [721,190], [722,190], [723,190], [724,190], [725,190], [726,190], [727,190], [728,190], [729,190], [730,190], [731,190], [732,190], [733,190], [734,190], [735,190], [736,190], [737,190], [738,190], [739,190], [740,190], [741,190], [742,190], [743,190], [744,190], [745,190], [635,191], [636,191], [637,191], [638,191], [639,191], [640,191], [641,191], [642,191], [643,191], [644,191], [645,191], [646,191], [647,191], [648,191], [649,191], [636,192], [637,192], [638,192], [639,192], [640,192], [641,192], [642,192], [643,192], [644,192], [645,192], [646,192], [647,192], [648,192], [649,192], [636,193], [637,193], [638,193], [639,193], [640,193], [641,193], [642,193], [643,193], [644,193], [645,193], [646,193], [647,193], [648,193], [649,193], [637,194], [638,194], [639,194], [640,194], [641,194], [642,194], [643,194], [644,194], [645,194], [646,194], [647,194], [648,194], [638,195], [639,195], [640,195], [641,195], [642,195], [643,195], [644,195], [645,195], [646,195], [647,195], [640,196], [641,196], [642,196], [643,196], [644,196], [645,196]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_7": {
+      "edgeId": "E_7",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_16": {
+          "pinId": "P_16",
+          "cpntId": "C_5",
+          "location": [328,190]
+        },
+        "P_17": {
+          "pinId": "P_17",
+          "cpntId": "C_6",
+          "location": [541,190]
+        },
+        "P_18": {
+          "pinId": "P_18",
+          "cpntId": "C_7",
+          "location": [487,152]
+        },
+        "P_19": {
+          "pinId": "P_19",
+          "cpntId": "C_8",
+          "location": [422,225]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[487,154],[487,155],[487,156],[487,157],[487,158],[487,159],[487,160],[487,161],[487,162],[487,163],[487,164],[487,165],[487,166],[487,167],[487,168],[487,169],[487,170],[487,171],[487,172],[487,173],[487,174],[487,175],[487,176],[487,177],[487,178],[487,179],[487,180],[487,181],[487,182],[487,183],[487,184],[487,185],[487,186],[486,187],[487,187],[486,188],[486,189],[329,190],[330,190],[331,190],[332,190],[333,190],[334,190],[335,190],[336,190],[337,190],[338,190],[339,190],[340,190],[341,190],[342,190],[343,190],[344,190],[345,190],[346,190],[347,190],[348,190],[349,190],[350,190],[351,190],[352,190],[353,190],[354,190],[355,190],[356,190],[357,190],[358,190],[359,190],[360,190],[361,190],[362,190],[363,190],[364,190],[365,190],[366,190],[367,190],[368,190],[369,190],[370,190],[371,190],[372,190],[373,190],[374,190],[375,190],[376,190],[377,190],[378,190],[379,190],[380,190],[381,190],[382,190],[383,190],[384,190],[385,190],[386,190],[387,190],[388,190],[389,190],[390,190],[391,190],[392,190],[393,190],[394,190],[395,190],[396,190],[397,190],[398,190],[399,190],[400,190],[401,190],[402,190],[403,190],[404,190],[405,190],[406,190],[407,190],[408,190],[409,190],[410,190],[411,190],[412,190],[413,190],[414,190],[415,190],[416,190],[417,190],[418,190],[419,190],[420,190],[421,190],[422,190],[423,190],[424,190],[425,190],[426,190],[427,190],[428,190],[429,190],[430,190],[431,190],[432,190],[433,190],[434,190],[435,190],[436,190],[437,190],[438,190],[439,190],[440,190],[441,190],[442,190],[443,190],[444,190],[445,190],[446,190],[447,190],[448,190],[449,190],[450,190],[451,190],[452,190],[453,190],[454,190],[455,190],[456,190],[457,190],[458,190],[459,190],[460,190],[461,190],[462,190],[463,190],[464,190],[465,190],[466,190],[467,190],[468,190],[469,190],[470,190],[471,190],[472,190],[473,190],[474,190],[475,190],[476,190],[477,190],[478,190],[479,190],[480,190],[481,190],[482,190],[483,190],[484,190],[485,190],[486,190],[487,190],[488,190],[489,190],[490,190],[491,190],[492,190],[493,190],[494,190],[495,190],[496,190],[497,190],[498,190],[499,190],[500,190],[501,190],[502,190],[503,190],[504,190],[505,190],[506,190],[507,190],[508,190],[509,190],[510,190],[511,190],[512,190],[513,190],[514,190],[515,190],[516,190],[517,190],[518,190],[519,190],[520,190],[521,190],[522,190],[523,190],[524,190],[525,190],[526,190],[527,190],[528,190],[529,190],[530,190],[531,190],[532,190],[533,190],[534,190],[535,190],[536,190],[537,190],[538,190],[539,190],[540,190],[422,191],[422,192],[422,193],[422,194],[422,195],[422,196],[422,197],[422,198],[422,199],[422,200],[422,201],[422,202],[422,203],[422,204],[422,205],[422,206],[422,207],[422,208],[422,209],[422,210],[422,211],[422,212],[422,213],[422,214],[422,215],[422,216],[422,217],[422,218],[422,219],[422,220],[422,221],[422,222],[422,223],[422,224],[422,225],[422,226]]},
+        "endPoints": {"wire": [[487,154],[329,190],[540,190],[422,226]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[487,154],[487,187]],[[329,190],[422,190]],[[540,190],[486,190]],[[422,226],[422,190]],[[422,190],[486,190]],[[486,190],[486,187]],[[486,187],[487,187]]]},
+      "coordinates": [[487,153], [488,153], [487,154], [488,154], [487,155], [488,155], [487,156], [488,156], [487,157], [488,157], [487,158], [488,158], [487,159], [488,159], [487,160], [488,160], [487,161], [488,161], [487,162], [488,162], [487,163], [488,163], [487,164], [488,164], [487,165], [488,165], [487,166], [488,166], [487,167], [488,167], [487,168], [488,168], [487,169], [488,169], [487,170], [488,170], [487,171], [488,171], [487,172], [488,172], [487,173], [488,173], [487,174], [488,174], [487,175], [488,175], [487,176], [488,176], [487,177], [488,177], [487,178], [488,178], [487,179], [488,179], [487,180], [488,180], [487,181], [488,181], [487,182], [488,182], [487,183], [488,183], [419,184], [420,184], [421,184], [422,184], [423,184], [424,184], [425,184], [483,184], [484,184], [485,184], [486,184], [487,184], [488,184], [418,185], [419,185], [420,185], [421,185], [422,185], [423,185], [424,185], [425,185], [426,185], [482,185], [483,185], [484,185], [485,185], [486,185], [487,185], [488,185], [489,185], [490,185], [417,186], [418,186], [419,186], [420,186], [421,186], [422,186], [423,186], [424,186], [425,186], [426,186], [427,186], [481,186], [482,186], [483,186], [484,186], [485,186], [486,186], [487,186], [488,186], [489,186], [490,186], [491,186], [416,187], [417,187], [418,187], [419,187], [420,187], [421,187], [422,187], [423,187], [424,187], [425,187], [426,187], [427,187], [480,187], [481,187], [482,187], [483,187], [484,187], [485,187], [486,187], [487,187], [488,187], [489,187], [490,187], [491,187], [416,188], [417,188], [418,188], [419,188], [420,188], [421,188], [422,188], [423,188], [424,188], [425,188], [426,188], [427,188], [428,188], [480,188], [481,188], [482,188], [483,188], [484,188], [485,188], [486,188], [487,188], [488,188], [489,188], [490,188], [491,188], [492,188], [416,189], [417,189], [418,189], [419,189], [420,189], [421,189], [422,189], [423,189], [424,189], [425,189], [426,189], [427,189], [428,189], [480,189], [481,189], [482,189], [483,189], [484,189], [485,189], [486,189], [487,189], [488,189], [489,189], [490,189], [491,189], [492,189], [329,190], [330,190], [331,190], [332,190], [333,190], [334,190], [335,190], [336,190], [337,190], [338,190], [339,190], [340,190], [341,190], [342,190], [343,190], [344,190], [345,190], [346,190], [347,190], [348,190], [349,190], [350,190], [351,190], [352,190], [353,190], [354,190], [355,190], [356,190], [357,190], [358,190], [359,190], [360,190], [361,190], [362,190], [363,190], [364,190], [365,190], [366,190], [367,190], [368,190], [369,190], [370,190], [371,190], [372,190], [373,190], [374,190], [375,190], [376,190], [377,190], [378,190], [379,190], [380,190], [381,190], [382,190], [383,190], [384,190], [385,190], [386,190], [387,190], [388,190], [389,190], [390,190], [391,190], [392,190], [393,190], [394,190], [395,190], [396,190], [397,190], [398,190], [399,190], [400,190], [401,190], [402,190], [403,190], [404,190], [405,190], [406,190], [407,190], [408,190], [409,190], [410,190], [411,190], [412,190], [413,190], [414,190], [415,190], [416,190], [417,190], [418,190], [419,190], [420,190], [421,190], [422,190], [423,190], [424,190], [425,190], [426,190], [427,190], [428,190], [429,190], [430,190], [431,190], [432,190], [433,190], [434,190], [435,190], [436,190], [437,190], [438,190], [439,190], [440,190], [441,190], [442,190], [443,190], [444,190], [445,190], [446,190], [447,190], [448,190], [449,190], [450,190], [451,190], [452,190], [453,190], [454,190], [455,190], [456,190], [457,190], [458,190], [459,190], [460,190], [461,190], [462,190], [463,190], [464,190], [465,190], [466,190], [467,190], [468,190], [469,190], [470,190], [471,190], [472,190], [473,190], [474,190], [475,190], [476,190], [477,190], [478,190], [479,190], [480,190], [481,190], [482,190], [483,190], [484,190], [485,190], [486,190], [487,190], [488,190], [489,190], [490,190], [491,190], [492,190], [493,190], [494,190], [495,190], [496,190], [497,190], [498,190], [499,190], [500,190], [501,190], [502,190], [503,190], [504,190], [505,190], [506,190], [507,190], [508,190], [509,190], [510,190], [511,190], [512,190], [513,190], [514,190], [515,190], [516,190], [517,190], [518,190], [519,190], [520,190], [521,190], [522,190], [523,190], [524,190], [525,190], [526,190], [527,190], [528,190], [529,190], [530,190], [531,190], [532,190], [533,190], [534,190], [535,190], [536,190], [537,190], [538,190], [539,190], [540,190], [416,191], [417,191], [418,191], [419,191], [420,191], [421,191], [422,191], [423,191], [424,191], [425,191], [426,191], [427,191], [428,191], [480,191], [481,191], [482,191], [483,191], [484,191], [485,191], [486,191], [487,191], [488,191], [489,191], [490,191], [491,191], [492,191], [416,192], [417,192], [418,192], [419,192], [420,192], [421,192], [422,192], [423,192], [424,192], [425,192], [426,192], [427,192], [428,192], [480,192], [481,192], [482,192], [483,192], [484,192], [485,192], [486,192], [487,192], [488,192], [489,192], [490,192], [491,192], [492,192], [416,193], [417,193], [418,193], [419,193], [420,193], [421,193], [422,193], [423,193], [424,193], [425,193], [426,193], [427,193], [480,193], [481,193], [482,193], [483,193], [484,193], [485,193], [486,193], [487,193], [488,193], [489,193], [490,193], [491,193], [417,194], [418,194], [419,194], [420,194], [421,194], [422,194], [423,194], [424,194], [425,194], [426,194], [427,194], [481,194], [482,194], [483,194], [484,194], [485,194], [486,194], [487,194], [488,194], [489,194], [490,194], [491,194], [418,195], [419,195], [420,195], [421,195], [422,195], [423,195], [424,195], [425,195], [426,195], [482,195], [483,195], [484,195], [485,195], [486,195], [487,195], [488,195], [489,195], [490,195], [419,196], [420,196], [421,196], [422,196], [423,196], [424,196], [483,196], [484,196], [485,196], [486,196], [487,196], [488,196], [421,197], [422,197], [422,198], [422,199], [422,200], [422,201], [422,202], [422,203], [422,204], [422,205], [422,206], [422,207], [422,208], [422,209], [422,210], [422,211], [422,212], [422,213], [422,214], [422,215], [422,216], [422,217], [422,218], [422,219], [422,220], [422,221], [422,222], [422,223], [422,224], [422,225], [422,226]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_8": {
+      "edgeId": "E_8",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_20": {
+          "pinId": "P_20",
+          "cpntId": "C_17",
+          "location": [337,475]
+        },
+        "P_21": {
+          "pinId": "P_21",
+          "cpntId": "C_2",
+          "location": [337,453]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[337,454],[337,476]]},
+        "endPoints": {"wire": [[337,454],[337,476]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[337,454],[337,476]]]},
+      "coordinates": [[337,454], [338,454], [337,455], [338,455], [337,456], [338,456], [337,457], [338,457], [337,458], [338,458], [337,459], [338,459], [337,460], [338,460], [337,461], [338,461], [337,462], [338,462], [337,463], [338,463], [337,464], [338,464], [337,465], [338,465], [337,466], [338,466], [337,467], [338,467], [337,468], [338,468], [337,469], [338,469], [337,470], [338,470], [337,471], [338,471], [337,472], [338,472], [337,473], [338,473], [337,474], [338,474], [337,475], [338,475], [337,476], [338,476]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_9": {
+      "edgeId": "E_9",
+      "state": "deleted",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[815,304]]},
+        "endPoints": {"wire": [[815,304]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[815,307],[815,312]]]},
+      "coordinates": [[815,304]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_10": {
+      "edgeId": "E_10",
+      "state": "active",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+        "P_23": {
+          "pinId": "P_23",
+          "cpntId": "C_18",
+          "location": [815,276]
+        },
+        "P_24": {
+          "pinId": "P_24",
+          "cpntId": "C_4",
+          "location": [815,292]
+        }
+      },
+      "keyPoints": {
+        "skeleton": {"wire": [[815,298],[815,299],[815,300],[815,301],[815,302],[815,303],[815,304],[815,305],[815,306],[815,307],[815,308]]},
+        "endPoints": {"wire": [[815,298],[815,308]]},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[815,295],[815,311]]]},
+      "coordinates": [[815,298], [815,299], [815,300], [815,301], [815,302], [815,303], [815,304], [815,305], [815,306], [815,307], [815,308]],
+      "associatedTexts": {
+
+      }
+    },
+    "E_11": {
+      "edgeId": "E_11",
+      "state": "deleted",
+      "category": "wire",
+      "netlabel": "",
+      "isFlywire": false,
+      "text": {},
+      "location": [],
+      "originalCoordinatesCount": 0,
+      "connect": {
+
+      },
+      "keyPoints": {
+        "skeleton": {"wire": []},
+        "endPoints": {"wire": []},
+        "divergePoints": {"wire": []},
+        "turnPoints": {"wire": []}
+      },
+      "keyPointPaths": {"wire": [[[814,307],[814,312]]]},
+      "coordinates": [[814,307], [814,308]],
+      "associatedTexts": {
+
+      }
+    }
+  }
+}

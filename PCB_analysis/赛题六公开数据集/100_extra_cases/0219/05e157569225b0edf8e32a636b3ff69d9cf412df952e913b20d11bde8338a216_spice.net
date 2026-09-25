@@ -1,0 +1,45 @@
+* SPICE netlist generated from 05e157569225b0edf8e32a636b3ff69d9cf412df952e913b20d11bde8338a216_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 VM NET_E_27 NET_E_13 NET_E_15 NET_E_5 NET_E_6 NET_E_10 NET_E_8 NET_E_9 NET_E_9 NET_E_14 NET_E_12 NET_E_7 NET_E_1 NET_E_4 NET_E_2 U1
+R1 NET_E_9 NET_E_21 1k
+L1 NET_E_15 NET_E_13 1u
+C1 0 VM 0.01_μ
+R2 0 NET_E_9 1k
+C2 0 VM 100μ
+C3 NET_E_19 NET_E_8 0.47_μ
+L2 NET_E_6 NET_E_5 1u
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅106" 为参数值形态或无效，已回退自动命名） : P_42(C_2)
+* E_2 = NET_E_2（原 netlabel "∅107" 为参数值形态或无效，已回退自动命名） : P_11(C_2)
+* E_3 = VM : P_12(C_2) P_13(C_5) P_14(C_7)
+* E_4 = NET_E_4（原 netlabel "∅108" 为参数值形态或无效，已回退自动命名） : P_15(C_2)
+* E_5 = NET_E_5（原 netlabel "∅109" 为参数值形态或无效，已回退自动命名） : P_16(C_13) P_17(C_2)
+* E_6 = NET_E_6（原 netlabel "∅110" 为参数值形态或无效，已回退自动命名） : P_18(C_13) P_19(C_2)
+* E_7 = NET_E_7（原 netlabel "∅111" 为参数值形态或无效，已回退自动命名） : P_20(C_2)
+* E_8 = NET_E_8（原 netlabel "∅112" 为参数值形态或无效，已回退自动命名） : P_21(C_2) P_22(C_9)
+* E_9 = NET_E_9（原 netlabel "∅113" 为参数值形态或无效，已回退自动命名） : P_23(C_2) P_24(C_2) P_25(C_3) P_26(C_6)
+* E_10 = NET_E_10（原 netlabel "∅114" 为参数值形态或无效，已回退自动命名） : P_1(C_12) P_2(C_2)
+* E_12 = NET_E_12（原 netlabel "∅115" 为参数值形态或无效，已回退自动命名） : P_4(C_2)
+* E_13 = NET_E_13（原 netlabel "∅116" 为参数值形态或无效，已回退自动命名） : P_5(C_2) P_6(C_4)
+* E_14 = NET_E_14（原 netlabel "∅117" 为参数值形态或无效，已回退自动命名） : P_7(C_15) P_8(C_2)
+* E_15 = NET_E_15（原 netlabel "∅118" 为参数值形态或无效，已回退自动命名） : P_9(C_2) P_10(C_4)
+* E_16 = 0 : P_27(C_5) P_28(C_11)
+* E_17 = 0 : P_29(C_6) P_30(C_10)
+* E_18 = 0 : P_31(C_7) P_32(C_8)
+* E_19 = NET_E_19（原 netlabel "∅122" 为参数值形态或无效，已回退自动命名） : P_33(C_9) P_34(C_16)
+* E_20 = 0 : P_35(C_14)
+* E_21 = NET_E_21（原 netlabel "∅124" 为参数值形态或无效，已回退自动命名） : P_3(C_3)
+* E_27 = NET_E_27（原 netlabel "∅125" 为参数值形态或无效，已回退自动命名） : P_41(C_2)
+
+* ---- 待确认项 ----
+* 待人工确认: C_2 designator="U1" value="∅24" type=Box
+* 待人工确认: C_3 designator="R1" value="∅30" type=R
+* 待人工确认: C_4 designator="L1" value="∅37" type=L
+* 待人工确认: C_6 designator="R2" value="∅50" type=R
+* 待人工确认: C_13 designator="L2" value="∅88" type=L
+
+.end

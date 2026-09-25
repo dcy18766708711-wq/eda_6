@@ -1,0 +1,24 @@
+* SPICE netlist generated from 0a10ee693c780a6cd580fb2ab66c6d50d3c04ecbcc91c2431b1412e7900f3ab4_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 0 0 0 0 NC_P_11 NET_E_7 U1
+XU2 NET_E_7 NET_E_8 U2
+C1 0 NET_E_7 0.1_μ
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = 0 : P_1(C_1) P_2(C_11)
+* E_2 = 0 : P_3(C_1) P_4(C_9)
+* E_3 = 0 : P_5(C_1) P_6(C_10)
+* E_4 = 0 : P_7(C_1) P_8(C_7)
+* E_5 = 0 : P_9(C_3) P_10(C_8)
+* E_7 = NET_E_7（原 netlabel "∅63" 为参数值形态或无效，已回退自动命名） : P_12(C_1) P_13(C_2) P_14(C_3)
+* E_8 = NET_E_8（原 netlabel "∅64" 为参数值形态或无效，已回退自动命名） : P_15(C_2) P_16(C_6)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅13" type=Box
+* 未映射类型 Battary（C_2 U2），按 X 子电路输出
+* 待人工确认: C_2 designator="∅20" value="∅19" type=Battary
+
+.end

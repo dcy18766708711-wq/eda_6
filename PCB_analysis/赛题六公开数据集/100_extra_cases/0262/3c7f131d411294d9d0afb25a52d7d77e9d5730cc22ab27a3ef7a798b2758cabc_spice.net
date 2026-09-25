@@ -1,0 +1,53 @@
+* SPICE netlist generated from 3c7f131d411294d9d0afb25a52d7d77e9d5730cc22ab27a3ef7a798b2758cabc_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 NET_E_1 NET_E_3 NET_E_4 NET_E_4 NET_E_6 0 U1
+XU1 NET_E_7 NET_E_6 0 NET_E_23 NET_E_24 NET_E_3 NET_E_10 NET_E_25 U1
+XU2  U2
+XU3  U3
+R1 0 NET_E_7 10_k
+C1 0 NET_E_7 10
+C2 0 NET_E_3 10
+C3 0 NET_E_3 0.1
+C4 NET_E_2 NET_E_10 1n
+C5 0 NET_E_3 1n
+XU4  U4
+C6 NET_E_4 NET_E_9 1n
+R2 NET_E_7 NET_E_19 10_k
+C7 0 NET_E_3 0.1
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅163" 为参数值形态或无效，已回退自动命名） : P_1(C_1) P_2(C_3)
+* E_2 = NET_E_2（原 netlabel "∅164" 为参数值形态或无效，已回退自动命名） : P_5(C_17) P_6(C_31)
+* E_3 = NET_E_3（原 netlabel "∅165" 为参数值形态或无效，已回退自动命名） : P_7(C_1) P_8(C_14) P_9(C_16) P_10(C_18) P_11(C_2) P_12(C_23) P_13(C_32)
+* E_4 = NET_E_4（原 netlabel "∅166" 为参数值形态或无效，已回退自动命名） : P_14(C_1) P_15(C_1) P_16(C_20)
+* E_5 = 0 : P_17(C_2) P_18(C_4)
+* E_6 = NET_E_6（原 netlabel "∅168" 为参数值形态或无效，已回退自动命名） : P_19(C_1) P_20(C_2)
+* E_7 = NET_E_7（原 netlabel "∅169" 为参数值形态或无效，已回退自动命名） : P_21(C_11) P_22(C_13) P_23(C_2) P_24(C_22)
+* E_8 = 0 : P_25(C_11) P_26(C_13) P_27(C_31) P_28(C_8)
+* E_9 = NET_E_9（原 netlabel "∅171" 为参数值形态或无效，已回退自动命名） : P_29(C_20) P_30(C_3)
+* E_10 = NET_E_10（原 netlabel "∅172" 为参数值形态或无效，已回退自动命名） : P_3(C_17) P_4(C_2)
+* E_15 = 0 : P_35(C_14) P_36(C_9)
+* E_17 = 0 : P_38(C_16) P_39(C_12)
+* E_18 = 0 : P_40(C_18) P_41(C_7)
+* E_19 = NET_E_19（原 netlabel "∅176" 为参数值形态或无效，已回退自动命名） : P_42(C_22)
+* E_20 = 0 : P_44(C_23) P_45(C_5)
+* E_21 = 0 : P_46(C_15) P_47(C_1)
+* E_23 = NET_E_23（原 netlabel "∅179" 为参数值形态或无效，已回退自动命名） : P_49(C_2)
+* E_24 = NET_E_24（原 netlabel "∅180" 为参数值形态或无效，已回退自动命名） : P_50(C_2)
+* E_25 = NET_E_25（原 netlabel "∅181" 为参数值形态或无效，已回退自动命名） : P_51(C_2)
+
+* ---- 待确认项 ----
+* 未映射类型 ANT（C_1 U1），按 X 子电路输出
+* 待人工确认: C_1 designator="∅44" value="∅43" type=ANT
+* 待人工确认: C_2 designator="U1" value="∅46" type=Box
+* 待人工确认: C_6 designator="U2" value="∅64" type=Box
+* 待人工确认: C_10 designator="U3" value="∅81" type=Box
+* 待人工确认: C_17 designator="C4" value="∅121" type=C
+* 待人工确认: C_18 designator="C5" value="∅128" type=C
+* 待人工确认: C_19 designator="U4" value="∅131" type=Box
+* 待人工确认: C_20 designator="C6" value="∅137" type=C
+
+.end

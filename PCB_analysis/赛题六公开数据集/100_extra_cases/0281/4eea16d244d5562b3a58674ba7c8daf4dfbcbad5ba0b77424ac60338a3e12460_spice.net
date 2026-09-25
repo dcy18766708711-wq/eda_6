@@ -1,0 +1,27 @@
+* SPICE netlist generated from 4eea16d244d5562b3a58674ba7c8daf4dfbcbad5ba0b77424ac60338a3e12460_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 NET_E_1 NET_E_4 U1
+C1 NET_E_1 with_Line_Headphone 1n
+C2 NET_E_4 with_Line_Headphone 1n
+R1 0 with_Line_Headphone 1k
+R2 with_Line_Headphone 0 1k
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅58" 为参数值形态或无效，已回退自动命名） : P_1(C_1) P_2(C_2)
+* E_2 = with_Line_Headphone : P_3(C_3) P_4(C_5)
+* E_3 = with_Line_Headphone : P_5(C_2) P_6(C_4)
+* E_4 = NET_E_4（原 netlabel "∅59" 为参数值形态或无效，已回退自动命名） : P_7(C_1) P_8(C_3)
+* E_5 = 0 : P_9(C_5) P_10(C_8)
+* E_6 = 0 : P_11(C_4) P_12(C_9)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅20" type=Box
+* 待人工确认: C_2 designator="C1" value="∅26" type=C
+* 待人工确认: C_3 designator="C2" value="∅33" type=C
+* 待人工确认: C_4 designator="R1" value="∅40" type=R
+* 待人工确认: C_5 designator="R2" value="∅47" type=R
+
+.end

@@ -1,0 +1,62 @@
+* SPICE netlist generated from 4f5402510655ff5650234cfcccf7d7d68a4bbf7ba04b3d66e5e19eb5b0a9ae64_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 0 NET_E_24 U1
+XU1 NET_E_1 NET_E_10 NET_E_11 NET_E_14 NET_E_15 NET_E_16 0 0 NET_E_18 NET_E_2 NET_E_3 NET_E_5 0 NET_E_7 NET_E_7 NET_E_9 NET_E_19 NET_E_22 U1
+XU5 0 NET_E_20 U5
+L1 NET_E_9 NET_E_12 33_μH
+C1 NET_E_4 NET_E_2 1_μ
+C2 NET_E_8 NET_E_15 1n
+C3 NET_E_19 NET_E_9 1n
+C4 NET_E_12 NET_E_20 1n
+L2 NET_E_13 NET_E_21 33_H
+C5 NET_E_22 NET_E_10 1n
+C6 NET_E_13 NET_E_24 470_μ
+C7 0 NET_E_16 1n
+C8 NET_E_12 0 1n
+C9 NET_E_14 0 1n
+C10 0 NET_E_13 0.22_F
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅173" 为参数值形态或无效，已回退自动命名） : P_1(C_2) P_2(C_4)
+* E_2 = NET_E_2（原 netlabel "∅174" 为参数值形态或无效，已回退自动命名） : P_28(C_10) P_29(C_4)
+* E_3 = NET_E_3（原 netlabel "∅175" 为参数值形态或无效，已回退自动命名） : P_30(C_3) P_31(C_4)
+* E_4 = NET_E_4（原 netlabel "∅176" 为参数值形态或无效，已回退自动命名） : P_32(C_10) P_33(C_8)
+* E_5 = NET_E_5（原 netlabel "∅177" 为参数值形态或无效，已回退自动命名） : P_34(C_4) P_35(C_6)
+* E_6 = 0 : P_36(C_23) P_37(C_35) P_38(C_4)
+* E_7 = NET_E_7（原 netlabel "∅179" 为参数值形态或无效，已回退自动命名） : P_39(C_31) P_40(C_4) P_41(C_4)
+* E_8 = NET_E_8（原 netlabel "∅180" 为参数值形态或无效，已回退自动命名） : P_42(C_11) P_43(C_7)
+* E_9 = NET_E_9（原 netlabel "∅181" 为参数值形态或无效，已回退自动命名） : P_44(C_12) P_45(C_4) P_46(C_9)
+* E_10 = NET_E_10（原 netlabel "∅182" 为参数值形态或无效，已回退自动命名） : P_3(C_15) P_4(C_4)
+* E_11 = NET_E_11（原 netlabel "∅183" 为参数值形态或无效，已回退自动命名） : P_5(C_33) P_6(C_4)
+* E_12 = NET_E_12（原 netlabel "∅184" 为参数值形态或无效，已回退自动命名） : P_7(C_13) P_8(C_25) P_9(C_9)
+* E_13 = NET_E_13（原 netlabel "∅185" 为参数值形态或无效，已回退自动命名） : P_10(C_14) P_11(C_22) P_12(C_29)
+* E_14 = NET_E_14（原 netlabel "∅186" 为参数值形态或无效，已回退自动命名） : P_13(C_27) P_14(C_4)
+* E_15 = NET_E_15（原 netlabel "∅187" 为参数值形态或无效，已回退自动命名） : P_15(C_11) P_16(C_4)
+* E_16 = NET_E_16（原 netlabel "∅188" 为参数值形态或无效，已回退自动命名） : P_17(C_23) P_18(C_4)
+* E_17 = 0 : P_19(C_1) P_20(C_16) P_21(C_25) P_22(C_29) P_23(C_4) P_24(C_4) P_25(C_5)
+* E_18 = NET_E_18（原 netlabel "∅190" 为参数值形态或无效，已回退自动命名） : P_26(C_34) P_27(C_4)
+* E_19 = NET_E_19（原 netlabel "∅191" 为参数值形态或无效，已回退自动命名） : P_47(C_12) P_48(C_4)
+* E_20 = NET_E_20（原 netlabel "∅192" 为参数值形态或无效，已回退自动命名） : P_49(C_13) P_50(C_5)
+* E_21 = NET_E_21（原 netlabel "∅193" 为参数值形态或无效，已回退自动命名） : P_51(C_14)
+* E_22 = NET_E_22（原 netlabel "∅194" 为参数值形态或无效，已回退自动命名） : P_52(C_15) P_53(C_4)
+* E_23 = 0 : P_54(C_19) P_55(C_27)
+* E_24 = NET_E_24（原 netlabel "∅196" 为参数值形态或无效，已回退自动命名） : P_56(C_22) P_57(C_1)
+
+* ---- 待确认项 ----
+* 未映射类型 Buzzer（C_1 U1），按 X 子电路输出
+* 待人工确认: C_1 designator="∅14" value="∅13" type=Buzzer
+* 待人工确认: C_4 designator="U1" value="∅40" type=Box
+* 未映射类型 Buzzer（C_5 U5），按 X 子电路输出
+* 待人工确认: C_5 designator="∅47" value="∅46" type=Buzzer
+* 待人工确认: C_11 designator="C2" value="∅80" type=C
+* 待人工确认: C_12 designator="C3" value="∅87" type=C
+* 待人工确认: C_13 designator="C4" value="∅94" type=C
+* 待人工确认: C_15 designator="C5" value="∅107" type=C
+* 待人工确认: C_23 designator="C7" value="∅130" type=C
+* 待人工确认: C_25 designator="C8" value="∅137" type=C
+* 待人工确认: C_27 designator="C9" value="∅144" type=C
+
+.end

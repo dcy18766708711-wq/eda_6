@@ -1,0 +1,30 @@
+* SPICE netlist generated from 1d8614944a6bd4e712081c5255fd4aad8ab63d8257225686cb6ad5f902315d3f_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 ADC_VMID IN_ IN_ U1
+XU2 IN_ NET_E_7 NET_E_8 U2
+R1 NET_E_2 NET_E_7 10_k
+R2 ADC_VMID NET_E_6 10_k
+R3 NET_E_7 IN_ 10_k
+R4 0 NET_E_8 10_k
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = 0 : P_2(C_11)
+* E_2 = NET_E_2（原 netlabel "∅61" 为参数值形态或无效，已回退自动命名） : P_3(C_3)
+* E_3 = ADC_VMID : P_4(C_1) P_5(C_4)
+* E_4 = IN_ : P_6(C_1) P_7(C_1)
+* E_5 = IN_ : P_8(C_2) P_9(C_6)
+* E_6 = NET_E_6（原 netlabel "∅62" 为参数值形态或无效，已回退自动命名） : P_10(C_4)
+* E_7 = NET_E_7（原 netlabel "∅63" 为参数值形态或无效，已回退自动命名） : P_11(C_2) P_12(C_3) P_13(C_6)
+* E_8 = NET_E_8（原 netlabel "∅64" 为参数值形态或无效，已回退自动命名） : P_14(C_2) P_15(C_7)
+* E_9 = 0 : P_16(C_13) P_17(C_7)
+
+* ---- 待确认项 ----
+* 未映射类型 ANT（C_1 U1），按 X 子电路输出
+* 待人工确认: C_1 designator="∅16" value="∅15" type=ANT
+* 未映射类型 ANT（C_2 U2），按 X 子电路输出
+* 待人工确认: C_2 designator="∅25" value="∅24" type=ANT
+
+.end

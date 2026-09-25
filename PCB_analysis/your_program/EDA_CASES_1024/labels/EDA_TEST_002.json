@@ -1,0 +1,209 @@
+{
+  "task1": [
+    {
+      "Component": "Sum1",
+      "Pos": [
+        92,
+        126,
+        126,
+        165
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "k1/Tp+1"
+        ]
+      }
+    },
+    {
+      "Component": "k1/Tp+1",
+      "Pos": [
+        196,
+        102,
+        303,
+        186
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "k2/p"
+        ]
+      }
+    },
+    {
+      "Component": "k2/p",
+      "Pos": [
+        332,
+        103,
+        387,
+        186
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Step",
+      "Pos": [
+        461,
+        114,
+        518,
+        170
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum"
+        ]
+      }
+    },
+    {
+      "Component": "Sum",
+      "Pos": [
+        549,
+        124,
+        588,
+        162
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/s+1"
+        ]
+      }
+    },
+    {
+      "Component": "1/s+1",
+      "Pos": [
+        619,
+        111,
+        721,
+        174
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "1/s"
+        ]
+      }
+    },
+    {
+      "Component": "1/s",
+      "Pos": [
+        744,
+        114,
+        798,
+        170
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 4
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Scope",
+          "To Workspace",
+          "Display",
+          "Sum"
+        ]
+      }
+    },
+    {
+      "Component": "Scope",
+      "Pos": [
+        893,
+        114,
+        946,
+        174
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "Display",
+      "Pos": [
+        893,
+        255,
+        1006,
+        312
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "To Workspace",
+      "Pos": [
+        893,
+        185,
+        994,
+        240
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "下图(b)所示的Simulink模型对应的闭环系统（前向路径传递函数为\nG(s)=1/[(s+1)\\cdot s]，单位负反馈）对幅值为1的阶跃输入的响应具有以下哪种特性？",
+      "options": [
+        "A. 稳态误差为1",
+        "B. 最大超调约为16\\\\%",
+        "C. 阻尼比约为0.707",
+        "D. 系统不稳定"
+      ],
+      "answer": "B"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "图(b)所示单位负反馈系统的闭环传递函数为 $T(s)=\\frac{1}{s^2+s+1}$，其单位阶跃响应的第一次峰值出现时间 $t_p=____\\,\\mathrm{s}$。",
+      "answer": "2π/√3"
+    }
+  ]
+}

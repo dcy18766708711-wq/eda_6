@@ -1,0 +1,50 @@
+* SPICE netlist generated from 5c50a8b26177831e9f050534c1a8d517dc8aabbbba9b30d4d0906750bfa22da0_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 Filter_Circuits Filter_Circuits NET_E_9 U1
+XU2 NET_E_1 NET_E_10 Filter_Circuits 0 U2
+XU1 NET_E_5 NET_E_9 U1
+C3 0 NET_E_9 10
+R2 NET_E_4 NET_E_10 1k
+R4 NET_E_10 NET_E_11 1k
+R1 NET_E_5 NET_E_4 1k
+R3 NET_E_4 NET_E_1 1k
+R5 0 NET_E_3 1k
+C1 NET_E_1 NET_E_10 1n
+C2 0 NET_E_4 1n
+C4 NET_E_11 NET_E_3 1n
+XU2 NC_P_34 U2
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅138" 为参数值形态或无效，已回退自动命名） : P_1(C_12) P_2(C_2) P_3(C_8)
+* E_2 = 0 : P_10(C_11) P_11(C_4)
+* E_3 = NET_E_3（原 netlabel "∅140" 为参数值形态或无效，已回退自动命名） : P_12(C_16) P_13(C_9)
+* E_4 = NET_E_4（原 netlabel "∅141" 为参数值形态或无效，已回退自动命名） : P_14(C_14) P_15(C_5) P_16(C_7) P_17(C_8)
+* E_5 = NET_E_5（原 netlabel "∅142" 为参数值形态或无效，已回退自动命名） : P_18(C_3) P_19(C_7)
+* E_6 = Filter_Circuits : P_20(C_1) P_21(C_1) P_22(C_2)
+* E_7 = 0 : P_23(C_14) P_24(C_19)
+* E_8 = 0 : P_25(C_24) P_26(C_9)
+* E_9 = NET_E_9（原 netlabel "∅145" 为参数值形态或无效，已回退自动命名） : P_27(C_1) P_28(C_3) P_29(C_4)
+* E_10 = NET_E_10（原 netlabel "∅146" 为参数值形态或无效，已回退自动命名） : P_4(C_12) P_5(C_2) P_6(C_5) P_7(C_6)
+* E_11 = NET_E_11（原 netlabel "∅147" 为参数值形态或无效，已回退自动命名） : P_8(C_16) P_9(C_6)
+* E_13 = 0 : P_31(C_13) P_32(C_2)
+
+* ---- 待确认项 ----
+* 未映射类型 ANT（C_1 U1），按 X 子电路输出
+* 待人工确认: C_1 designator="∅40" value="∅39" type=ANT
+* 未映射类型 ANT（C_2 U2），按 X 子电路输出
+* 待人工确认: C_2 designator="∅51" value="∅50" type=ANT
+* 待人工确认: C_3 designator="U1" value="∅55" type=Box
+* 待人工确认: C_5 designator="R2" value="∅66" type=R
+* 待人工确认: C_6 designator="R4" value="∅72" type=R
+* 待人工确认: C_7 designator="R1" value="∅78" type=R
+* 待人工确认: C_8 designator="R3" value="∅85" type=R
+* 待人工确认: C_9 designator="R5" value="∅91" type=R
+* 待人工确认: C_12 designator="C1" value="∅102" type=C
+* 待人工确认: C_14 designator="C2" value="∅114" type=C
+* 待人工确认: C_16 designator="C4" value="∅120" type=C
+* 待人工确认: C_26 designator="U2" value="∅135" type=Box
+
+.end

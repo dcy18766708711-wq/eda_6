@@ -1,0 +1,18 @@
+{
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图(b)所示的DC–DC转换器闭环控制系统，从负载电流扰动 $\\hat{i}_{\\mathrm{load}}(s)$ 到输出电压扰动 $\\hat{v}(s)$ 的闭环传递函数应为下列哪一项？",
+      "options": [
+        "A. $\\-dfrac{Z_{out}(s)}{1 + \\dfrac{G_c(s)G_{vd}(s)H(s)}{V_M}}$",
+        "B. $\\dfrac{G_{vd}(s)}{1 + \\dfrac{G_c(s)G_{vd}(s)H(s)}{V_M}}$",
+        "C. $\\dfrac{G_{vg}(s)}{1 + \\dfrac{G_c(s)G_{vd}(s)H(s)}{V_M}}$",
+        "D. $\\-dfrac{Z_{out}(s)}{1 + \\dfrac{G_c(s)G_{vg}(s)H(s)}{V_M}}$"
+      ]
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图(b)所示的电压模式闭环控制系统中，将PWM调制器视为静态增益 $1/V_M$，则参考输入到输出电压的闭环传递函数 $$T_{ref}(s)=\\frac{\\hat v(s)}{\\hat v_{ref}(s)}=\\underline{\\quad}.$$"
+    }
+  ]
+}

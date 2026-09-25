@@ -1,0 +1,174 @@
+{
+  "task1": [
+    {
+      "Component": "Compensator",
+      "Pos": [
+        350,
+        295,
+        457,
+        369
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Pulse-width modulator"
+        ]
+      }
+    },
+    {
+      "Component": "Pulse-width modulator",
+      "Pos": [
+        540,
+        296,
+        654,
+        367
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Gvd(s)"
+        ]
+      }
+    },
+    {
+      "Component": "Gvd(s)",
+      "Pos": [
+        778,
+        294,
+        892,
+        369
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Sum1",
+      "Pos": [
+        214,
+        298,
+        269,
+        361
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Compensator"
+        ]
+      }
+    },
+    {
+      "Component": "Sum2",
+      "Pos": [
+        945,
+        303,
+        1003,
+        360
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "H(s)"
+        ]
+      }
+    },
+    {
+      "Component": "H(s)",
+      "Pos": [
+        539,
+        475,
+        646,
+        552
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum1"
+        ]
+      }
+    },
+    {
+      "Component": "Gvg(s)",
+      "Pos": [
+        776,
+        144,
+        876,
+        217
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    },
+    {
+      "Component": "Zout(s)",
+      "Pos": [
+        922,
+        118,
+        1029,
+        178
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 1
+      },
+      "Connection": {
+        "input": [],
+        "output": [
+          "Sum2"
+        ]
+      }
+    }
+  ],
+  "task2": [
+    {
+      "type": "multiple_choice",
+      "question": "对于图(b)所示的DC–DC转换器闭环控制系统，从负载电流扰动 $\\hat{i}_{\\mathrm{load}}(s)$ 到输出电压扰动 $\\hat{v}(s)$ 的闭环传递函数应为下列哪一项？",
+      "options": [
+        "A. $\\-dfrac{Z_{out}(s)}{1 + \\dfrac{G_c(s)G_{vd}(s)H(s)}{V_M}}$",
+        "B. $\\dfrac{G_{vd}(s)}{1 + \\dfrac{G_c(s)G_{vd}(s)H(s)}{V_M}}$",
+        "C. $\\dfrac{G_{vg}(s)}{1 + \\dfrac{G_c(s)G_{vd}(s)H(s)}{V_M}}$",
+        "D. $\\-dfrac{Z_{out}(s)}{1 + \\dfrac{G_c(s)G_{vg}(s)H(s)}{V_M}}$"
+      ],
+      "answer": "A"
+    },
+    {
+      "type": "fill_in_the_blank",
+      "question": "在图(b)所示的电压模式闭环控制系统中，将PWM调制器视为静态增益 $1/V_M$，则参考输入到输出电压的闭环传递函数 $$T_{ref}(s)=\\frac{\\hat v(s)}{\\hat v_{ref}(s)}=\\underline{\\quad}.$$",
+      "answer": "\\frac{G_c(s)G_{vd}(s)/V_M}{1+G_c(s)G_{vd}(s)H(s)/V_M}"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+* SPICE netlist generated from 06_datasheet_sch_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+X1 NET_E_3 Uo X1
+XU2 Uo NET_E_3 0 U2
+C2 NET_E_3 0 1n
+C1 0 Uo 1n
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = 0 : P_1(C_10) P_2(C_2) P_3(C_3) P_4(C_5)
+* E_2 = Uo : P_5(C_1) P_6(C_2) P_7(C_5)
+* E_3 = NET_E_3（原 netlabel "∅38" 为参数值形态或无效，已回退自动命名） : P_8(C_1) P_9(C_2) P_10(C_3)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="X1" value="∅9" type=Crystal_2Pin
+* 未映射类型 AMP_3Pin（C_2 U2），按 X 子电路输出
+* 待人工确认: C_2 designator="∅18" value="∅17" type=AMP_3Pin
+* 待人工确认: C_3 designator="C2" value="∅24" type=C
+* 待人工确认: C_5 designator="C1" value="∅30" type=C
+
+.end

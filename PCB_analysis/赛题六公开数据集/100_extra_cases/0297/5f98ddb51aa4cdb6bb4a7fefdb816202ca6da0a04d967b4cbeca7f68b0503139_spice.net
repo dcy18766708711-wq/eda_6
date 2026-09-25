@@ -1,0 +1,60 @@
+* SPICE netlist generated from 5f98ddb51aa4cdb6bb4a7fefdb816202ca6da0a04d967b4cbeca7f68b0503139_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 SDA SCL ALERT 0 0 V_ 0 V_ U1
+XU2 SDA SCL ALERT 0 0 0 NET_E_22 U2
+XU3 SDA SCL ALERT 0 0 V_ V_ U3
+XU4 SCL ALERT 0 0 V_ V_ SDA U4
+XU5 SDA SCL ALERT 0 0 V_ V_ V_ U5
+XU6 SDA SCL ALERT 0 V_ NET_E_34 V_ V_ U6
+XU7 SDA SCL ALERT U7
+XU8 SDA SCL ALERT 0 V_ 0 0 V_ U8
+XU9 SDA SCL ALERT 0 V_ V_ U9
+R1 ALERT V_ 5_k
+R2 SCL V_ 1k
+R3 SDA V_ 1k
+C1 0 V_ 0.01_μ
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = SDA : P_1(C_1) P_2(C_2) P_3(C_3) P_4(C_4) P_5(C_5) P_6(C_6) P_7(C_7) P_8(C_76) P_9(C_8) P_10(C_9)
+* E_2 = SCL : P_29(C_3) P_30(C_6) P_31(C_8) P_32(C_9)
+* E_3 = SCL : P_37(C_1) P_38(C_2) P_39(C_4) P_40(C_5) P_41(C_62) P_42(C_7)
+* E_4 = ALERT : P_43(C_1) P_44(C_2) P_45(C_3) P_46(C_4) P_47(C_5) P_48(C_58) P_49(C_6) P_50(C_7) P_51(C_8) P_52(C_9)
+* E_5 = V_ : P_53(C_1) P_54(C_1) P_55(C_3) P_56(C_3) P_57(C_4) P_58(C_4) P_59(C_5) P_60(C_5) P_61(C_58) P_62(C_6) P_63(C_6) P_64(C_6) P_65(C_62) P_66(C_76) P_67(C_79) P_68(C_8) P_69(C_8) P_70(C_9) P_71(C_9) P_94(C_5)
+* E_6 = 0 : P_72(C_4) P_73(C_95)
+* E_7 = 0 : P_74(C_111) P_75(C_2) P_93(C_2)
+* E_9 = 0 : P_77(C_8) P_78(C_99) P_96(C_8)
+* E_10 = 0 : P_11(C_5) P_12(C_67)
+* E_11 = 0 : P_13(C_79) P_14(C_88)
+* E_12 = 0 : P_15(C_102) P_16(C_4)
+* E_13 = 0 : P_17(C_1) P_18(C_115)
+* E_14 = 0 : P_19(C_1) P_20(C_105)
+* E_15 = 0 : P_21(C_106) P_22(C_5)
+* E_16 = 0 : P_23(C_2) P_24(C_75)
+* E_17 = 0 : P_83(C_121) P_25(C_3)
+* E_18 = 0 : P_26(C_112) P_27(C_6)
+* E_19 = 0 : P_28(C_9) P_91(C_98)
+* E_20 = 0 : P_33(C_3) P_34(C_93)
+* E_21 = 0 : P_35(C_119) P_36(C_8)
+* E_22 = NET_E_22（原 netlabel "∅237" 为参数值形态或无效，已回退自动命名） : P_76(C_2)
+* E_24 = 0 : P_80(C_73)
+* E_25 = 0 : P_81(C_83)
+* E_27 = 0 : P_84(C_69) P_85(C_1)
+* E_34 = NET_E_34（原 netlabel "∅241" 为参数值形态或无效，已回退自动命名） : P_95(C_6)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅81" type=Box
+* 待人工确认: C_2 designator="U2" value="∅83" type=Box
+* 待人工确认: C_3 designator="U3" value="∅85" type=Box
+* 待人工确认: C_4 designator="U4" value="∅88" type=Box
+* 待人工确认: C_5 designator="U5" value="∅90" type=Box
+* 待人工确认: C_6 designator="U6" value="∅92" type=Box
+* 待人工确认: C_7 designator="U7" value="∅100" type=Box
+* 待人工确认: C_8 designator="U8" value="∅102" type=Box
+* 待人工确认: C_9 designator="U9" value="∅104" type=Box
+* 待人工确认: C_62 designator="R2" value="∅116" type=R
+* 待人工确认: C_76 designator="R3" value="∅143" type=R
+
+.end

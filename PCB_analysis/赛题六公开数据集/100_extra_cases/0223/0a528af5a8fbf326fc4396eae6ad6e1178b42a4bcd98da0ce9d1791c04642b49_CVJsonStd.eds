@@ -1,0 +1,1302 @@
+(edif JSON_X_0a528af5a8fbf326fc4396eae6ad6e1178b42a4bcd98da0ce9d1791c04642b49_CVJsonStd
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2026 8 3 17 10 26)
+      (author "json-edif.py")
+      (program "Dataset300 JSON to EDIF Converter"
+        (version "1.0")
+      )
+    )
+  )
+  (library JSON_DATASET_LIBRARY
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1 (e 1 -8) (unit DISTANCE))
+        (gridMap 1 1)
+      )
+      (figureGroup BODY_FGP (color 50 0 50))
+      (figureGroup ATTRIBUTE (color 9 25 63) (textHeight 254000))
+      (figureGroup PIN (color 37 37 37))
+      (figureGroup NET (color 12 34 86))
+      (figureGroup LABEL (color 9 25 63) (textHeight 254000))
+      (figureGroup GRAPHICS)
+    )
+    (cell CELL_C_1
+      (cellType GENERIC)
+      (view VIEW_C_1
+        (viewType SCHEMATIC)
+        (interface
+          (designator
+            (stringDisplay "U?"
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 4394200 254000))
+              )
+            )
+          )
+          (property VALUE (string ""))
+          (symbol
+            (boundingBox (rectangle (pt 0 0) (pt 4292600 -1727200)))
+            (figure BODY_FGP (rectangle (pt 0 0) (pt 4292600 -1727200)))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 4394200 254000))
+              )
+            )
+            (propertyDisplay VALUE
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 4394200 0))
+              )
+            )
+          )
+        )
+      )
+    )
+    (cell CELL_C_2
+      (cellType GENERIC)
+      (view VIEW_C_2
+        (viewType SCHEMATIC)
+        (interface
+          (port (rename PORT_P_3 "P_3")
+            (direction INOUT)
+            (designator "1")
+          )
+          (port (rename PORT_P_6 "2.5mV LSB")
+            (direction INOUT)
+            (designator "2")
+          )
+          (port (rename PORT_P_7 "P_7")
+            (direction INOUT)
+            (designator "3")
+          )
+          (port (rename PORT_P_9 "0-2.56V Input")
+            (direction INOUT)
+            (designator "4")
+          )
+          (port (rename PORT_P_10 "10-Bit A/D")
+            (direction INOUT)
+            (designator "5")
+          )
+          (port (rename PORT_P_11 "P_11")
+            (direction INOUT)
+            (designator "6")
+          )
+          (port (rename PORT_P_13 "Range")
+            (direction INOUT)
+            (designator "7")
+          )
+          (designator
+            (stringDisplay "U?"
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 3327400 254000))
+              )
+            )
+          )
+          (property VALUE (string ""))
+          (symbol
+            (boundingBox (rectangle (pt 0 0) (pt 3225800 -10591800)))
+            (figure BODY_FGP (rectangle (pt 0 0) (pt 3225800 -10591800)))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 3327400 254000))
+              )
+            )
+            (propertyDisplay VALUE
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 3327400 0))
+              )
+            )
+            (portImplementation
+              (name PORT_P_3)
+              (connectLocation (figure GRAPHICS (dot (pt -127000 -685800))))
+            )
+            (figure PIN (path (pointList (pt 0 -685800) (pt -127000 -685800))))
+            (portImplementation
+              (name PORT_P_6
+                (display
+                  (figureGroupOverride LABEL
+                    (textHeight 355600)
+                    (userData visibleName (false))
+                    (visible (true))
+                  )
+                  (justify CENTERLEFT)
+                  (orientation R0)
+                  (origin (pt 355600 -2082800))
+                )
+              )
+              (connectLocation (figure GRAPHICS (dot (pt -127000 -2032000))))
+            )
+            (figure PIN (path (pointList (pt 0 -2032000) (pt -127000 -2032000))))
+            (portImplementation
+              (name PORT_P_7)
+              (connectLocation (figure GRAPHICS (dot (pt -127000 -7137400))))
+            )
+            (figure PIN (path (pointList (pt 0 -7137400) (pt -127000 -7137400))))
+            (portImplementation
+              (name PORT_P_9
+                (display
+                  (figureGroupOverride LABEL
+                    (textHeight 408940)
+                    (userData visibleName (false))
+                    (visible (true))
+                  )
+                  (justify CENTERLEFT)
+                  (orientation R0)
+                  (origin (pt 152400 -2667000))
+                )
+              )
+              (connectLocation (figure GRAPHICS (dot (pt -127000 -2717800))))
+            )
+            (figure PIN (path (pointList (pt 0 -2717800) (pt -127000 -2717800))))
+            (portImplementation
+              (name PORT_P_10
+                (display
+                  (figureGroupOverride LABEL
+                    (textHeight 391160)
+                    (userData visibleName (false))
+                    (visible (true))
+                  )
+                  (justify CENTERLEFT)
+                  (orientation R0)
+                  (origin (pt 355600 -838200))
+                )
+              )
+              (connectLocation (figure GRAPHICS (dot (pt -127000 -1371600))))
+            )
+            (figure PIN (path (pointList (pt 0 -1371600) (pt -127000 -1371600))))
+            (portImplementation
+              (name PORT_P_11)
+              (connectLocation (figure GRAPHICS (dot (pt -127000 -4064000))))
+            )
+            (figure PIN (path (pointList (pt 0 -4064000) (pt -127000 -4064000))))
+            (portImplementation
+              (name PORT_P_13
+                (display
+                  (figureGroupOverride LABEL
+                    (textHeight 462280)
+                    (userData visibleName (false))
+                    (visible (true))
+                  )
+                  (justify CENTERLEFT)
+                  (orientation R0)
+                  (origin (pt 889000 -3251200))
+                )
+              )
+              (connectLocation (figure GRAPHICS (dot (pt -127000 -3403600))))
+            )
+            (figure PIN (path (pointList (pt 0 -3403600) (pt -127000 -3403600))))
+          )
+        )
+      )
+    )
+    (cell CELL_C_3
+      (cellType GENERIC)
+      (view VIEW_C_3
+        (viewType SCHEMATIC)
+        (interface
+          (port (rename PORT_P_50 "P_50")
+            (direction INOUT)
+            (designator "1")
+          )
+          (designator
+            (stringDisplay "GND?"
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 1041400 254000))
+              )
+            )
+          )
+          (property VALUE (string ""))
+          (symbol
+            (boundingBox (rectangle (pt 0 0) (pt 939800 -711200)))
+            (figure BODY_FGP (path (pointList (pt 469900 0) (pt 469900 -298704))))
+            (figure BODY_FGP (path (pointList (pt 75184 -298704) (pt 864616 -298704))))
+            (figure BODY_FGP (path (pointList (pt 225552 -440944) (pt 714248 -440944))))
+            (figure BODY_FGP (path (pointList (pt 366522 -583184) (pt 573278 -583184))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 1041400 254000))
+              )
+            )
+            (propertyDisplay VALUE
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 1041400 0))
+              )
+            )
+            (portImplementation
+              (name PORT_P_50)
+              (connectLocation (figure GRAPHICS (dot (pt 482600 76200))))
+            )
+            (figure PIN (path (pointList (pt 482600 0) (pt 482600 76200))))
+          )
+        )
+      )
+    )
+    (cell CELL_C_4
+      (cellType GENERIC)
+      (view VIEW_C_4
+        (viewType SCHEMATIC)
+        (interface
+          (port (rename PORT_P_19 "P_19")
+            (direction INOUT)
+            (designator "1")
+          )
+          (port (rename PORT_P_21 "P_21")
+            (direction INOUT)
+            (designator "2")
+          )
+          (port (rename PORT_P_23 "P_23")
+            (direction INOUT)
+            (designator "3")
+          )
+          (port (rename PORT_P_25 "P_25")
+            (direction INOUT)
+            (designator "4")
+          )
+          (port (rename PORT_P_27 "P_27")
+            (direction INOUT)
+            (designator "5")
+          )
+          (port (rename PORT_P_28 "P_28")
+            (direction INOUT)
+            (designator "6")
+          )
+          (port (rename PORT_P_29 "P_29")
+            (direction INOUT)
+            (designator "7")
+          )
+          (port (rename PORT_P_30 "P_30")
+            (direction INOUT)
+            (designator "8")
+          )
+          (port (rename PORT_P_31 "P_31")
+            (direction INOUT)
+            (designator "9")
+          )
+          (port (rename PORT_P_32 "P_32")
+            (direction INOUT)
+            (designator "10")
+          )
+          (port (rename PORT_P_34 "P_34")
+            (direction INOUT)
+            (designator "11")
+          )
+          (port (rename PORT_P_35 "P_35")
+            (direction INOUT)
+            (designator "12")
+          )
+          (port (rename PORT_P_36 "P_36")
+            (direction INOUT)
+            (designator "13")
+          )
+          (port (rename PORT_P_37 "P_37")
+            (direction INOUT)
+            (designator "14")
+          )
+          (port (rename PORT_P_38 "P_38")
+            (direction INOUT)
+            (designator "15")
+          )
+          (port (rename PORT_P_41 "P_41")
+            (direction INOUT)
+            (designator "16")
+          )
+          (port (rename PORT_P_44 "P_44")
+            (direction INOUT)
+            (designator "17")
+          )
+          (port (rename PORT_P_46 "P_46")
+            (direction INOUT)
+            (designator "18")
+          )
+          (designator
+            (stringDisplay "R?"
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 426720)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 203200 609600))
+              )
+            )
+          )
+          (property VALUE (string ""))
+          (symbol
+            (boundingBox (rectangle (pt 0 0) (pt 1168400 -533400)))
+            (figure BODY_FGP (path (pointList (pt 0 -266700) (pt 210312 -266700) (pt 303784 -106680) (pt 443992 -426720) (pt 584200 -106680) (pt 724408 -426720) (pt 864616 -106680) (pt 958088 -266700) (pt 1168400 -266700))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 426720)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 203200 609600))
+              )
+            )
+            (propertyDisplay VALUE
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 1270000 0))
+              )
+            )
+            (portImplementation
+              (name PORT_P_19)
+              (connectLocation (figure GRAPHICS (dot (pt 1193800 -177800))))
+            )
+            (figure PIN (path (pointList (pt 101600 -177800) (pt 1193800 -177800))))
+            (portImplementation
+              (name PORT_P_21)
+              (connectLocation (figure GRAPHICS (dot (pt -25400 -203200))))
+            )
+            (figure PIN (path (pointList (pt 177800 -203200) (pt -25400 -203200))))
+            (portImplementation
+              (name PORT_P_23)
+              (connectLocation (figure GRAPHICS (dot (pt 1193800 -177800))))
+            )
+            (figure PIN (path (pointList (pt 457200 -177800) (pt 1193800 -177800))))
+            (portImplementation
+              (name PORT_P_25)
+              (connectLocation (figure GRAPHICS (dot (pt -25400 -203200))))
+            )
+            (figure PIN (path (pointList (pt 508000 -203200) (pt -25400 -203200))))
+            (portImplementation
+              (name PORT_P_27)
+              (connectLocation (figure GRAPHICS (dot (pt 812800 25400))))
+            )
+            (figure PIN (path (pointList (pt 812800 -177800) (pt 812800 25400))))
+            (portImplementation
+              (name PORT_P_28)
+              (connectLocation (figure GRAPHICS (dot (pt -25400 -203200))))
+            )
+            (figure PIN (path (pointList (pt 863600 -203200) (pt -25400 -203200))))
+            (portImplementation
+              (name PORT_P_29)
+              (connectLocation (figure GRAPHICS (dot (pt -25400 -228600))))
+            )
+            (figure PIN (path (pointList (pt 558800 -228600) (pt -25400 -228600))))
+            (portImplementation
+              (name PORT_P_30)
+              (connectLocation (figure GRAPHICS (dot (pt -25400 -254000))))
+            )
+            (figure PIN (path (pointList (pt 0 -254000) (pt -25400 -254000))))
+            (portImplementation
+              (name PORT_P_31)
+              (connectLocation (figure GRAPHICS (dot (pt 355600 -558800))))
+            )
+            (figure PIN (path (pointList (pt 355600 -355600) (pt 355600 -558800))))
+            (portImplementation
+              (name PORT_P_32)
+              (connectLocation (figure GRAPHICS (dot (pt 406400 -558800))))
+            )
+            (figure PIN (path (pointList (pt 406400 -304800) (pt 406400 -558800))))
+            (portImplementation
+              (name PORT_P_34)
+              (connectLocation (figure GRAPHICS (dot (pt 685800 -558800))))
+            )
+            (figure PIN (path (pointList (pt 685800 -381000) (pt 685800 -558800))))
+            (portImplementation
+              (name PORT_P_35)
+              (connectLocation (figure GRAPHICS (dot (pt 736600 -558800))))
+            )
+            (figure PIN (path (pointList (pt 736600 -330200) (pt 736600 -558800))))
+            (portImplementation
+              (name PORT_P_36)
+              (connectLocation (figure GRAPHICS (dot (pt 1016000 -558800))))
+            )
+            (figure PIN (path (pointList (pt 1016000 -381000) (pt 1016000 -558800))))
+            (portImplementation
+              (name PORT_P_37)
+              (connectLocation (figure GRAPHICS (dot (pt 1016000 -558800))))
+            )
+            (figure PIN (path (pointList (pt 1016000 -330200) (pt 1016000 -558800))))
+            (portImplementation
+              (name PORT_P_38)
+              (connectLocation (figure GRAPHICS (dot (pt 1193800 -304800))))
+            )
+            (figure PIN (path (pointList (pt 304800 -304800) (pt 1193800 -304800))))
+            (portImplementation
+              (name PORT_P_41)
+              (connectLocation (figure GRAPHICS (dot (pt 1168400 -558800))))
+            )
+            (figure PIN (path (pointList (pt 1168400 -355600) (pt 1168400 -558800))))
+            (portImplementation
+              (name PORT_P_44)
+              (connectLocation (figure GRAPHICS (dot (pt 1193800 -330200))))
+            )
+            (figure PIN (path (pointList (pt 609600 -330200) (pt 1193800 -330200))))
+            (portImplementation
+              (name PORT_P_46)
+              (connectLocation (figure GRAPHICS (dot (pt 1193800 -330200))))
+            )
+            (figure PIN (path (pointList (pt 965200 -330200) (pt 1193800 -330200))))
+          )
+        )
+      )
+    )
+    (cell CELL_C_5
+      (cellType GENERIC)
+      (view VIEW_C_5
+        (viewType SCHEMATIC)
+        (interface
+          (port (rename PORT_P_4 "P_4")
+            (direction INOUT)
+            (designator "1")
+          )
+          (port (rename PORT_P_49 "P_49")
+            (direction INOUT)
+            (designator "2")
+          )
+          (designator
+            (stringDisplay "R?"
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 391160)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt -711200 -355600))
+              )
+            )
+          )
+          (property VALUE (string ""))
+          (symbol
+            (boundingBox (rectangle (pt 0 0) (pt 508000 -1143000)))
+            (figure BODY_FGP (path (pointList (pt 254000 0) (pt 254000 -205740) (pt 101600 -297180) (pt 406400 -434340) (pt 101600 -571500) (pt 406400 -708660) (pt 101600 -845820) (pt 254000 -937260) (pt 254000 -1143000))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 391160)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt -711200 -355600))
+              )
+            )
+            (propertyDisplay VALUE
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 609600 0))
+              )
+            )
+            (portImplementation
+              (name PORT_P_4)
+              (connectLocation (figure GRAPHICS (dot (pt 254000 25400))))
+            )
+            (figure PIN (path (pointList (pt 254000 0) (pt 254000 25400))))
+            (portImplementation
+              (name PORT_P_49)
+              (connectLocation (figure GRAPHICS (dot (pt 254000 -1168400))))
+            )
+            (figure PIN (path (pointList (pt 254000 -1143000) (pt 254000 -1168400))))
+          )
+        )
+      )
+    )
+    (cell CELL_C_6
+      (cellType GENERIC)
+      (view VIEW_C_6
+        (viewType SCHEMATIC)
+        (interface
+          (port (rename PORT_P_8 "P_8")
+            (direction INOUT)
+            (designator "1")
+          )
+          (port (rename PORT_P_12 "P_12")
+            (direction INOUT)
+            (designator "2")
+          )
+          (designator
+            (stringDisplay "R?"
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 408940)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 228600 609600))
+              )
+            )
+          )
+          (property VALUE (string ""))
+          (symbol
+            (boundingBox (rectangle (pt 0 0) (pt 1143000 -533400)))
+            (figure BODY_FGP (path (pointList (pt 0 -266700) (pt 205740 -266700) (pt 297180 -106680) (pt 434340 -426720) (pt 571500 -106680) (pt 708660 -426720) (pt 845820 -106680) (pt 937260 -266700) (pt 1143000 -266700))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 408940)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 228600 609600))
+              )
+            )
+            (propertyDisplay VALUE
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 1244600 0))
+              )
+            )
+            (portImplementation
+              (name PORT_P_8)
+              (connectLocation (figure GRAPHICS (dot (pt 1168400 -279400))))
+            )
+            (figure PIN (path (pointList (pt 1143000 -279400) (pt 1168400 -279400))))
+            (portImplementation
+              (name PORT_P_12)
+              (connectLocation (figure GRAPHICS (dot (pt -25400 -254000))))
+            )
+            (figure PIN (path (pointList (pt 0 -254000) (pt -25400 -254000))))
+          )
+        )
+      )
+    )
+    (cell CELL_C_7
+      (cellType GENERIC)
+      (view VIEW_C_7
+        (viewType SCHEMATIC)
+        (interface
+          (port (rename PORT_P_5 "P_5")
+            (direction INOUT)
+            (designator "1")
+          )
+          (port (rename PORT_P_14 "P_14")
+            (direction INOUT)
+            (designator "2")
+          )
+          (designator
+            (stringDisplay "R?"
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 408940)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 254000 -482600))
+              )
+            )
+          )
+          (property VALUE (string ""))
+          (symbol
+            (boundingBox (rectangle (pt 0 0) (pt 1143000 -508000)))
+            (figure BODY_FGP (path (pointList (pt 0 -254000) (pt 205740 -254000) (pt 297180 -101600) (pt 434340 -406400) (pt 571500 -101600) (pt 708660 -406400) (pt 845820 -101600) (pt 937260 -254000) (pt 1143000 -254000))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 408940)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 254000 -482600))
+              )
+            )
+            (propertyDisplay VALUE
+              (display
+                (figureGroupOverride ATTRIBUTE
+                  (textHeight 254000)
+                  (userData visibleName (false))
+                  (visible (true))
+                )
+                (justify UPPERLEFT)
+                (orientation R0)
+                (origin (pt 1244600 0))
+              )
+            )
+            (portImplementation
+              (name PORT_P_5)
+              (connectLocation (figure GRAPHICS (dot (pt 1168400 -254000))))
+            )
+            (figure PIN (path (pointList (pt 1143000 -254000) (pt 1168400 -254000))))
+            (portImplementation
+              (name PORT_P_14)
+              (connectLocation (figure GRAPHICS (dot (pt -25400 -228600))))
+            )
+            (figure PIN (path (pointList (pt 0 -228600) (pt -25400 -228600))))
+          )
+        )
+      )
+    )
+    (cell JSON_SCHEMATIC
+      (cellType GENERIC)
+      (view SCHEMATIC_VIEW
+        (viewType SCHEMATIC)
+        (interface)
+        (contents
+          (page PAGE_1
+            (pageSize (rectangle (pt 0 0) (pt 14401800 11557000)))
+            (instance (rename INST_C_1 "U1")
+              (viewRef VIEW_C_1 (cellRef CELL_C_1 (libraryRef JSON_DATASET_LIBRARY)))
+              (transform (orientation R0) (origin (pt 6375400 2159000)))
+              (designator
+                (stringDisplay "U1"
+                  (display
+                    (figureGroupOverride ATTRIBUTE
+                      (textHeight 254000)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify UPPERLEFT)
+                    (orientation R0)
+                    (origin (pt 10769600 2413000))
+                  )
+                )
+              )
+              (property VALUE
+                (string
+                  (stringDisplay ""
+                    (display
+                      (figureGroupOverride ATTRIBUTE
+                        (textHeight 254000)
+                        (userData visibleName (false))
+                        (visible (true))
+                      )
+                      (justify UPPERLEFT)
+                      (orientation R0)
+                      (origin (pt 10769600 2159000))
+                    )
+                  )
+                )
+              )
+              (property SOURCE_ID
+                (string (stringDisplay "C_1"))
+              )
+              (property CATEGORY
+                (string (stringDisplay "Box"))
+              )
+              (property CATEGORY_ID
+                (string (stringDisplay "1"))
+              )
+              (property SEARCH_NAME
+                (string (stringDisplay "Temperature Sensor"))
+              )
+            )
+            (instance (rename INST_C_2 "U2")
+              (viewRef VIEW_C_2 (cellRef CELL_C_2 (libraryRef JSON_DATASET_LIBRARY)))
+              (transform (orientation R0) (origin (pt 11150600 10566400)))
+              (designator
+                (stringDisplay "U2"
+                  (display
+                    (figureGroupOverride ATTRIBUTE
+                      (textHeight 254000)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify UPPERLEFT)
+                    (orientation R0)
+                    (origin (pt 14478000 10820400))
+                  )
+                )
+              )
+              (property VALUE
+                (string
+                  (stringDisplay ""
+                    (display
+                      (figureGroupOverride ATTRIBUTE
+                        (textHeight 254000)
+                        (userData visibleName (false))
+                        (visible (true))
+                      )
+                      (justify UPPERLEFT)
+                      (orientation R0)
+                      (origin (pt 14478000 10566400))
+                    )
+                  )
+                )
+              )
+              (property SOURCE_ID
+                (string (stringDisplay "C_2"))
+              )
+              (property CATEGORY
+                (string (stringDisplay "Box"))
+              )
+              (property CATEGORY_ID
+                (string (stringDisplay "1"))
+              )
+              (property SEARCH_NAME
+                (string (stringDisplay "and MUX"))
+              )
+            )
+            (instance (rename INST_C_3 "GND1")
+              (viewRef VIEW_C_3 (cellRef CELL_C_3 (libraryRef JSON_DATASET_LIBRARY)))
+              (transform (orientation R0) (origin (pt 5257800 7772400)))
+              (designator
+                (stringDisplay "GND1"
+                  (display
+                    (figureGroupOverride ATTRIBUTE
+                      (textHeight 254000)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify UPPERLEFT)
+                    (orientation R0)
+                    (origin (pt 6299200 8026400))
+                  )
+                )
+              )
+              (property VALUE
+                (string
+                  (stringDisplay ""
+                    (display
+                      (figureGroupOverride ATTRIBUTE
+                        (textHeight 254000)
+                        (userData visibleName (false))
+                        (visible (true))
+                      )
+                      (justify UPPERLEFT)
+                      (orientation R0)
+                      (origin (pt 6299200 7772400))
+                    )
+                  )
+                )
+              )
+              (property SOURCE_ID
+                (string (stringDisplay "C_3"))
+              )
+              (property CATEGORY
+                (string (stringDisplay "Gnd"))
+              )
+              (property CATEGORY_ID
+                (string (stringDisplay "2"))
+              )
+              (property SEARCH_NAME
+                (string (stringDisplay "Gnd"))
+              )
+            )
+            (instance (rename INST_C_4 "R4")
+              (viewRef VIEW_C_4 (cellRef CELL_C_4 (libraryRef JSON_DATASET_LIBRARY)))
+              (transform (orientation R0) (origin (pt 6680200 4546600)))
+              (designator
+                (stringDisplay "R4"
+                  (display
+                    (figureGroupOverride ATTRIBUTE
+                      (textHeight 426720)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify UPPERLEFT)
+                    (orientation R0)
+                    (origin (pt 6883400 5156200))
+                  )
+                )
+              )
+              (property VALUE
+                (string
+                  (stringDisplay ""
+                    (display
+                      (figureGroupOverride ATTRIBUTE
+                        (textHeight 254000)
+                        (userData visibleName (false))
+                        (visible (true))
+                      )
+                      (justify UPPERLEFT)
+                      (orientation R0)
+                      (origin (pt 7950200 4546600))
+                    )
+                  )
+                )
+              )
+              (property SOURCE_ID
+                (string (stringDisplay "C_4"))
+              )
+              (property CATEGORY
+                (string (stringDisplay "R"))
+              )
+              (property CATEGORY_ID
+                (string (stringDisplay "3"))
+              )
+              (property SEARCH_NAME
+                (string (stringDisplay "R"))
+              )
+            )
+            (instance (rename INST_C_5 "R2")
+              (viewRef VIEW_C_5 (cellRef CELL_C_5 (libraryRef JSON_DATASET_LIBRARY)))
+              (transform (orientation R0) (origin (pt 5486400 9194800)))
+              (designator
+                (stringDisplay "R2"
+                  (display
+                    (figureGroupOverride ATTRIBUTE
+                      (textHeight 391160)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify UPPERLEFT)
+                    (orientation R0)
+                    (origin (pt 4775200 8839200))
+                  )
+                )
+              )
+              (property VALUE
+                (string
+                  (stringDisplay ""
+                    (display
+                      (figureGroupOverride ATTRIBUTE
+                        (textHeight 254000)
+                        (userData visibleName (false))
+                        (visible (true))
+                      )
+                      (justify UPPERLEFT)
+                      (orientation R0)
+                      (origin (pt 6096000 9194800))
+                    )
+                  )
+                )
+              )
+              (property SOURCE_ID
+                (string (stringDisplay "C_5"))
+              )
+              (property CATEGORY
+                (string (stringDisplay "R"))
+              )
+              (property CATEGORY_ID
+                (string (stringDisplay "3"))
+              )
+              (property SEARCH_NAME
+                (string (stringDisplay "R"))
+              )
+            )
+            (instance (rename INST_C_6 "R3")
+              (viewRef VIEW_C_6 (cellRef CELL_C_6 (libraryRef JSON_DATASET_LIBRARY)))
+              (transform (orientation R0) (origin (pt 4038600 3708400)))
+              (designator
+                (stringDisplay "R3"
+                  (display
+                    (figureGroupOverride ATTRIBUTE
+                      (textHeight 408940)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify UPPERLEFT)
+                    (orientation R0)
+                    (origin (pt 4267200 4318000))
+                  )
+                )
+              )
+              (property VALUE
+                (string
+                  (stringDisplay ""
+                    (display
+                      (figureGroupOverride ATTRIBUTE
+                        (textHeight 254000)
+                        (userData visibleName (false))
+                        (visible (true))
+                      )
+                      (justify UPPERLEFT)
+                      (orientation R0)
+                      (origin (pt 5283200 3708400))
+                    )
+                  )
+                )
+              )
+              (property SOURCE_ID
+                (string (stringDisplay "C_6"))
+              )
+              (property CATEGORY
+                (string (stringDisplay "R"))
+              )
+              (property CATEGORY_ID
+                (string (stringDisplay "3"))
+              )
+              (property SEARCH_NAME
+                (string (stringDisplay "R"))
+              )
+            )
+            (instance (rename INST_C_7 "R1")
+              (viewRef VIEW_C_7 (cellRef CELL_C_7 (libraryRef JSON_DATASET_LIBRARY)))
+              (transform (orientation R0) (origin (pt 3937000 10109200)))
+              (designator
+                (stringDisplay "R1"
+                  (display
+                    (figureGroupOverride ATTRIBUTE
+                      (textHeight 408940)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify UPPERLEFT)
+                    (orientation R0)
+                    (origin (pt 4191000 9626600))
+                  )
+                )
+              )
+              (property VALUE
+                (string
+                  (stringDisplay ""
+                    (display
+                      (figureGroupOverride ATTRIBUTE
+                        (textHeight 254000)
+                        (userData visibleName (false))
+                        (visible (true))
+                      )
+                      (justify UPPERLEFT)
+                      (orientation R0)
+                      (origin (pt 5181600 10109200))
+                    )
+                  )
+                )
+              )
+              (property SOURCE_ID
+                (string (stringDisplay "C_7"))
+              )
+              (property CATEGORY
+                (string (stringDisplay "R"))
+              )
+              (property CATEGORY_ID
+                (string (stringDisplay "3"))
+              )
+              (property SEARCH_NAME
+                (string (stringDisplay "R"))
+              )
+            )
+            (net
+              (rename NET_0001
+                (stringDisplay "INO"
+                  (display
+                    (figureGroupOverride LABEL
+                      (textHeight 355600)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify LOWERLEFT)
+                    (orientation R0)
+                    (origin (pt 7264400 10160000))
+                  )
+                )
+              )
+              (joined
+                (portRef PORT_P_3 (instanceRef INST_C_2))
+                (portRef PORT_P_4 (instanceRef INST_C_5))
+                (portRef PORT_P_5 (instanceRef INST_C_7))
+              )
+              (figure NET (path (pointList (pt 5689600 10261600) (pt 5689600 9982200))))
+              (figure NET (path (pointList (pt 5715000 9855200) (pt 5715000 9982200))))
+              (figure NET (path (pointList (pt 5715000 9855200) (pt 5740400 9855200))))
+              (figure NET (path (pointList (pt 5689600 9982200) (pt 5715000 9982200))))
+              (figure NET (path (pointList (pt 10947400 9855200) (pt 5740400 9855200))))
+              (figure NET (path (pointList (pt 11023600 9880600) (pt 10947400 9855200))))
+              (figure NET (path (pointList (pt 5740400 9296400) (pt 5740400 9855200))))
+              (figure NET (path (pointList (pt 5740400 9220200) (pt 5740400 9296400))))
+              (figure NET (path (pointList (pt 5156200 9855200) (pt 5715000 9855200))))
+              (figure NET (path (pointList (pt 5105400 9855200) (pt 5156200 9855200))))
+            )
+            (net
+              (rename NET_0002
+                (stringDisplay "19"
+                  (display
+                    (figureGroupOverride LABEL
+                      (textHeight 373380)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify LOWERLEFT)
+                    (orientation R0)
+                    (origin (pt 8521700 8775700))
+                  )
+                )
+              )
+              (joined
+                (portRef PORT_P_6 (instanceRef INST_C_2))
+              )
+              (figure NET (path (pointList (pt 7721600 8534400) (pt 10998200 8534400))))
+              (figure NET (path (pointList (pt 11023600 8534400) (pt 7721600 8534400))))
+            )
+            (net
+              (rename NET_0003
+                (stringDisplay "18"
+                  (display
+                    (figureGroupOverride LABEL
+                      (textHeight 373380)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify LOWERLEFT)
+                    (orientation R0)
+                    (origin (pt 8521700 8089900))
+                  )
+                )
+              )
+              (joined
+                (portRef PORT_P_9 (instanceRef INST_C_2))
+              )
+              (figure NET (path (pointList (pt 7721600 7848600) (pt 10998200 7848600))))
+              (figure NET (path (pointList (pt 11023600 7848600) (pt 7721600 7848600))))
+            )
+            (net
+              (rename NET_0004
+                (stringDisplay "20"
+                  (display
+                    (figureGroupOverride LABEL
+                      (textHeight 373380)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify LOWERLEFT)
+                    (orientation R0)
+                    (origin (pt 8559800 9486900))
+                  )
+                )
+              )
+              (joined
+                (portRef PORT_P_10 (instanceRef INST_C_2))
+              )
+              (figure NET (path (pointList (pt 7721600 9194800) (pt 10998200 9194800))))
+              (figure NET (path (pointList (pt 11023600 9194800) (pt 7721600 9194800))))
+            )
+            (net
+              (rename NET_0005
+                (stringDisplay "16"
+                  (display
+                    (figureGroupOverride LABEL
+                      (textHeight 373380)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify LOWERLEFT)
+                    (orientation R0)
+                    (origin (pt 8521700 6718300))
+                  )
+                )
+              )
+              (joined
+                (portRef PORT_P_11 (instanceRef INST_C_2))
+              )
+              (figure NET (path (pointList (pt 7721600 6502400) (pt 10998200 6502400))))
+              (figure NET (path (pointList (pt 11023600 6502400) (pt 7721600 6502400))))
+            )
+            (net
+              (rename NET_0006
+                (stringDisplay "Vs"
+                  (display
+                    (figureGroupOverride LABEL
+                      (textHeight 444500)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify LOWERLEFT)
+                    (orientation R0)
+                    (origin (pt 2832100 3390900))
+                  )
+                )
+              )
+              (joined
+                (portRef PORT_P_12 (instanceRef INST_C_6))
+                (portRef PORT_P_14 (instanceRef INST_C_7))
+              )
+              (figure NET (path (pointList (pt 3175000 3454400) (pt 3987800 3454400))))
+              (figure NET (path (pointList (pt 4013200 3454400) (pt 3175000 3454400))))
+              (figure NET (path (pointList (pt 3048000 9880600) (pt 3886200 9880600))))
+              (figure NET (path (pointList (pt 3911600 9880600) (pt 3098800 9880600))))
+              (figure NET (path (pointList (pt 3098800 9880600) (pt 3048000 9880600))))
+            )
+            (net
+              (rename NET_0007
+                (stringDisplay "17"
+                  (display
+                    (figureGroupOverride LABEL
+                      (textHeight 408940)
+                      (userData visibleName (false))
+                      (visible (true))
+                    )
+                    (justify LOWERLEFT)
+                    (orientation R0)
+                    (origin (pt 8509000 7429500))
+                  )
+                )
+              )
+              (joined
+                (portRef PORT_P_13 (instanceRef INST_C_2))
+              )
+              (figure NET (path (pointList (pt 7721600 7162800) (pt 10998200 7162800))))
+              (figure NET (path (pointList (pt 11023600 7162800) (pt 7721600 7162800))))
+            )
+            (net
+              NET_0008
+              (joined
+                (portRef PORT_P_19 (instanceRef INST_C_4))
+                (portRef PORT_P_23 (instanceRef INST_C_4))
+              )
+              (figure NET (path (pointList (pt 7874000 4368800) (pt 8001000 4368800))))
+              (figure NET (path (pointList (pt 7162800 4572000) (pt 7162800 4699000))))
+            )
+            (net
+              NET_0009
+              (joined
+                (portRef PORT_P_27 (instanceRef INST_C_4))
+              )
+              (figure NET (path (pointList (pt 7493000 4572000) (pt 7493000 4699000))))
+            )
+            (net
+              NET_0010
+              (joined
+                (portRef PORT_P_7 (instanceRef INST_C_2))
+                (portRef PORT_P_30 (instanceRef INST_C_4))
+                (portRef PORT_P_8 (instanceRef INST_C_6))
+              )
+              (figure NET (path (pointList (pt 5994400 4267200) (pt 5994400 3429000))))
+              (figure NET (path (pointList (pt 6654800 4343400) (pt 5943600 4343400))))
+              (figure NET (path (pointList (pt 5943600 4343400) (pt 5943600 4267200))))
+              (figure NET (path (pointList (pt 5943600 4267200) (pt 5994400 4267200))))
+              (figure NET (path (pointList (pt 6654800 4318000) (pt 6172200 4318000))))
+              (figure NET (path (pointList (pt 6172200 4318000) (pt 6172200 3429000))))
+              (figure NET (path (pointList (pt 6172200 3429000) (pt 5994400 3429000))))
+              (figure NET (path (pointList (pt 6654800 4216400) (pt 5943600 4216400))))
+              (figure NET (path (pointList (pt 5943600 4216400) (pt 5943600 3429000))))
+              (figure NET (path (pointList (pt 5943600 3429000) (pt 5994400 3429000))))
+              (figure NET (path (pointList (pt 6654800 4292600) (pt 6527800 4292600))))
+              (figure NET (path (pointList (pt 10947400 3429000) (pt 5994400 3429000))))
+              (figure NET (path (pointList (pt 11023600 3429000) (pt 10947400 3429000))))
+              (figure NET (path (pointList (pt 5257800 3429000) (pt 5994400 3429000))))
+              (figure NET (path (pointList (pt 5207000 3429000) (pt 5257800 3429000))))
+            )
+            (net
+              NET_0011
+              (joined
+                (portRef PORT_P_31 (instanceRef INST_C_4))
+                (portRef PORT_P_32 (instanceRef INST_C_4))
+                (portRef PORT_P_36 (instanceRef INST_C_4))
+                (portRef PORT_P_37 (instanceRef INST_C_4))
+                (portRef PORT_P_38 (instanceRef INST_C_4))
+                (portRef PORT_P_44 (instanceRef INST_C_4))
+                (portRef PORT_P_46 (instanceRef INST_C_4))
+              )
+              (figure NET (path (pointList (pt 7874000 4292600) (pt 8001000 4292600))))
+              (figure NET (path (pointList (pt 7086600 3987800) (pt 7086600 3860800))))
+              (figure NET (path (pointList (pt 7874000 4267200) (pt 8001000 4267200))))
+              (figure NET (path (pointList (pt 7696200 3987800) (pt 7696200 3860800))))
+              (figure NET (path (pointList (pt 7874000 4241800) (pt 8001000 4241800))))
+              (figure NET (path (pointList (pt 7035800 3987800) (pt 7035800 3860800))))
+              (figure NET (path (pointList (pt 7061200 4572000) (pt 7061200 4699000))))
+              (figure NET (path (pointList (pt 7874000 4216400) (pt 8001000 4216400))))
+            )
+            (net
+              NET_0012
+              (joined
+                (portRef PORT_P_34 (instanceRef INST_C_4))
+                (portRef PORT_P_35 (instanceRef INST_C_4))
+              )
+              (figure NET (path (pointList (pt 7366000 3987800) (pt 7366000 3860800))))
+              (figure NET (path (pointList (pt 7416800 3987800) (pt 7416800 3860800))))
+            )
+            (net
+              NET_0013
+              (joined
+                (portRef PORT_P_41 (instanceRef INST_C_4))
+              )
+              (figure NET (path (pointList (pt 7848600 3987800) (pt 7848600 3860800))))
+            )
+            (net
+              NET_0014
+              (joined
+                (portRef PORT_P_50 (instanceRef INST_C_3))
+                (portRef PORT_P_49 (instanceRef INST_C_5))
+              )
+              (figure NET (path (pointList (pt 5740400 8026400) (pt 5740400 7848600))))
+            )
+          )
+        )
+      )
+    )
+  )
+  (design (rename JSON_DESIGN "0a528af5a8fbf326fc4396eae6ad6e1178b42a4bcd98da0ce9d1791c04642b49_CVJsonStd")
+    (cellRef JSON_SCHEMATIC (libraryRef JSON_DATASET_LIBRARY))
+  )
+)

@@ -1,0 +1,55 @@
+* SPICE netlist generated from 4acbd3e0a3cb8a2189f3334c7466dcac83bfd052f43d9cc200c37652f8e75199_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 O.S. 0 _Vs NET_E_10 SDA_1 A0_7 A2_5 NET_E_17 U1
+XU2 0 NET_E_14 NET_E_14 NET_E_24 NET_E_3 _Vs O.S. NET_E_7 U2
+R2 0 NET_E_1 10k
+R1 O.S. _Vs 10k
+R5 NET_E_7 NET_E_3 1k
+R3 0 NET_E_8 10k
+R4 0 NET_E_9 10k
+R6 SCL_2 _Vs 1k
+XU17 NET_E_3 U17
+C1 0 NET_E_14 1n
+C3 NET_E_1 NET_E_7 100_n
+C6 0 _Vs 100_n
+C2 NET_E_1 NET_E_8 6.8_n
+C4 NET_E_8 NET_E_9 6.8_n
+C5 NET_E_9 NET_E_3 6.8_n
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅159" 为参数值形态或无效，已回退自动命名） : P_2(C_3) P_3(C_33) P_48(C_26)
+* E_3 = NET_E_3（原 netlabel "∅160" 为参数值形态或无效，已回退自动命名） : P_21(C_17) P_22(C_2) P_23(C_36) P_24(C_6)
+* E_4 = _Vs : P_25(C_1) P_26(C_15) P_27(C_2) P_28(C_30) P_29(C_4)
+* E_5 = O.S. : P_30(C_1) P_31(C_2) P_32(C_4)
+* E_6 = SCL_2 : P_33(C_15)
+* E_7 = NET_E_7（原 netlabel "∅161" 为参数值形态或无效，已回退自动命名） : P_34(C_2) P_35(C_26) P_36(C_6)
+* E_8 = NET_E_8（原 netlabel "∅162" 为参数值形态或无效，已回退自动命名） : P_37(C_33) P_38(C_35) P_39(C_8)
+* E_9 = NET_E_9（原 netlabel "∅163" 为参数值形态或无效，已回退自动命名） : P_40(C_13) P_41(C_35) P_42(C_36)
+* E_10 = NET_E_10（原 netlabel "∅164" 为参数值形态或无效，已回退自动命名） : P_4(C_1)
+* E_11 = SDA_1 : P_5(C_1)
+* E_12 = A0_7 : P_6(C_1)
+* E_13 = 0 : P_7(C_12) P_8(C_2)
+* E_14 = NET_E_14（原 netlabel "∅166" 为参数值形态或无效，已回退自动命名） : P_9(C_2) P_10(C_2) P_11(C_25)
+* E_15 = A2_5 : P_12(C_1)
+* E_16 = 0 : P_13(C_1) P_14(C_28)
+* E_17 = NET_E_17（原 netlabel "∅168" 为参数值形态或无效，已回退自动命名） : P_15(C_1)
+* E_18 = 0 : P_16(C_19) P_17(C_25)
+* E_19 = 0 : P_18(C_3) P_19(C_5)
+* E_20 = 0 : P_43(C_8) P_44(C_9)
+* E_21 = 0 : P_45(C_13) P_46(C_20)
+* E_23 = 0 : P_49(C_30) P_50(C_16)
+* E_24 = NET_E_24（原 netlabel "∅174" 为参数值形态或无效，已回退自动命名） : P_20(C_2)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅39" type=Box
+* 待人工确认: C_2 designator="U2" value="∅50" type=Box
+* 待人工确认: C_6 designator="R5" value="∅72" type=R
+* 待人工确认: C_15 designator="R6" value="∅99" type=R
+* 未映射类型 Buzzer（C_17 U17），按 X 子电路输出
+* 待人工确认: C_17 designator="∅110" value="∅109" type=Buzzer
+* 待人工确认: C_25 designator="C1" value="∅126" type=C
+
+.end

@@ -1,0 +1,97 @@
+* SPICE netlist generated from 1d2064df48420f35f0760020953562afda569a6ddc1608073e2cc97b21d7f7c1_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XU1 NET_E_13 NET_E_1 NET_E_10 NET_E_11 NET_E_12 NET_E_14 NET_E_15 NET_E_16 NET_E_17 NET_E_18 NET_E_19 NET_E_20 0 NET_E_4 NET_E_5 NET_E_7 NET_E_8 NET_E_9 NET_E_24 NET_E_27 0 0 U1
+C2 0 NET_E_19 1n
+C8 NET_E_24 NET_E_4 0.1_μ
+XU4 NET_E_3 NET_E_6 U4
+C5 0 NET_E_18 1n
+C7 0 NET_E_11 1_μ
+C9 NET_E_27 NET_E_5 0.1_μ
+Cf1 0 NET_E_6 1n
+C1 0 NET_E_3 1n
+C10 0 NET_E_19 10_μ
+C6 0 NET_E_1 1_μ
+C11 0 NET_E_15 1n
+C3 0 NET_E_20 1n
+C4 0 NET_E_20 1n
+R1 NET_E_12 NET_E_35 1k
+L1 NET_E_5 NET_E_6 1u
+R2 NET_E_10 NET_E_6 1k
+L2 NET_E_4 NET_E_3 1u
+D1 NET_E_8 NET_E_36 NET_E_49 NET_E_52 DMOD
+R3 NET_E_7 NET_E_6 1k
+R4 NET_E_9 NET_E_37 1k
+R5 NET_E_48 NET_E_49 1k
+R6 NET_E_20 NET_E_15 1k
+R7 NET_E_51 NET_E_52 1k
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅342" 为参数值形态或无效，已回退自动命名） : P_1(C_1) P_2(C_12)
+* E_2 = NET_E_2（原 netlabel "∅343" 为参数值形态或无效，已回退自动命名） : P_29(C_26)
+* E_3 = NET_E_3（原 netlabel "∅344" 为参数值形态或无效，已回退自动命名） : P_37(C_10) P_38(C_19) P_29(C_26) P_39(C_4)
+* E_4 = NET_E_4（原 netlabel "∅345" 为参数值形态或无效，已回退自动命名） : P_40(C_1) P_41(C_19) P_42(C_3)
+* E_5 = NET_E_5（原 netlabel "∅346" 为参数值形态或无效，已回退自动命名） : P_43(C_1) P_44(C_17) P_45(C_7)
+* E_6 = NET_E_6（原 netlabel "∅347" 为参数值形态或无效，已回退自动命名） : P_46(C_17) P_47(C_18) P_29(C_26) P_48(C_4) P_49(C_9)
+* E_7 = NET_E_7（原 netlabel "∅348" 为参数值形态或无效，已回退自动命名） : P_50(C_1) P_51(C_26)
+* E_8 = NET_E_8（原 netlabel "∅349" 为参数值形态或无效，已回退自动命名） : P_52(C_1) P_53(C_22)
+* E_9 = NET_E_9（原 netlabel "∅350" 为参数值形态或无效，已回退自动命名） : P_54(C_1) P_55(C_31) P_56(C_64)
+* E_10 = NET_E_10（原 netlabel "∅351" 为参数值形态或无效，已回退自动命名） : P_3(C_1) P_4(C_18)
+* E_11 = NET_E_11（原 netlabel "∅352" 为参数值形态或无效，已回退自动命名） : P_5(C_1) P_6(C_21) P_7(C_6)
+* E_12 = NET_E_12（原 netlabel "∅353" 为参数值形态或无效，已回退自动命名） : P_8(C_1) P_9(C_16) P_10(C_54)
+* E_13 = NET_E_13（原 netlabel "∅354" 为参数值形态或无效，已回退自动命名） : P_11(C_1) P_12(C_63)
+* E_14 = NET_E_14（原 netlabel "∅355" 为参数值形态或无效，已回退自动命名） : P_13(C_1) P_14(C_58)
+* E_15 = NET_E_15（原 netlabel "∅356" 为参数值形态或无效，已回退自动命名） : P_15(C_1) P_16(C_13) P_17(C_42)
+* E_16 = NET_E_16（原 netlabel "∅357" 为参数值形态或无效，已回退自动命名） : P_18(C_1) P_19(C_55)
+* E_17 = NET_E_17（原 netlabel "∅358" 为参数值形态或无效，已回退自动命名） : P_20(C_1) P_21(C_62)
+* E_18 = NET_E_18（原 netlabel "∅359" 为参数值形态或无效，已回退自动命名） : P_22(C_1) P_23(C_40) P_24(C_5)
+* E_19 = NET_E_19（原 netlabel "∅360" 为参数值形态或无效，已回退自动命名） : P_25(C_1) P_26(C_11) P_27(C_2) P_28(C_59)
+* E_20 = NET_E_20（原 netlabel "∅361" 为参数值形态或无效，已回退自动命名） : P_30(C_1) P_31(C_14) P_32(C_15) P_33(C_42) P_34(C_50)
+* E_21 = 0 : P_35(C_1) P_36(C_49)
+* E_23 = 0 : P_57(C_2) P_58(C_33)
+* E_24 = NET_E_24（原 netlabel "∅364" 为参数值形态或无效，已回退自动命名） : P_59(C_3) P_60(C_1)
+* E_25 = 0 : P_61(C_5) P_62(C_28)
+* E_26 = 0 : P_63(C_6) P_64(C_20)
+* E_27 = NET_E_27（原 netlabel "∅367" 为参数值形态或无效，已回退自动命名） : P_65(C_7) P_66(C_1)
+* E_28 = 0 : P_67(C_9) P_68(C_25)
+* E_29 = 0 : P_69(C_10) P_70(C_53)
+* E_30 = 0 : P_71(C_11) P_72(C_47)
+* E_31 = 0 : P_73(C_12) P_74(C_29)
+* E_32 = 0 : P_75(C_13) P_76(C_27)
+* E_33 = 0 : P_77(C_14) P_78(C_24)
+* E_34 = 0 : P_79(C_15) P_80(C_35)
+* E_35 = NET_E_35（原 netlabel "∅375" 为参数值形态或无效，已回退自动命名） : P_81(C_16) P_82(C_46)
+* E_36 = NET_E_36（原 netlabel "∅376" 为参数值形态或无效，已回退自动命名） : P_83(C_22)
+* E_37 = NET_E_37（原 netlabel "∅377" 为参数值形态或无效，已回退自动命名） : P_84(C_31) P_85(C_45)
+* E_38 = 0 : P_86(C_56) P_87(C_1)
+* E_48 = NET_E_48（原 netlabel "∅379" 为参数值形态或无效，已回退自动命名） : P_97(C_39)
+* E_49 = NET_E_49（原 netlabel "∅380" 为参数值形态或无效，已回退自动命名） : P_98(C_39) P_99(C_22)
+* E_51 = NET_E_51（原 netlabel "∅381" 为参数值形态或无效，已回退自动命名） : P_101(C_48)
+* E_52 = NET_E_52（原 netlabel "∅382" 为参数值形态或无效，已回退自动命名） : P_102(C_48) P_103(C_22)
+* E_55 = 0 : P_106(C_57) P_107(C_1)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="U1" value="∅69" type=Box
+* 待人工确认: C_2 designator="C2" value="∅75" type=C
+* 未映射类型 Buzzer（C_4 U4），按 X 子电路输出
+* 待人工确认: C_4 designator="∅87" value="∅86" type=Buzzer
+* 待人工确认: C_5 designator="C5" value="∅93" type=C
+* 待人工确认: C_9 designator="Cf1" value="∅109" type=C
+* 待人工确认: C_10 designator="C1" value="∅115" type=C
+* 待人工确认: C_13 designator="C11" value="∅133" type=C
+* 待人工确认: C_14 designator="C3" value="∅140" type=C
+* 待人工确认: C_15 designator="C4" value="∅146" type=C
+* 待人工确认: C_16 designator="R1" value="∅152" type=R
+* 待人工确认: C_17 designator="L1" value="∅159" type=L
+* 待人工确认: C_18 designator="R2" value="∅166" type=R
+* 待人工确认: C_19 designator="L2" value="∅173" type=L
+* 待人工确认: C_22 designator="D1" value="∅194" type=LED
+* 待人工确认: C_26 designator="R3" value="∅211" type=R
+* 待人工确认: C_31 designator="R4" value="∅233" type=R
+* 待人工确认: C_39 designator="R5" value="∅250" type=R
+* 待人工确认: C_42 designator="R6" value="∅261" type=R
+* 待人工确认: C_48 designator="R7" value="∅281" type=R
+
+.end

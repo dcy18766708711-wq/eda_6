@@ -1,0 +1,34 @@
+* SPICE netlist generated from 05_datasheet_sch_ParseredJson.json
+* case: reconstructed_hybrid
+.title reconstructed_hybrid
+
+* ---- 元件 ----
+XC2 NET_E_6 NC_P_20 C2
+Q1 NET_E_6 0 NET_E_2 QMOD
+Q2 NET_E_1 0 U0 QMOD
+R1 NET_E_6 NET_E_2 1k
+R4 U0 _5V 1k
+R3 NET_E_1 U0 1k
+R2 NET_E_2 _5V 1k
+C1 NET_E_2 NET_E_1 1n
+
+* ---- 网络对照（edge -> 节点） ----
+* E_1 = NET_E_1（原 netlabel "∅72" 为参数值形态或无效，已回退自动命名） : P_1(C_3) P_2(C_6) P_3(C_8)
+* E_2 = NET_E_2（原 netlabel "∅73" 为参数值形态或无效，已回退自动命名） : P_4(C_2) P_5(C_4) P_6(C_7) P_7(C_8)
+* E_3 = U0 : P_8(C_3) P_9(C_5) P_10(C_6)
+* E_4 = 0 : P_11(C_13) P_12(C_3)
+* E_5 = 0 : P_13(C_12) P_14(C_2)
+* E_6 = NET_E_6（原 netlabel "∅76" 为参数值形态或无效，已回退自动命名） : P_15(C_1) P_16(C_2) P_17(C_4)
+* E_7 = _5V : P_18(C_5) P_19(C_7)
+
+* ---- 待确认项 ----
+* 待人工确认: C_1 designator="C2" value="∅12" type=Crystal_2Pin
+* 待人工确认: C_2 designator="Q1" value="∅20" type=BJT_NPN
+* 待人工确认: C_3 designator="Q2" value="∅29" type=BJT_NPN
+* 待人工确认: C_4 designator="R1" value="∅36" type=R
+* 待人工确认: C_5 designator="R4" value="∅42" type=R
+* 待人工确认: C_6 designator="R3" value="∅48" type=R
+* 待人工确认: C_7 designator="R2" value="∅54" type=R
+* 待人工确认: C_8 designator="C1" value="∅60" type=C
+
+.end
