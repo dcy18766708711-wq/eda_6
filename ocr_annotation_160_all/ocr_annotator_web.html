@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>赛题六 OCR 手工标注</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #202124; color: #e8eaed; font: 14px sans-serif; }
+    #toolbar { height: 52px; min-height: 52px; display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #303134; position: sticky; top: 0; z-index: 2; overflow-x: auto; overflow-y: hidden; }
+    button, select { flex: 0 0 auto; white-space: nowrap; background: #3c4043; color: #fff; border: 1px solid #686b70; border-radius: 4px; padding: 7px 11px; cursor: pointer; }
+    input { flex: 0 0 auto; width: 64px; background: #202124; color: #fff; border: 1px solid #686b70; border-radius: 4px; padding: 7px 6px; }
+    button.active { background: #1769aa; border-color: #69b7ff; }
+    button:hover { background: #505358; }
+    #status { flex: 0 0 auto; min-width: 240px; white-space: nowrap; overflow: visible; text-overflow: clip; }
+    #workspace { height: calc(100vh - 52px); overflow: auto; background: #171717; }
+    #canvas { display: block; background: #fff; transform-origin: top left; }
+    #help { flex: 0 0 auto; color: #aeb4bb; font-size: 12px; white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <div id="toolbar">
+    <button id="prev">上一张</button>
+    <button id="next">下一张</button>
+    <input id="pageInput" type="number" min="1" placeholder="页码" aria-label="跳转页码">
+    <button id="jump">跳转</button>
+    <button id="rect" class="active">矩形框</button>
+    <button id="poly">四点框</button>
+    <button id="auto">整页预标注</button>
+    <button id="edit">修改文字</button>
+    <button id="normalize">空格→_</button>
+    <button id="save">保存</button>
+    <button id="rebuild">重建训练标签</button>
+    <button id="delete">删除选中</button>
+    <button id="fit">适应窗口</button>
+    <span id="status">正在加载...</span>
+    <span id="help">滚轮缩放 | 框选后输入原文 | Ctrl+点击多选 | Delete 批量删除</span>
+  </div>
+  <div id="workspace"><canvas id="canvas"></canvas></div>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const workspace = document.getElementById('workspace');
+    let samples = [], index = 0, data = null, image = new Image();
+    let mode = 'rect', scale = 1, fitScale = 1, start = null, poly = [], selected = null;
+    let selectedTids = new Set();
+    let editMode = null, editItem = null, editIndex = -1, editStart = null, editOriginal = null;
+    let saveChain = Promise.resolve();
+    let navigationBusy = false;
+
+    async function getJson(url) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(await response.text());
+      return response.json();
+    }
+
+    function setStatus(text) { document.getElementById('status').textContent = text; }
+    function updateStatus(extra='') {
+      const s = samples[index] || {};
+      setStatus(`${index + 1}/${samples.length}  case=${s.case_id || ''}  已标注=${Object.keys(data?.texts || {}).length}  ${extra}`);
+    }
+
+    function pointsFor(item) { return item.points_top_left || item.points || []; }
+    function draw() {
+      if (!image.complete) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(image, 0, 0, image.naturalWidth * scale, image.naturalHeight * scale);
+      for (const item of Object.values(data?.texts || {})) {
+        const pts = pointsFor(item).map(p => [p[0] * scale, p[1] * scale]);
+        if (!pts.length) continue;
+        ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]);
+        for (const p of pts.slice(1)) ctx.lineTo(p[0], p[1]);
+        ctx.closePath();
+        const isSelected = selectedTids.has(item.tid);
+        const isPrimary = item.tid === selected;
+        ctx.strokeStyle = isSelected ? '#00e676' : '#00aaff';
+        ctx.lineWidth = 2; ctx.stroke();
+        // Keep ordinary labels compact; enlarge only the current primary selection.
+        const fontSize = isPrimary
+          ? Math.max(18, Math.min(32, 22 * scale))
+          : Math.max(7, Math.min(12, 9 * scale));
+        // Keep the internal T_N id and the separator before OCR text unchanged.
+        const label = isPrimary ? `${item.tid} ${item.content}` : item.tid;
+        ctx.font = isPrimary ? `bold ${fontSize}px sans-serif` : `${fontSize}px sans-serif`;
+        const labelX = pts[0][0] + 3;
+        const labelY = Math.max(fontSize + 3, pts[0][1] - 5);
+        if (isPrimary) {
+          const width = ctx.measureText(label).width + 8;
+          ctx.fillStyle = 'rgba(0, 0, 0, 0.72)';
+          ctx.fillRect(labelX - 3, labelY - fontSize - 3, width, fontSize + 7);
+        }
+        ctx.fillStyle = ctx.strokeStyle;
+        ctx.fillText(label, labelX, labelY);
+        if (isSelected) {
+          for (const p of pts) {
+            ctx.fillStyle = '#00e676';
+            ctx.fillRect(p[0] - 4, p[1] - 4, 8, 8);
+          }
+        }
+      }
+      if (poly.length) {
+        ctx.beginPath(); ctx.moveTo(poly[0][0] * scale, poly[0][1] * scale);
+        for (const p of poly.slice(1)) ctx.lineTo(p[0] * scale, p[1] * scale);
+        // Close the preview polygon so the fourth edge is visible before OCR confirmation.
+        ctx.closePath();
+        ctx.strokeStyle = '#ffcc00'; ctx.lineWidth = 2; ctx.stroke();
+        for (const p of poly) { ctx.beginPath(); ctx.arc(p[0] * scale, p[1] * scale, 4, 0, Math.PI * 2); ctx.fillStyle = '#ffcc00'; ctx.fill(); }
+      }
+    }
+
+    function resizeCanvas() {
+      if (!image.naturalWidth) return;
+      const availableW = Math.max(300, workspace.clientWidth - 20);
+      const availableH = Math.max(300, workspace.clientHeight - 20);
+      fitScale = Math.min(availableW / image.naturalWidth, availableH / image.naturalHeight, 1);
+      if (!scale || scale === fitScale) scale = fitScale;
+      canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
+      canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+      draw();
+    }
+
+    function canvasPoint(event) {
+      const rect = canvas.getBoundingClientRect();
+      return [Math.max(0, Math.min(image.naturalWidth, (event.clientX - rect.left) / scale)),
+              Math.max(0, Math.min(image.naturalHeight, (event.clientY - rect.top) / scale))];
+    }
+
+    function hit(point) {
+      const items = Object.values(data?.texts || {});
+      for (let i = items.length - 1; i >= 0; i--) {
+        const pts = pointsFor(items[i]);
+        const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+        if (point[0] >= Math.min(...xs) && point[0] <= Math.max(...xs) && point[1] >= Math.min(...ys) && point[1] <= Math.max(...ys)) return items[i];
+      }
+      return null;
+    }
+
+    function cornerHit(point, item) {
+      const pts = pointsFor(item);
+      const radius = Math.max(8 / scale, 5);
+      for (let i = 0; i < pts.length; i++) {
+        const dx = point[0] - pts[i][0], dy = point[1] - pts[i][1];
+        if (dx * dx + dy * dy <= radius * radius) return i;
+      }
+      return -1;
+    }
+
+    function setManual(item) {
+      if (item) item.source = 'manual';
+    }
+
+    async function askText(points) {
+      let guess = '';
+      try {
+        setStatus(`${index + 1}/${samples.length}  case=${samples[index].case_id}  正在 OCR 识别...`);
+        const response = await fetch('/api/recognize', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({case_id:samples[index].case_id, points_top_left:points})});
+        if (response.ok) guess = (await response.json()).text || '';
+      } catch (_) {}
+      const content = window.prompt('请核对并修改文字（严格区分大小写，不要输入 pin_ 前缀）：', guess);
+      if (content === null || content === '') { poly = []; draw(); return; }
+      const usedTids = new Set(Object.keys(data.texts || {}));
+      let n = 1;
+      while (usedTids.has(`T_${n}`)) n += 1;
+      data.texts[`T_${n}`] = { tid: `T_${n}`, content, source: 'manual', points_top_left: points.map(p => [Number(p[0].toFixed(2)), Number(p[1].toFixed(2))]) };
+      poly = []; selected = `T_${n}`; selectedTids = new Set([selected]); draw(); await save(false);
+    }
+
+    async function editSelectedText() {
+      if (!selected || !data?.texts?.[selected]) return;
+      const item = data.texts[selected];
+      const content = window.prompt('请核对并修改原文（严格区分大小写）：', item.content || '');
+      if (content === null || content === '') return;
+      item.content = content;
+      setManual(item);
+      draw();
+      await save(false);
+    }
+
+    function finishEdit() {
+      if (!editMode || !editItem) return false;
+      setManual(editItem);
+      editMode = null; editItem = null; editIndex = -1; editStart = null; editOriginal = null;
+      draw(); save(false);
+      return true;
+    }
+
+    canvas.addEventListener('mousedown', event => {
+      if (event.button !== 0) return;
+      const p = canvasPoint(event), old = hit(p);
+      if (old) {
+        if (event.ctrlKey || event.metaKey) {
+          if (selectedTids.has(old.tid)) selectedTids.delete(old.tid);
+          else selectedTids.add(old.tid);
+          const current = [...selectedTids];
+          selected = current.length ? current[current.length - 1] : null;
+          editMode = null; editItem = null; editIndex = -1; editStart = null; editOriginal = null;
+          draw();
+          updateStatus(selectedTids.size ? `已选中 ${selectedTids.size} 个框，可继续 Ctrl+点击或删除` : '已取消选择');
+          return;
+        }
+        selectedTids = new Set([old.tid]);
+        selected = old.tid;
+        const handle = cornerHit(p, old);
+        editItem = old;
+        editStart = p;
+        editOriginal = pointsFor(old).map(point => [point[0], point[1]]);
+        editIndex = handle;
+        editMode = handle >= 0 ? 'resize' : 'move';
+        draw();
+        updateStatus(`已选中 ${old.tid}，可拖动框或角点调整`);
+        return;
+      }
+      if (mode === 'poly') { poly.push(p); draw(); if (poly.length === 4) askText(poly); }
+      else start = p;
+    });
+    canvas.addEventListener('mousemove', event => {
+      if (editMode && editItem) {
+        const p = canvasPoint(event);
+        if (editMode === 'move') {
+          const dx = p[0] - editStart[0], dy = p[1] - editStart[1];
+          editItem.points_top_left = editOriginal.map(point => [
+            Math.max(0, Math.min(image.naturalWidth, point[0] + dx)),
+            Math.max(0, Math.min(image.naturalHeight, point[1] + dy))
+          ]);
+        } else if (editMode === 'resize') {
+          const points = editItem.points_top_left || editItem.points;
+          points[editIndex] = [p[0], p[1]];
+          editItem.points_top_left = points;
+        }
+        draw();
+        return;
+      }
+      if (!start || mode !== 'rect') return;
+      draw(); const p = canvasPoint(event);
+      ctx.strokeStyle = '#ffcc00'; ctx.lineWidth = 2; ctx.strokeRect(start[0] * scale, start[1] * scale, (p[0] - start[0]) * scale, (p[1] - start[1]) * scale);
+    });
+    canvas.addEventListener('mouseup', event => {
+      if (editMode) { finishEdit(); return; }
+      if (!start || mode !== 'rect') return;
+      const p = canvasPoint(event), x1 = Math.min(start[0], p[0]), x2 = Math.max(start[0], p[0]), y1 = Math.min(start[1], p[1]), y2 = Math.max(start[1], p[1]);
+      start = null; if (x2 - x1 >= 3 && y2 - y1 >= 3) askText([[x1,y1],[x2,y1],[x2,y2],[x1,y2]]); else draw();
+    });
+    canvas.addEventListener('dblclick', event => {
+      const item = hit(canvasPoint(event));
+      if (!item) return;
+      selected = item.tid;
+      draw();
+      editSelectedText();
+    });
+    canvas.addEventListener('contextmenu', event => { event.preventDefault(); start = null; poly = []; draw(); });
+    canvas.addEventListener('wheel', event => { event.preventDefault(); scale = Math.max(fitScale, Math.min(8, scale * (event.deltaY < 0 ? 1.2 : 1 / 1.2))); resizeCanvas(); }, {passive:false});
+
+    async function load() {
+      data = await getJson(`/api/annotation?case=${samples[index].case_id}`);
+      document.getElementById('pageInput').value = index + 1;
+      image = new Image(); image.onload = () => { scale = 0; resizeCanvas(); updateStatus(); }; image.src = samples[index].image;
+      selected = null; selectedTids = new Set(); poly = [];
+      editMode = null; editItem = null; editIndex = -1; editStart = null; editOriginal = null;
+    }
+    async function save(rebuildTrainingFiles = false) {
+      if (!data || !samples[index]) return;
+      const caseId = samples[index].case_id;
+      // Snapshot this version. Later annotations must not be lost while this request is pending.
+      const texts = JSON.parse(JSON.stringify(data.texts || {}));
+      const preannotation = data.preannotation || null;
+      const request = async () => {
+        const response = await fetch('/api/save', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({case_id: caseId, texts, preannotation, rebuild_training_files: rebuildTrainingFiles})
+        });
+        if (!response.ok) throw new Error(await response.text());
+        await response.json();
+        // Do not replace local data with the older server response. The local canvas may
+        // already contain a newer annotation created while this request was in flight.
+        if (samples[index]?.case_id === caseId) updateStatus('已保存');
+      };
+      saveChain = saveChain.then(request, request).catch(error => {
+        alert(`保存失败：${error.message}`);
+      });
+      return saveChain;
+    }
+    function setNavigationBusy(busy) {
+      navigationBusy = busy;
+      document.getElementById('prev').disabled = busy;
+      document.getElementById('next').disabled = busy;
+      document.getElementById('pageInput').disabled = busy;
+      document.getElementById('jump').disabled = busy;
+      document.getElementById('save').disabled = busy;
+      document.getElementById('rebuild').disabled = busy;
+      document.getElementById('auto').disabled = busy;
+      document.getElementById('edit').disabled = busy;
+      document.getElementById('normalize').disabled = busy;
+      document.getElementById('delete').disabled = busy;
+    }
+
+    async function normalizeSpaces() {
+      if (navigationBusy || !data?.texts) return;
+      let changed = 0;
+      for (const item of Object.values(data.texts)) {
+        const oldContent = String(item.content || '');
+        const newContent = oldContent.replace(/ /g, '_');
+        if (newContent !== oldContent) {
+          item.content = newContent;
+          item.source = 'manual';
+          changed += 1;
+        }
+      }
+      if (!changed) {
+        updateStatus('当前页面没有需要替换的空格');
+        return;
+      }
+      draw();
+      await save(false);
+      updateStatus(`已将 ${changed} 个文本框中的空格替换为下划线`);
+    }
+
+    async function autoAnnotate() {
+      if (navigationBusy) return;
+      setNavigationBusy(true);
+      setStatus(`${index + 1}/${samples.length}  正在进行整页 medium OCR，首次可能需要加载模型...`);
+      try {
+        const response = await fetch('/api/auto_annotate', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({case_id: samples[index].case_id})
+        });
+        if (!response.ok) throw new Error(await response.text());
+        data = await response.json();
+        selected = null; selectedTids = new Set(); poly = [];
+        draw();
+        updateStatus(data.preannotation?.status === 'completed' ? '整页预标注已完成（再次点击将直接读取缓存）' : '整页预标注完成，请人工核对');
+      } catch (error) {
+        alert(`整页预标注失败：${error.message}`);
+      } finally {
+        setNavigationBusy(false);
+      }
+    }
+    async function changeSample(step) {
+      if (navigationBusy) return;
+      if ((step > 0 && index >= samples.length - 1) || (step < 0 && index <= 0)) return;
+      setNavigationBusy(true);
+      try {
+        setStatus(`${index + 1}/${samples.length}  正在保存并切换...`);
+        await save(false);
+        index += step;
+        await load();
+      } finally {
+        setNavigationBusy(false);
+      }
+    }
+
+    async function jumpToSample() {
+      if (navigationBusy || !samples.length) return;
+      const input = document.getElementById('pageInput');
+      const target = Number.parseInt(input.value, 10);
+      if (!Number.isInteger(target) || target < 1 || target > samples.length) {
+        alert(`请输入 1 到 ${samples.length} 之间的页码`);
+        input.focus();
+        return;
+      }
+      const targetIndex = target - 1;
+      if (targetIndex === index) return;
+      setNavigationBusy(true);
+      try {
+        setStatus(`${index + 1}/${samples.length}  正在保存并跳转...`);
+        await save(false);
+        index = targetIndex;
+        await load();
+      } finally {
+        setNavigationBusy(false);
+      }
+    }
+
+    async function rebuildTrainingFiles() {
+      if (navigationBusy) return;
+      setNavigationBusy(true);
+      setStatus('正在重建 OCR 训练标签，请稍候...');
+      try {
+        const response = await fetch('/api/rebuild', {method:'POST'});
+        if (!response.ok) throw new Error(await response.text());
+        await response.json();
+        updateStatus('OCR 训练标签已重建');
+      } catch (error) {
+        alert(`重建失败：${error.message}`);
+      } finally {
+        setNavigationBusy(false);
+      }
+    }
+    function setMode(next) { mode = next; document.getElementById('rect').classList.toggle('active', mode === 'rect'); document.getElementById('poly').classList.toggle('active', mode === 'poly'); start = null; poly = []; draw(); }
+    document.getElementById('rect').onclick = () => setMode('rect');
+    document.getElementById('poly').onclick = () => setMode('poly');
+    document.getElementById('auto').onclick = autoAnnotate;
+    document.getElementById('edit').onclick = editSelectedText;
+    document.getElementById('normalize').onclick = normalizeSpaces;
+    document.getElementById('save').onclick = () => save(false);
+    document.getElementById('rebuild').onclick = rebuildTrainingFiles;
+    document.getElementById('fit').onclick = () => { scale = 0; resizeCanvas(); };
+    document.getElementById('delete').onclick = () => {
+      const tids = selectedTids.size ? [...selectedTids] : (selected ? [selected] : []);
+      if (!tids.length) return;
+      for (const tid of tids) delete data.texts[tid];
+      selected = null;
+      selectedTids = new Set();
+      draw();
+      updateStatus(`已删除 ${tids.length} 个框`);
+      save(false);
+    };
+    document.getElementById('next').onclick = () => changeSample(1);
+    document.getElementById('prev').onclick = () => changeSample(-1);
+    document.getElementById('jump').onclick = jumpToSample;
+    document.getElementById('pageInput').addEventListener('keydown', event => {
+      if (event.key === 'Enter') jumpToSample();
+    });
+    document.addEventListener('keydown', event => { if (event.key === 'Delete') document.getElementById('delete').click(); if (event.key.toLowerCase() === 'r') setMode('rect'); if (event.key.toLowerCase() === 'p') setMode('poly'); if (event.key.toLowerCase() === 'n') document.getElementById('next').click(); });
+    window.addEventListener('resize', () => { if (scale <= fitScale * 1.01) { scale = 0; resizeCanvas(); } });
+    (async () => { try { samples = await getJson('/api/samples'); await load(); } catch (e) { alert(e); } })();
+  </script>
+</body>
+</html>
