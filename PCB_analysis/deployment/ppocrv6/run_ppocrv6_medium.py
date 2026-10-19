@@ -48,6 +48,37 @@ def result_field(result: Any, field: str, default: Any) -> Any:
     return default
 
 
+def create_ocr(
+    det_model_dir: Path = DEFAULT_DET_MODEL_DIR,
+    rec_model_dir: Path = DEFAULT_REC_MODEL_DIR,
+    device: str = "gpu:0",
+    box_thresh: float = 0.30,
+    rec_score_thresh: float = 0.0,
+    limit_side_len: int = 4000,
+    textline_orientation: bool = True,
+) -> Any:
+    """Create one reusable PP-OCRv6 instance for an integrated pipeline."""
+    os.environ.setdefault("PADDLE_PDX_CACHE_HOME", str(DEFAULT_CACHE_DIR))
+
+    from paddleocr import PaddleOCR
+
+    ocr_kwargs = {
+        "use_doc_orientation_classify": False,
+        "use_doc_unwarping": False,
+        "use_textline_orientation": textline_orientation,
+        "text_det_limit_side_len": limit_side_len,
+        "text_det_limit_type": "max",
+        "text_det_box_thresh": box_thresh,
+        "text_rec_score_thresh": rec_score_thresh,
+        "device": device,
+        "enable_mkldnn": False,
+        "engine": "paddle",
+        "text_detection_model_dir": str(det_model_dir.resolve()),
+        "text_recognition_model_dir": str(rec_model_dir.resolve()),
+    }
+    return PaddleOCR(**ocr_kwargs)
+
+
 def run_one(ocr: Any, image_path: Path, output_dir: Path) -> None:
     case = image_path.stem
     case_dir = output_dir / case
@@ -128,28 +159,15 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    # Keep downloaded PP-OCR/PaddleX models inside this project directory.
-    os.environ.setdefault("PADDLE_PDX_CACHE_HOME", str(DEFAULT_CACHE_DIR))
-
-    from paddleocr import PaddleOCR
-
-    ocr_kwargs = {
-        "use_doc_orientation_classify": False,
-        "use_doc_unwarping": False,
-        "use_textline_orientation": args.textline_orientation,
-        "text_det_limit_side_len": args.limit_side_len,
-        "text_det_limit_type": "max",
-        "text_det_box_thresh": args.box_thresh,
-        "text_rec_score_thresh": args.rec_score_thresh,
-        "device": args.device,
-        # Paddle's OneDNN path currently fails on this PP-OCRv6 CPU setup.
-        # Disabling it keeps CPU inference on the standard Paddle backend.
-        "enable_mkldnn": False,
-        "engine": "paddle",
-    }
-    ocr_kwargs["text_detection_model_dir"] = str(args.det_model_dir.resolve())
-    ocr_kwargs["text_recognition_model_dir"] = str(args.rec_model_dir.resolve())
-    ocr = PaddleOCR(**ocr_kwargs)
+    ocr = create_ocr(
+        det_model_dir=args.det_model_dir,
+        rec_model_dir=args.rec_model_dir,
+        device=args.device,
+        box_thresh=args.box_thresh,
+        rec_score_thresh=args.rec_score_thresh,
+        limit_side_len=args.limit_side_len,
+        textline_orientation=args.textline_orientation,
+    )
 
     if args.image:
         images = [args.image]

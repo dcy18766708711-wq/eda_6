@@ -15,8 +15,17 @@ package; the Python environment itself is not included.
 
 ## Install the runtime
 
-Create a Python environment on the target computer and install PaddleOCR 3.x
-with exactly one matching PaddlePaddle CPU or GPU build:
+Create a Python environment on the target computer. For the integrated
+YOLO+OCR CPU pipeline, use the parent deployment dependency file so that the
+ONNX Runtime, PaddlePaddle and CPU PyTorch compatibility versions are installed
+together:
+
+```bash
+python -m pip install -r ../requirements-cpu.txt
+```
+
+For OCR-only use, install PaddleOCR 3.x with exactly one matching PaddlePaddle
+CPU or GPU build:
 
 ```bash
 python -m pip install -r requirements.txt

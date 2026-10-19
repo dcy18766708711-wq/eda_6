@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 
 import cv2
+import numpy as np
 import onnxruntime as ort
 
 from onnx_postprocess import decode_predictions, preprocess
@@ -33,13 +34,21 @@ def providers(device: str) -> list[str]:
     return ["CPUExecutionProvider"]
 
 
+def read_image(path: Path) -> np.ndarray | None:
+    """Read Unicode paths reliably on Windows."""
+    data = np.fromfile(str(path), dtype=np.uint8)
+    if data.size == 0:
+        return None
+    return cv2.imdecode(data, cv2.IMREAD_COLOR)
+
+
 def main() -> None:
     args = parse_args()
     names = json.loads(args.classes.read_text(encoding="utf-8"))
     session = ort.InferenceSession(str(args.model), providers=providers(args.device))
     input_name = session.get_inputs()[0].name
     for image_path in args.image:
-        image = cv2.imread(str(image_path), cv2.IMREAD_COLOR)
+        image = read_image(image_path)
         if image is None:
             raise FileNotFoundError(image_path)
         tensor, ratio, padding = preprocess(image, args.imgsz)

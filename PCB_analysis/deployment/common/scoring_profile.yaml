@@ -1,0 +1,12 @@
+# Problem 6 protocol/scoring defaults. Keep evaluator-sensitive rules here.
+coordinate_system: bottom_left
+component_bbox_format: xyxy
+component_bbox_tolerance_px: 20
+pin_point_tolerance_px: 5
+edge_point_tolerance_px: 5
+edge_format: two_points
+components_field: components
+pins_field: pins
+nets_field: nets
+power_net_mode: official_latest
+official_type_list_source: deployment/configs/type_list.md

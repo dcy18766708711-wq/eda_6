@@ -74,6 +74,7 @@ def decode_predictions(
     original_shape: tuple[int, int],
     class_names: dict[str, str],
     confidence_threshold: float = 0.25,
+    class_confidence_thresholds: dict[str, float] | None = None,
     iou_threshold: float = 0.7,
     max_det: int = 300,
 ) -> list[dict[str, Any]]:
@@ -83,7 +84,15 @@ def decode_predictions(
     class_scores = prediction[:, 4:]
     class_ids = np.argmax(class_scores, axis=1).astype(np.int64)
     scores = class_scores[np.arange(len(class_scores)), class_ids]
-    keep = scores >= confidence_threshold
+    thresholds = np.full(scores.shape, float(confidence_threshold), dtype=np.float32)
+    if class_confidence_thresholds:
+        for class_id, class_name in class_names.items():
+            try:
+                threshold = float(class_confidence_thresholds.get(str(class_name).lower(), confidence_threshold))
+            except (TypeError, ValueError):
+                threshold = float(confidence_threshold)
+            thresholds[class_ids == int(class_id)] = threshold
+    keep = scores >= thresholds
     boxes, scores, class_ids = boxes[keep], scores[keep], class_ids[keep]
     if not len(boxes):
         return []
@@ -108,3 +117,69 @@ def decode_predictions(
             }
         )
     return result
+
+
+def _box_iou_lists(left: list[float], right: list[float]) -> float:
+    """IoU for two xyxy boxes in the same image coordinate frame."""
+    ix1 = max(float(left[0]), float(right[0]))
+    iy1 = max(float(left[1]), float(right[1]))
+    ix2 = min(float(left[2]), float(right[2]))
+    iy2 = min(float(left[3]), float(right[3]))
+    intersection = max(0.0, ix2 - ix1) * max(0.0, iy2 - iy1)
+    left_area = max(0.0, float(left[2]) - float(left[0])) * max(0.0, float(left[3]) - float(left[1]))
+    right_area = max(0.0, float(right[2]) - float(right[0])) * max(0.0, float(right[3]) - float(right[1]))
+    return intersection / max(1e-9, left_area + right_area - intersection)
+
+
+def weighted_box_fusion(
+    detections: list[dict[str, Any]],
+    *,
+    iou_threshold: float = 0.55,
+    max_det: int = 300,
+) -> list[dict[str, Any]]:
+    """Fuse overlapping detections of the same class from full/tile views.
+
+    This is deliberately class-aware and confidence-weighted.  It is used
+    only after each view has run its own NMS, so a tile cannot suppress a
+    different class or a distant object.  Every fused record retains the
+    candidate IDs and source regions for auditability.
+    """
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for detection in detections:
+        class_name = str(detection.get("class_name", "")).lower()
+        box = detection.get("bbox_xyxy_top_left")
+        if not class_name or not isinstance(box, list) or len(box) != 4:
+            continue
+        grouped.setdefault(class_name, []).append(detection)
+
+    fused: list[dict[str, Any]] = []
+    for class_name, items in grouped.items():
+        remaining = sorted(items, key=lambda item: float(item.get("confidence", 0.0)), reverse=True)
+        while remaining:
+            seed = remaining.pop(0)
+            cluster = [seed]
+            keep: list[dict[str, Any]] = []
+            for candidate in remaining:
+                if _box_iou_lists(seed["bbox_xyxy_top_left"], candidate["bbox_xyxy_top_left"]) >= iou_threshold:
+                    cluster.append(candidate)
+                else:
+                    keep.append(candidate)
+            remaining = keep
+
+            weights = np.asarray(
+                [max(1e-6, float(item.get("confidence", 0.0))) for item in cluster],
+                dtype=np.float64,
+            )
+            boxes = np.asarray([item["bbox_xyxy_top_left"] for item in cluster], dtype=np.float64)
+            fused_box = (boxes * weights[:, None]).sum(axis=0) / max(1e-9, float(weights.sum()))
+            result = dict(seed)
+            result["class_name"] = seed.get("class_name", class_name)
+            result["confidence"] = round(max(float(item.get("confidence", 0.0)) for item in cluster), 6)
+            result["bbox_xyxy_top_left"] = [round(float(value), 2) for value in fused_box]
+            result["fusion_count"] = len(cluster)
+            result["fusion_member_ids"] = [item.get("candidate_id") for item in cluster if item.get("candidate_id")]
+            result["fusion_sources"] = sorted({str(item.get("source", "unknown")) for item in cluster})
+            fused.append(result)
+
+    fused.sort(key=lambda item: float(item.get("confidence", 0.0)), reverse=True)
+    return fused[:max_det]

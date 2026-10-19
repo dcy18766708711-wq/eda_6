@@ -1,6 +1,13 @@
 __pycache__/
 *.py[cod]
+api_config.py
 onnx_yolo/test_results/
+outputs/
+**/outputs/
+stages/__pycache__/
+common/__pycache__/
+ic_library/__pycache__/
+topology/__pycache__/
 ppocrv6/outputs/
 ppocrv6/.paddlex/locks/
 ppocrv6/.paddlex/temp/
